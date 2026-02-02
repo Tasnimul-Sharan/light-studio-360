@@ -2,49 +2,54 @@ const faqData = {
   title: "Frequently Asked Questions",
   faqs: [
     {
-      question: "What is Redith Group?",
+      question: "What is Light Studio360?",
       answer:
-        "Founded in 2018, Redith Group is one of Bangladesh’s leading conglomerates with operations across Digital Marketing & IT, Consumer Brands, Agribusiness, and Retail Chain. The group focuses on innovation, sustainability, and long-term value creation.",
+        "Light Studio360 is an award-winning creative studio specializing in professional image editing, cinematic VFX, 3D modeling, and video production. Since 2020, we have been helping global brands transform ideas into high-impact visual content that drives engagement and conversions.",
     },
     {
-      question: "Which industries does Redith Group operate in?",
+      question: "What services does Light Studio360 provide?",
       answer:
-        "Redith Group operates through four Strategic Business Units: Digital Marketing & IT, Consumer Brands, Agribusiness, and Retail Chain—serving both local and international markets.",
+        "We provide a full range of creative services including image editing, clipping path, background removal, retouching, color correction, VFX & motion graphics, 3D modeling & rendering, animation, and professional video production for businesses worldwide.",
     },
     {
-      question: "What services are offered by Redith IT?",
+      question: "How fast is your delivery time?",
       answer:
-        "Redith IT delivers custom software development, AI & machine learning integration, cloud infrastructure services, cybersecurity solutions, ERP systems, and IT consulting for enterprise and government clients.",
+        "Our standard turnaround time is 24–48 hours depending on project complexity. We also offer express delivery options for urgent projects without compromising quality.",
     },
     {
-      question: "How does Redith use AI and advanced technology?",
+      question: "Do you offer unlimited revisions?",
       answer:
-        "Redith develops proprietary AI tools for marketing optimization, predictive analytics, chatbots, personalized customer journeys, smart retail systems, and AI-assisted agricultural solutions.",
+        "Yes. Client satisfaction is our priority. We provide unlimited revisions within the agreed project scope to ensure the final result perfectly matches your expectations.",
     },
     {
-      question: "What products fall under Redith Consumer Brands?",
+      question: "What industries do you work with?",
       answer:
-        "The Consumer Brands division includes toiletries, home care, hygiene products, electrical & electronics, mobile devices, food products, and paints & coatings—focused on quality, safety, and affordability.",
+        "We work with eCommerce brands, fashion labels, real estate agencies, marketing teams, production houses, jewelry businesses, startups, and enterprise clients across more than 50 countries.",
     },
     {
-      question: "What makes Redith Agribusiness unique?",
+      question: "What makes Light Studio360 different from others?",
       answer:
-        "Redith Agribusiness is the largest agricultural integrator in Bangladesh, covering agriculture, livestock, fisheries, farm mechanization, agri-infrastructure, and AI-powered farming technologies.",
+        "Our expert team, AI-assisted workflows, strict quality control, fast turnaround, and competitive pricing set us apart. We focus on delivering production-ready visuals that are both creative and conversion-focused.",
     },
     {
-      question: "How does Redith Retail Chain serve customers?",
+      question: "Do you handle high-end retouching and complex edits?",
       answer:
-        "Through hypermarkets, neighborhood stores, and e-commerce platforms, Redith Retail Chain delivers convenient access to quality goods with innovations such as smart billing, loyalty programs, and same-day delivery.",
+        "Absolutely. We specialize in high-end fashion retouching, ghost mannequin editing, jewelry enhancement, real estate visuals, product enhancement, and complex background or compositing tasks.",
     },
     {
-      question: "What sustainability initiatives does Redith follow?",
+      question: "Can you handle bulk or long-term projects?",
       answer:
-        "Redith focuses on renewable energy, plastic waste reduction, women empowerment in agribusiness, free digital training programs, and nationwide health and nutrition awareness campaigns.",
+        "Yes. We regularly manage large-scale and long-term projects for agencies and global brands, ensuring consistency, dedicated support, and scalable production capacity.",
     },
     {
-      question: "Where is Redith Group located?",
+      question: "How can I start a project with Light Studio360?",
       answer:
-        "Redith Group’s head office is in Dhaka, Bangladesh, with operational facilities across major districts and export markets in South Asia, the Middle East, and Africa.",
+        "You can start by contacting us through our website contact form, email, or phone. Share your requirements, and our team will provide a free quote and consultation to get your project started quickly.",
+    },
+    {
+      question: "Where is Light Studio360 located?",
+      answer:
+        "Our main operations are based in Bangladesh, but we serve clients worldwide with a fully remote workflow and 24/6 support availability.",
     },
   ],
 };

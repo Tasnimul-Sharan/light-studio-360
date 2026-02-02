@@ -1,22 +1,19 @@
 import Head from "next/head";
 import LandingPage from "@/components/LandingPage";
-import AboutSection from "@/components/AboutSection";
 import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
-import Sustainability from "@/components/Sustainability";
 import Leadership from "@/components/Leadership";
-import WhyRedith from "@/components/WhyUs";
 import News from "@/components/News";
 import Contact from "@/components/Contact";
-import InnovationTechnology from "@/components/InnovationTechnology";
 import BrandSlider from "@/components/BrandSlider";
 import OnModelPreview from "@/components/OnModelPreview";
 import CompareSections from "@/components/CompareSections";
 import PortfolioSlideshow from "@/components/PortfolioSlideshow";
 import TrustSection from "@/components/TrustSection";
-import ClientTrustSection from "@/components/ClientTrustSection";
 import WhyChooseUs from "@/components/WhyUs";
 import CallToActionSection from "@/components/CallToActionSection";
+import About from "@/components/About";
+import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
   const meta = {
@@ -61,18 +58,17 @@ export default function Home() {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       <LandingPage />
-      <AboutSection />
-      <BrandSlider />
+      <About />
       <OnModelPreview />
+      <BrandSlider />
+      <ServicesSection />
+      <ProjectsSection />
       <CompareSections />
       <PortfolioSlideshow />
       <StatsSection />
-      <ServicesSection />
       <TrustSection />
-      <ClientTrustSection />
-      <Sustainability />
-      <InnovationTechnology />
-      <Leadership />
+      {/* <ClientTrustSection /> */}
+      {/* <Leadership /> */}
       <WhyChooseUs />
       <CallToActionSection />
       <News />

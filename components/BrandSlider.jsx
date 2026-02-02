@@ -1,11 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 
-export default function BrandSlider() {
+export default function BrandGrid() {
   const brands = [
     { name: "Adidas", src: "/image/Brand/Adidas.png" },
     { name: "C&A", src: "/image/Brand/C&A.png" },
@@ -18,36 +15,39 @@ export default function BrandSlider() {
   ];
 
   return (
-    <section className="w-full py-8 md:py-12 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={10}
-          slidesPerView="auto"
-          loop
-          speed={4000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          allowTouchMove={false}
-        >
+    <section className="w-full py-14 bg-[#F5F5F5]">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2
+            className="text-3xl md:text-4xl font-black text-[#2B2B2B] mb-3"
+            style={{ fontFamily: "var(--heading-font)" }}
+          >
+            Trusted by Global Brands
+          </h2>
+          <p className="text-gray-600 max-w-xl mx-auto">
+            Leading brands worldwide rely on our production quality and delivery
+            standards.
+          </p>
+        </div>
+
+        {/* Brand Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {brands.map((brand, i) => (
-            <SwiperSlide key={i} className="!w-auto">
-              <div className="flex items-center justify-center px-6 group">
-                <div className="h-14 flex items-center justify-center">
-                  <Image
-                    src={brand.src}
-                    alt={brand.name}
-                    width={120}
-                    height={60}
-                    className="max-h-14 w-auto grayscale group-hover:grayscale-0 transition duration-300"
-                  />
-                </div>
-              </div>
-            </SwiperSlide>
+            <div
+              key={i}
+              className="group bg-white rounded-2xl p-6 flex items-center justify-center shadow-sm hover:shadow-lg transition-all duration-300"
+            >
+              <Image
+                src={brand.src}
+                alt={brand.name}
+                width={140}
+                height={70}
+                className="max-h-14 w-auto grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition duration-300"
+              />
+            </div>
           ))}
-        </Swiper>
+        </div>
       </div>
     </section>
   );

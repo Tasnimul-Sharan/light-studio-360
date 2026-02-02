@@ -61,10 +61,16 @@ export default function FAQ({ faqData }) {
   };
 
   return (
-    <section className="bg-red-50 py-24">
-      <div className="max-w-5xl mx-auto px-6 md:px-0">
+    <section className="relative py-28 bg-gradient-to-b from-[#0f172a] via-[#020617] to-black text-white overflow-hidden">
+      {/* Glow Background */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
+        <div className="w-[600px] h-[600px] bg-purple-600 blur-[160px] rounded-full absolute -top-40 -left-40" />
+        <div className="w-[500px] h-[500px] bg-cyan-600 blur-[160px] rounded-full absolute bottom-0 right-0" />
+      </div>
+
+      <div className="relative max-w-4xl mx-auto px-6">
         <motion.h2
-          className="text-center text-3xl md:text-4xl font-bold mb-20"
+          className="text-center text-4xl md:text-5xl font-extrabold mb-20 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -72,75 +78,63 @@ export default function FAQ({ faqData }) {
           {faqData.title}
         </motion.h2>
 
-        <div className="relative border-l border-gray-300 pl-12 space-y-14">
+        <div className="space-y-8">
           {faqData.faqs.map((faq, index) => {
             const isActive = activeIndex === index;
 
             return (
-              <div key={index} className="relative">
-                {/* Timeline dot */}
-                <span
-                  className={`absolute -left-[36px] top-0 flex items-center justify-center
-                w-7 h-7 rounded-full text-sm font-semibold
-                transition-all duration-300
-                ${
-                  isActive
-                    ? "bg-primary text-white scale-110"
-                    : "bg-gray-300 text-gray-700"
-                }
-              `}
-                >
-                  {index + 1}
-                </span>
-
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                viewport={{ once: true }}
+                className={`group backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 transition-all duration-500 shadow-lg
+                ${isActive ? "shadow-purple-500/20 scale-[1.01]" : "hover:shadow-cyan-500/10 hover:bg-white/10"}
+                `}
+              >
                 {/* Question */}
-                <motion.div
+                <div
                   onClick={() => toggleFAQ(index)}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="cursor-pointer group"
+                  className="flex items-center justify-between gap-6 cursor-pointer"
                 >
-                  <div className="flex items-start justify-between gap-6">
-                    <h3
-                      className={`text-lg font-semibold transition-colors duration-300
-                    ${isActive ? "text-primary" : "text-gray-900"}
+                  <h3
+                    className={`text-lg md:text-xl font-semibold transition-colors duration-300
+                    ${isActive ? "text-cyan-400" : "text-white"}
                   `}
-                    >
-                      {faq.question}
-                    </h3>
+                  >
+                    {faq.question}
+                  </h3>
 
-                    <span
-                      className={`text-xl transition-transform duration-500 p-2 rounded-full border
+                  <span
+                    className={`p-3 rounded-full border transition-all duration-500
                     ${
                       isActive
-                        ? "rotate-180 text-primary border-primary"
-                        : "text-gray-500 border-gray-500"
+                        ? "rotate-180 border-cyan-400 text-cyan-400 shadow-lg shadow-cyan-500/20"
+                        : "border-white/30 text-gray-300 group-hover:text-white"
                     }
                   `}
-                    >
-                      {isActive ? <AiOutlineMinus /> : <AiOutlinePlus />}
-                    </span>
-                  </div>
+                  >
+                    {isActive ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                  </span>
+                </div>
 
-                  {/* Animated underline */}
-                  <span
-                    className={`block mt-3 h-[2px] w-full origin-left transition-transform duration-500
-                  ${isActive ? "scale-x-100 bg-primary" : "scale-x-0 bg-gray-200"}
+                {/* Divider */}
+                <span
+                  className={`block mt-4 h-[1px] w-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-opacity duration-500
+                  ${isActive ? "opacity-100" : "opacity-40"}
                 `}
-                  />
-                </motion.div>
+                />
 
                 {/* Answer */}
                 <div
                   ref={(el) => (answerRefs.current[index] = el)}
-                  className="mt-6 ml-2 border-l-2 border-primary/80 pl-6 text-gray-600 text-sm leading-relaxed overflow-hidden"
+                  className="mt-6 text-gray-300 leading-relaxed overflow-hidden"
                   style={{ height: 0, opacity: 0, display: "none" }}
                 >
                   {faq.answer}
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

@@ -1,0 +1,38 @@
+export const packages = [
+  {
+    key: "standard",
+    title: "STANDARD",
+    timeLabel: "24 HOUR",
+    shortDesc: "Pick Our Standard delivery option with no extra charge.",
+    features: ["Any Number of images."],
+    button: "Choose Plan",
+    delay: "animation-delay-[0.1s]",
+  },
+  {
+    key: "express",
+    title: "EXPRESS",
+    timeLabel: "12 / 18 HOUR",
+    shortDesc: "Pick Our Express delivery option with 50% additional charge.",
+    features: ["Up to 500 - 1000 images."],
+    button: "Choose Plan",
+    delay: "animation-delay-[0.2s]",
+  },
+  {
+    key: "urgent",
+    title: "URGENT",
+    timeLabel: "6 HOUR",
+    shortDesc: "Pick Our Urgent delivery option with 100% additional charge.",
+    features: ["Up to 100 - 500 images."],
+    button: "Choose Plan",
+    delay: "animation-delay-[0.3s]",
+  },
+  {
+    key: "custom",
+    title: "CUSTOMIZE",
+    timeLabel: "Flexible",
+    shortDesc: "Customize your delivery timeline based on your needs.",
+    features: ["Any Number of images."],
+    button: "Customize Plan",
+    delay: "animation-delay-[0.4s]",
+  },
+];

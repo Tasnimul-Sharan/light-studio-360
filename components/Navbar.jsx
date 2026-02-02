@@ -21,7 +21,8 @@ export default function Navbar() {
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
     { label: "Services", path: "/services" },
-    // { label: "Why Redith", path: "/why-redith" },
+    { label: "Packages", path: "/packages" },
+    // { label: "Why Us", path: "/whyus" },
     { label: "Careers", path: "/careers" },
     { label: "News", path: "/news" },
   ];
@@ -29,30 +30,20 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 transform-gpu
-        ${scrolled ? "bg-white border" : "bg-transparent border-transparent"}`}
+        ${scrolled ? "bg-white" : "bg-transparent border-transparent"}`}
     >
-      <div className="custom-container mx-auto flex items-center justify-between w-full h-24 overflow-hidden">
-        {/* -------- Logo -------- */}
+      <div className="custom-container mx-auto flex items-center justify-between w-full h-28 overflow-hidden">
         <Link href="/" className="flex items-center">
-          {/* <Image
-            src="/logo-2.png"
-            alt="Redith Group"
-            width={1200}
-            height={1200}
-            priority
-            className="md:h-56 h-48 w-auto object-contain border-transparent"
-          /> */}
           <Image
-            src="/logo-1.png"
+            src="/logo-main.png"
             alt="Light Studio 360"
             width={1200}
             height={1200}
             priority
-            className="md:h-36 h-16 w-full object-cover overflow-hidden"
+            className="md:h-28 h-16 w-full object-cover overflow-hidden"
           />
         </Link>
 
-        {/* -------- Mobile Button -------- */}
         <button
           className={`md:hidden text-3xl z-50 transition-colors ${
             scrolled ? "text-secondary" : "text-white"
@@ -62,66 +53,9 @@ export default function Navbar() {
           {open ? <HiOutlineX /> : <HiOutlineMenu />}
         </button>
 
-        {/* -------- Desktop Menu -------- */}
-        {/* <nav
-          className={`hidden md:flex items-center gap-10 text-sm font-semibold tracking-wide
-            ${scrolled ? "text-secondary" : "text-white"}`}
-        >
-          <Link href="/about" className="hover:text-primary transition">
-            About
-          </Link>
-
-
-          <div className="group relative">
-            <button className="flex items-center gap-1 hover:text-primary transition">
-              SBUs
-              <span className="text-xs">▾</span>
-            </button>
-
-            <div className="absolute left-0 top-full mt-3 w-52 bg-white text-secondary shadow-xl rounded-lg p-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
-              {[
-                ["Digital & IT", "/sbu/digital-it"],
-                ["Consumer Brands", "/sbu/consumer-brands"],
-                ["Agribusiness", "/sbu/agribusiness"],
-                ["Retail Chain", "/sbu/retail"],
-              ].map(([label, path]) => (
-                <Link
-                  key={path}
-                  href={path}
-                  className="block px-3 py-2 rounded-md hover:bg-primary/10 hover:text-primary transition"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <Link
-            href="/sustainability"
-            className="hover:text-primary transition"
-          >
-            CSR
-          </Link>
-          <Link href="/leadership" className="hover:text-primary transition">
-            Leadership
-          </Link>
-          <Link href="/presence" className="hover:text-primary transition">
-            Presence
-          </Link>
-          <Link href="/why-redith" className="hover:text-primary transition">
-            Why Redith
-          </Link>
-
-          <Link
-            href="/contact"
-            className="bg-primary text-white px-5 py-2 rounded-md hover:bg-secondary transition"
-          >
-            Contact
-          </Link>
-        </nav> */}
         <nav
           className={`hidden md:flex items-center gap-10 text-sm font-semibold tracking-wide
-    ${scrolled ? "text-secondary" : "text-white"}`}
+    ${scrolled ? "text-dark" : "text-white"}`}
         >
           {menuItems.map((item) => (
             <NavLink key={item.path} href={item.path}>
@@ -167,7 +101,6 @@ export default function Navbar() {
         </nav>
       </div>
 
-      {/* -------- Mobile Menu -------- */}
       <div
         className={`md:hidden fixed top-0 right-0 h-full w-72 bg-white shadow-xl p-6 transition-transform duration-300
           ${open ? "translate-x-0" : "translate-x-full"}`}

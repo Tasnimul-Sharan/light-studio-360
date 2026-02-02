@@ -11,14 +11,14 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-b from-gray-950 via-gray-900 to-black text-gray-300">
+    <footer className="relative bg-black text-gray-300">
       {/* Top */}
       <div className="custom-container mx-auto py-20 grid gap-14 md:grid-cols-5">
         {/* Brand */}
         <div className="md:col-span-2 space-y-6">
           <Link href="#home" className="inline-block">
             <Image
-              src="/logo2.png"
+              src="/Logoc.png"
               alt="Light Studio360"
               width={1200}
               height={1200}

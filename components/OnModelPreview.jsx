@@ -42,7 +42,7 @@ export default function OnModelPreview() {
 
           {/* CENTER – Main Image */}
           <div className="md:col-span-6">
-            <div className="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+            <div className="bg-gray-100 rounded-xl overflow-hidden border border-gray-200">
               <Image
                 src={activeImage.src}
                 alt={activeImage.alt}
@@ -70,13 +70,13 @@ export default function OnModelPreview() {
             <div className="flex gap-3">
               <a
                 href="#contact"
-                className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-bold rounded-lg hover:shadow-lg transition"
+                className="px-6 py-3 bg-gradient-to-r from-accent to-primary text-white font-bold rounded-lg hover:shadow-lg transition"
               >
                 Get Started
               </a>
               <a
                 href="#portfolio"
-                className="px-6 py-3 border-2 border-blue-500 text-blue-500 font-bold rounded-lg hover:bg-blue-50 transition"
+                className="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-blue-50 transition"
               >
                 View More
               </a>

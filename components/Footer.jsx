@@ -18,12 +18,12 @@ export default function Footer() {
         <div className="md:col-span-2 space-y-6">
           <Link href="#home" className="inline-block">
             <Image
-              src="/Logoc.png"
+              src="/logo-main.png"
               alt="Light Studio360"
               width={1200}
               height={1200}
               priority
-              className="h-60 w-full object-cover
+              className="h-60 w-full object-contain
       transition-transform duration-500
       hover:scale-105
     "

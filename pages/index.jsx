@@ -2,7 +2,6 @@ import Head from "next/head";
 import LandingPage from "@/components/LandingPage";
 import StatsSection from "@/components/StatsSection";
 import ServicesSection from "@/components/ServicesSection";
-import Leadership from "@/components/Leadership";
 import News from "@/components/News";
 import Contact from "@/components/Contact";
 import BrandSlider from "@/components/BrandSlider";

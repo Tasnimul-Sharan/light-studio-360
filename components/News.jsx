@@ -13,33 +13,6 @@ const articles = [
     description:
       "Redith IT delivers AI-driven software, cloud, and cybersecurity solutions to accelerate digital growth across industries.",
   },
-  // {
-  //   title: "Consumer Brands Expansion",
-  //   slug: "consumer-brands-expansion",
-  //   date: "Dec 20, 2025",
-  //   author: "Redith Brands",
-  //   img: "/images/news/consumer-brands.jpg",
-  //   description:
-  //     "Redith Consumer Brands continues nationwide expansion with quality, affordable products for everyday living.",
-  // },
-  // {
-  //   title: "Smart Farming Initiative",
-  //   slug: "smart-farming-initiative",
-  //   date: "Dec 2, 2025",
-  //   author: "Redith Agro",
-  //   img: "/images/news/agribusiness.jpg",
-  //   description:
-  //     "Modern agriculture powered by AI, smart irrigation, and farm mechanization to support farmers nationwide.",
-  // },
-  // {
-  //   title: "Retail Chain Innovation",
-  //   slug: "retail-chain-innovation",
-  //   date: "Nov 18, 2025",
-  //   author: "Redith Retail",
-  //   img: "/images/news/retail-chain.jpg",
-  //   description:
-  //     "Smart stores, e-commerce, and same-day delivery are redefining convenience for Bangladeshi consumers.",
-  // },
   {
     title: "Web Development Solutions",
     slug: "web-development-solutions",

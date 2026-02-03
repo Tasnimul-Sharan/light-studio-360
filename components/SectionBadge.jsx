@@ -1,23 +1,15 @@
-export default function SectionBadge({
-  text,
-  className = "",
-  lineWidth = "w-6",
-}) {
+export default function SectionBadge({ text, className = "" }) {
   return (
     <span
-      className={`relative inline-flex items-center mb-3 px-8 py-2 text-sm font-semibold tracking-widest uppercase text-primary ${className}`}
+      className={`relative inline-block mb-3 px-6 py-1.5
+      text-xs font-bold tracking-widest uppercase
+      text-primary
+      border border-primary
+      ${className}`}
     >
-      {/* Left line */}
-      <span
-        className={`absolute left-0 top-1/2 -translate-y-1/2 h-[1px] ${lineWidth} bg-primary shadow-[0_0_8px_rgba(236,104,9,0.6)]`}
-      />
-
+      <span className="absolute -top-1 -left-1 w-2 h-2 border border-primary" />
+      <span className="absolute -bottom-1 -right-1 w-2 h-2 border border-primary" />
       {text}
-
-      {/* Right line */}
-      <span
-        className={`absolute right-0 top-1/2 -translate-y-1/2 h-[1px] ${lineWidth} bg-primary shadow-[0_0_8px_rgba(236,104,9,0.6)]`}
-      />
     </span>
   );
 }

@@ -22,7 +22,7 @@ export default function Navbar() {
     { label: "About", path: "/about" },
     { label: "Services", path: "/services" },
     { label: "Packages", path: "/packages" },
-    // { label: "Why Us", path: "/whyus" },
+    { label: "Why Us", path: "/whyus" },
     { label: "Careers", path: "/careers" },
     { label: "News", path: "/news" },
   ];
@@ -30,15 +30,19 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 transform-gpu
-        ${scrolled ? "bg-white" : "bg-transparent border-transparent"}`}
+        ${scrolled ? "bg-dark" : "bg-transparent border-transparent"}`}
     >
-      <div className="custom-container mx-auto flex items-center justify-between w-full h-28 overflow-hidden">
+      {/* // <header
+    //   className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 transform-gpu
+    //  bg-black ${scrolled ? "shadow-lg" : ""}`}
+    // > */}
+      <div className="custom-container mx-auto flex items-center justify-between w-full h-24 overflow-hidden">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo-main.png"
             alt="Light Studio 360"
-            width={1200}
-            height={1200}
+            width={1536}
+            height={1024}
             priority
             className="md:h-28 h-16 w-full object-cover overflow-hidden"
           />
@@ -55,7 +59,7 @@ export default function Navbar() {
 
         <nav
           className={`hidden md:flex items-center gap-10 text-sm font-semibold tracking-wide
-    ${scrolled ? "text-dark" : "text-white"}`}
+    ${scrolled ? "text-secondary" : "text-white"}`}
         >
           {menuItems.map((item) => (
             <NavLink key={item.path} href={item.path}>

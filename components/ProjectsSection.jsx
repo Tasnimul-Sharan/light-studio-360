@@ -74,6 +74,20 @@ const projects = [
     before: "/image-edating/background-retouch/1--1.jpg",
     after: "/image-edating/background-retouch/1--2.jpg",
   },
+  {
+    title: "eCommerce Shoes Enhancement",
+    category: "Image Editing",
+    slug: "ecommerce-shoes-enhancement",
+    before: "/image-edating/shoes-enhancement/1--1.jpg",
+    after: "/image-edating/shoes-enhancement/1--2.jpg",
+  },
+  {
+    title: "Glamour Model Retouching",
+    category: "Image Editing",
+    slug: "glamour-model-retouching",
+    before: "/image-edating/glamour-model/1--1.jpg",
+    after: "/image-edating/glamour-model/1--2.jpg",
+  },
 ];
 
 const ProjectsSection = () => {

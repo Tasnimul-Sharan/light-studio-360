@@ -1,62 +1,61 @@
 import Image from "next/image";
-import PageHeader from "./PageHeader";
 import SectionBadge from "./SectionBadge";
 import Link from "next/link";
 
 const articles = [
   {
-    title: "AI-Powered Digital Transformation",
-    slug: "ai-powered-digital-transformation",
-    date: "Jan 5, 2026",
-    author: "Redith IT",
-    img: "/news/redith-it.jpg",
+    title: "Professional Image Editing for eCommerce Growth",
+    slug: "professional-image-editing-ecommerce",
+    date: "Jan 12, 2026",
+    author: "Light Studio 360",
+    img: "/news/image-editing.jpg",
     description:
-      "Redith IT delivers AI-driven software, cloud, and cybersecurity solutions to accelerate digital growth across industries.",
+      "Clipping path, high-end retouching, ghost mannequin and product enhancement services designed for modern eCommerce brands.",
   },
   {
-    title: "Consumer Brands Expansion",
-    slug: "consumer-brands-expansion",
-    date: "Dec 20, 2025",
-    author: "Redith Brands",
-    img: "/news/consumer-brands.jpg",
+    title: "Commercial Video Production That Tells Your Story",
+    slug: "commercial-video-production-storytelling",
+    date: "Dec 28, 2025",
+    author: "Light Studio 360",
+    img: "/news/video-production.jpg",
     description:
-      "Redith Consumer Brands continues nationwide expansion with quality, affordable products for everyday living.",
+      "From cinematic edits to product promos, discover how professional video production builds strong visual branding.",
   },
   {
-    title: "Smart Farming Initiative",
-    slug: "smart-farming-initiative",
-    date: "Dec 2, 2025",
-    author: "Redith Agro",
-    img: "/news/agribusiness.jpg",
+    title: "Hollywood-Style VFX & Compositing Techniques",
+    slug: "hollywood-style-vfx-compositing",
+    date: "Dec 10, 2025",
+    author: "Light Studio 360",
+    img: "/news/vfx.jpg",
     description:
-      "Modern agriculture powered by AI, smart irrigation, and farm mechanization to support farmers nationwide.",
+      "Green screen removal, rotoscoping and advanced visual effects that transform raw footage into cinematic visuals.",
   },
   {
-    title: "Retail Chain Innovation",
-    slug: "retail-chain-innovation",
-    date: "Nov 18, 2025",
-    author: "Redith Retail",
-    img: "/news/retail-chain.jpg",
+    title: "3D Modeling & Photorealistic Product Rendering",
+    slug: "3d-modeling-product-rendering",
+    date: "Nov 25, 2025",
+    author: "Light Studio 360",
+    img: "/news/3d-modeling.jpg",
     description:
-      "Smart stores, e-commerce, and same-day delivery are redefining convenience for Bangladeshi consumers.",
+      "Architectural visuals, CGI creation and photorealistic 3D product renders for modern digital marketing.",
   },
   {
-    title: "Web Development Solutions",
-    slug: "web-development-solutions",
-    date: "Nov 5, 2025",
-    author: "Redith IT",
+    title: "2D & 3D Animation for Modern Brands",
+    slug: "2d-3d-animation-for-brands",
+    date: "Nov 10, 2025",
+    author: "Light Studio 360",
+    img: "/news/animation.jpg",
+    description:
+      "Explainer videos, character animation and motion graphics designed to simplify complex ideas visually.",
+  },
+  {
+    title: "Modern Web Development & UI/UX Solutions",
+    slug: "modern-web-development-ui-ux",
+    date: "Oct 30, 2025",
+    author: "Light Studio 360",
     img: "/news/web-development.jpg",
     description:
-      "Redith IT builds modern, secure, and scalable websites and web applications tailored to business growth and user experience.",
-  },
-  {
-    title: "AI in Digital Marketing",
-    slug: "ai-in-digital-marketing",
-    date: "Oct 15, 2025",
-    author: "Redith Digital",
-    img: "/news/digital-marketing.jpg",
-    description:
-      "AI-powered analytics and data-driven strategies are reshaping digital branding and marketing performance.",
+      "Responsive websites, landing pages and custom UI/UX experiences that boost engagement and conversions.",
   },
 ];
 
@@ -64,7 +63,6 @@ export default function NewsSection() {
   return (
     <section className="relative w-full py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6 md:px-0">
-        {/* Section Intro */}
         <div className="max-w-3xl mb-14">
           <SectionBadge text="Our Blogs" />
           <h2 className="text-3xl font-extrabold text-gray-900">
@@ -75,8 +73,6 @@ export default function NewsSection() {
             developments across Redith Group.
           </p>
         </div>
-
-        {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {articles.map((article, idx) => (
             <Link key={idx} href={`/news/${article.slug}`} className="block">
@@ -84,7 +80,6 @@ export default function NewsSection() {
                 className="group bg-white border rounded-2xl overflow-hidden
                  shadow-sm hover:shadow-xl transition-all duration-300"
               >
-                {/* Image */}
                 <div className="relative overflow-hidden">
                   <Image
                     src={article.img}
@@ -95,8 +90,6 @@ export default function NewsSection() {
                      group-hover:scale-105 transition duration-500"
                   />
                 </div>
-
-                {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-sm font-medium text-primary">
                     <span>{article.date}</span>

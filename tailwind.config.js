@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1E2A44", // Midnight Navy
-        secondary: "#D4AF37", // Royal Gold
+        // secondary: "#D4AF37", // Royal Gold
+        secondary: "#d3ab64", // Royal Gold
         accent: "#4A90E2", // Electric Blue
         dark: "#0B0F14", // Charcoal Black
         light: "#F5F7FA", // Soft Pearl

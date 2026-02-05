@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import SectionBadge from "./SectionBadge";
 
 /* =======================
    DATA
@@ -9,22 +10,22 @@ const STATS = [
   {
     label: "Happy Clients",
     value: 1000,
-    gradient: "from-primary to-secondary",
+    // gradient: "secondary",
   },
   {
     label: "Completed Projects",
     value: 400,
-    gradient: "from-secondary to-primary",
+    // gradient: "from-secondary to-primary",
   },
   {
     label: "Years in Business",
     value: 5,
-    gradient: "from-primary to-secondary",
+    // gradient: "from-primary to-secondary",
   },
   {
     label: "Countries Served",
     value: 50,
-    gradient: "from-primary to-secondary",
+    // gradient: "from-primary to-secondary",
   },
 ];
 
@@ -98,17 +99,22 @@ export default function StatsSection() {
   );
 }
 
+
 function SectionHeader() {
   return (
-    <div className="text-center">
+    <div className="text-center mb-16 md:mb-20">
+      <SectionBadge text="Our Impact" />
+
       <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">
-        Trusted By{" "}
-        <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-          Global Brands
+        Building Trust With{" "}
+        <span className="bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent">
+          Every Project
         </span>
       </h2>
-      <p className="text-gray-400">
-        Join 1000+ satisfied clients across 50+ countries
+      <p className="text-light">
+        Join 1000+ satisfied clients across 50+ countries who trust Light Studio360
+        for exceptional 3D, VFX, animation, and image services that drive real
+        business results.
       </p>
     </div>
   );
@@ -119,7 +125,8 @@ function StatCard({ stat, refCallback }) {
     <div className="bg-white/5 border border-white/10 backdrop-blur-md p-8 rounded-3xl text-center hover:scale-105 transition duration-300 shadow-lg">
       <div
         ref={refCallback}
-        className={`text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r ${stat.gradient}`}
+        // className={`text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r ${stat.gradient}`}
+        className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-secondary"
       >
         0
       </div>

@@ -1,26 +1,25 @@
+import SectionBadge from "./SectionBadge";
+
 export default function About() {
   return (
     <section className="relative bg-[#F5F7FA] text-[#1E2A44] md:py-28 py-20 overflow-hidden">
       {/* Soft Brand Glow */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="w-[420px] h-[420px] bg-[#D4AF37]/20 blur-[160px] rounded-full absolute -top-24 -left-24" />
+        <div className="w-[420px] h-[420px] bg-secondary/20 blur-[160px] rounded-full absolute -top-24 -left-24" />
         <div className="w-[360px] h-[360px] bg-[#1E2A44]/15 blur-[140px] rounded-full absolute bottom-0 right-0" />
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-6">
-        {/* Small Label */}
-        <p className="text-sm uppercase tracking-[0.25em] text-[#D4AF37] mb-6 font-semibold">
-          About Light Studio360
-        </p>
+      <div className="relative max-w-5xl mx-auto md:px-6 px-0">
+        <SectionBadge text="About Light Studio360" />
 
         {/* Headline */}
         <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-10">
-          Crafting <span className="text-[#D4AF37]">Visual Stories</span> That
+          Crafting <span className="text-secondary">Visual Stories</span> That
           Captivate and Convert
         </h2>
 
         {/* Divider */}
-        <div className="w-20 h-[3px] bg-[#D4AF37] mb-12 rounded-full" />
+        <div className="w-20 h-[3px] bg-secondary mb-12 rounded-full" />
 
         {/* Body */}
         <div className="space-y-8 text-[#1E2A44]/80 text-base md:text-lg leading-relaxed">
@@ -33,7 +32,7 @@ export default function About() {
 
           <p>
             We collaborate with{" "}
-            <strong className="text-[#D4AF37]">1,000+ global brands</strong>{" "}
+            <strong className="text-secondary">1,000+ global brands</strong>{" "}
             across industries, delivering premium visual solutions that elevate
             brand presence and engagement.
           </p>
@@ -50,7 +49,7 @@ export default function About() {
           <a
             href="/contact"
             className="inline-block px-10 py-4 
-              bg-[#D4AF37] text-[#0B0F14] 
+              bg-secondary text-[#0B0F14] 
               font-bold rounded-xl shadow-lg
               hover:bg-[#1E2A44] hover:text-[#F5F7FA]
               transition-all duration-300"

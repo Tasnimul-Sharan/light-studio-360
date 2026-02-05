@@ -5,31 +5,31 @@ import Link from "next/link";
 
 const articles = [
   {
-    title: "AI-Powered Digital Transformation",
-    slug: "ai-powered-digital-transformation",
-    date: "Jan 5, 2026",
-    author: "Redith IT",
-    img: "/news/redith-it.jpg",
+    title: "Professional Image Editing for eCommerce Growth",
+    slug: "professional-image-editing-ecommerce",
+    date: "Jan 12, 2026",
+    author: "Light Studio 360",
+    img: "/news/image-editing.jpg",
     description:
-      "Redith IT delivers AI-driven software, cloud, and cybersecurity solutions to accelerate digital growth across industries.",
+      "Clipping path, high-end retouching, ghost mannequin and product enhancement services designed for modern eCommerce brands.",
   },
   {
-    title: "Web Development Solutions",
-    slug: "web-development-solutions",
-    date: "Nov 5, 2025",
-    author: "Redith IT",
-    img: "/news/web-development.jpg",
+    title: "Commercial Video Production That Tells Your Story",
+    slug: "commercial-video-production-storytelling",
+    date: "Dec 28, 2025",
+    author: "Light Studio 360",
+    img: "/news/video-production.jpg",
     description:
-      "Redith IT builds modern, secure, and scalable websites and web applications tailored to business growth and user experience.",
+      "From cinematic edits to product promos, discover how professional video production builds strong visual branding.",
   },
   {
-    title: "AI in Digital Marketing",
-    slug: "ai-in-digital-marketing",
-    date: "Oct 15, 2025",
-    author: "Redith Digital",
-    img: "/news/digital-marketing.jpg",
+    title: "Hollywood-Style VFX & Compositing Techniques",
+    slug: "hollywood-style-vfx-compositing",
+    date: "Dec 10, 2025",
+    author: "Light Studio 360",
+    img: "/news/vfx.jpg",
     description:
-      "AI-powered analytics and data-driven strategies are reshaping digital branding and marketing performance.",
+      "Green screen removal, rotoscoping and advanced visual effects that transform raw footage into cinematic visuals.",
   },
 ];
 
@@ -37,17 +37,6 @@ export default function News() {
   return (
     <section className="relative w-full py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6 md:px-0">
-        {/* <div className="max-w-3xl mb-14">
-          <SectionBadge text="Our Blogs" />
-          <h2 className="text-3xl font-extrabold text-gray-900">
-            Latest <span className="text-primary">News & Media</span>
-          </h2>
-          <p className="mt-4 text-gray-600 leading-relaxed">
-            Stay informed with the latest announcements, achievements, and
-            developments across Redith Group.
-          </p>
-        </div> */}
-
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
           <div className="max-w-3xl">
             <SectionBadge text="Our Blogs" />
@@ -60,7 +49,6 @@ export default function News() {
             </p>
           </div>
 
-          {/* View All Button */}
           <Link
             href="/news"
             className="inline-flex items-center justify-center
@@ -77,44 +65,66 @@ export default function News() {
           {articles.map((article, idx) => (
             <Link key={idx} href={`/news/${article.slug}`} className="block">
               <article
-                className="group bg-white border rounded-2xl overflow-hidden
-                 shadow-sm hover:shadow-xl transition-all duration-300"
+                className="group relative bg-white rounded-2xl overflow-hidden
+  border border-gray-200/60
+  transition-all duration-500
+  hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)]"
               >
-                <div className="relative overflow-hidden">
+                {/* Gradient Glow */}
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500
+    bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 pointer-events-none"
+                />
+
+                {/* Image */}
+                <div className="relative h-56 overflow-hidden">
                   <Image
                     src={article.img}
                     alt={article.title}
-                    width={500}
-                    height={300}
-                    className="w-full h-56 object-cover
-                     group-hover:scale-105 transition duration-500"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+
+                  {/* Image Overlay */}
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t
+      from-black/50 via-black/10 to-transparent"
                   />
                 </div>
 
-                <div className="p-6">
-                  <div className="flex items-center gap-2 text-sm font-medium text-primary">
+                {/* Content */}
+                <div className="relative p-6">
+                  {/* Meta */}
+                  <div className="flex items-center gap-2 text-xs font-semibold tracking-wide text-primary uppercase">
                     <span>{article.date}</span>
                     <span className="w-1 h-1 rounded-full bg-primary" />
-                    <span className="text-gray-700">{article.author}</span>
+                    <span className="text-gray-500">{article.author}</span>
                   </div>
 
-                  <h3 className="mt-2 text-lg font-semibold text-gray-900 leading-snug">
+                  {/* Title */}
+                  <h3
+                    className="mt-3 text-lg font-bold text-gray-900 leading-snug
+      group-hover:text-primary transition-colors duration-300"
+                  >
                     {article.title}
                   </h3>
 
+                  {/* Description */}
                   <p className="mt-3 text-sm text-gray-600 leading-relaxed">
                     {article.description}
                   </p>
 
+                  {/* Read More */}
                   <div className="mt-6">
                     <span
-                      className="inline-flex items-center text-sm font-semibold
-                       text-gray-900 group-hover:text-primary transition"
+                      className="relative inline-flex items-center text-sm font-semibold text-gray-900
+        group-hover:text-primary transition-colors"
                     >
                       Read More
                       <span
-                        className="ml-2 h-[1px] w-6 bg-gray-900
-                         group-hover:bg-orange-600 transition"
+                        className="ml-2 h-[2px] w-6 bg-gray-900
+          group-hover:bg-primary group-hover:w-10
+          transition-all duration-500"
                       />
                     </span>
                   </div>

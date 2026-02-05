@@ -28,23 +28,33 @@ export default function Navbar() {
   ];
 
   return (
+    // <header
+    //   className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 transform-gpu
+    //     ${scrolled ? "bg-dark" : "bg-transparent border-transparent"}`}
+    // >
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 transform-gpu
-        ${scrolled ? "bg-dark" : "bg-transparent border-transparent"}`}
+     bg-dark ${scrolled ? "shadow-lg" : ""}`}
     >
-      {/* // <header
-    //   className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 transform-gpu
-    //  bg-black ${scrolled ? "shadow-lg" : ""}`}
-    // > */}
-      <div className="custom-container mx-auto flex items-center justify-between w-full h-24 overflow-hidden">
-        <Link href="/" className="flex items-center">
+      <div className="custom-container mx-auto relative  flex items-center justify-between w-full h-24 overflow-hidden">
+        {/* <Link href="/" className="flex items-center">
           <Image
             src="/logo-main.png"
             alt="Light Studio 360"
-            width={1536}
-            height={1024}
+            width={4096}
+            height={4096}
             priority
-            className="md:h-28 h-16 w-full object-cover overflow-hidden"
+            className="md:h-40 h-16 w-full object-cover overflow-hidden"
+          />
+        </Link> */}
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo-scale-up.jpg"
+            alt="Light Studio 360"
+            width={4000}
+            height={4000}
+            priority
+            className="md:h-36 h-16 w-full object-cover"
           />
         </Link>
 

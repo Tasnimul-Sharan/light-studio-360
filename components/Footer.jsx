@@ -11,19 +11,19 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="relative bg-black text-gray-300">
+    <footer className="relative bg-dark text-gray-300">
       {/* Top */}
       <div className="custom-container mx-auto py-20 grid gap-14 md:grid-cols-5">
         {/* Brand */}
         <div className="md:col-span-2 space-y-6">
           <Link href="#home" className="inline-block">
             <Image
-              src="/logo-main.png"
+              src="/logo-scale-up.jpg"
               alt="Light Studio360"
-              width={1200}
-              height={1200}
+              width={4000}
+              height={4000}
               priority
-              className="h-60 w-full object-contain
+              className="h-64 w-full object-contain
       transition-transform duration-500
       hover:scale-105
     "
@@ -105,8 +105,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+      <div className="custom-container mx-auto border-t border-white/10">
+        <div className=" py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <span>© 2025 LightStudio360. All rights reserved.</span>
 
           <div className="flex gap-6">
@@ -125,10 +125,6 @@ export default function Footer() {
     </footer>
   );
 }
-
-/* =====================
-   Reusable Pieces
-===================== */
 
 function FooterColumn({ title, children }) {
   return (
@@ -160,8 +156,8 @@ function SocialIcon({ href, children }) {
       rel="noopener noreferrer"
       className="w-10 h-10 flex items-center justify-center rounded-full
                  bg-white/5 text-gray-300
-                 hover:bg-white hover:text-black
-                 transition-all duration-300"
+                 hover:bg-secondary hover:text-white
+                 transition-all duration-500"
     >
       {children}
     </a>

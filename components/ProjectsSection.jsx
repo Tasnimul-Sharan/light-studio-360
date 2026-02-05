@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FiArrowRight, FiArrowRightCircle, FiClock } from "react-icons/fi";
 import ReactCompareImage from "react-compare-image";
 import Link from "next/link";
+import SectionBadge from "./SectionBadge";
 
 const categories = ["All", "VFX", "Video Editing", "Image Editing"];
 
@@ -100,18 +101,18 @@ const ProjectsSection = () => {
       : projects.filter((proj) => proj.category === activeCategory);
 
   return (
-    <section className="bg-white text-secondary py-16 custom-container mx-auto">
+    <section className="bg-white text-dark py-16 custom-container mx-auto">
       <div className="text-center mb-10">
-        <p className="text-primary uppercase text-sm font-semibold tracking-wider">
-          Latest Work
-        </p>
+        <SectionBadge text="Latest Work" />
+
         <h2 className="text-3xl md:text-4xl font-bold mt-2">
-          Transforming Ideas into Exceptional Visuals
+          Crafting Powerful{" "}
+          <span className="text-accent">Visual Experiences</span>
         </h2>
-        <p className="text-secondary_two text-sm max-w-2xl mx-auto mt-2">
-          At Creative Frog, we craft stunning VFX, animations, video
-          productions, and graphic designs that bring your vision to life.
-          Explore our portfolio to see how creativity meets technology.
+        <p className="text-dark text-sm max-w-2xl mx-auto mt-2">
+          We specialize in high-quality VFX, animation, video production, and
+          graphic design—turning creative concepts into visually compelling
+          stories that leave a lasting impact.
         </p>
       </div>
 

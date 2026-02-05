@@ -56,8 +56,6 @@ export default function AboutPageProfile() {
           backgroundImage: "/hero-bg.jpg",
         }}
       />
-
-      <StorySection />
       <StorySection />
       <VisionMission />
       <FAQ faqData={faqData} />

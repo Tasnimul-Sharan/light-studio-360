@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function OnModelPreview() {
   const images = [
-    { id: "front", src: "/image/Model/Front.png", alt: "Front View" },
-    { id: "side", src: "/image/Model/Side.png", alt: "Side View" },
-    { id: "back", src: "/image/Model/Back.png", alt: "Back View" },
+    { id: "front", src: "/Model/Front.png", alt: "Front View" },
+    { id: "side", src: "/Model/Side.png", alt: "Side View" },
+    { id: "back", src: "/Model/Back.png", alt: "Back View" },
   ];
 
   const [activeImage, setActiveImage] = useState(images[0]);

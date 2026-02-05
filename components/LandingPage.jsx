@@ -58,21 +58,21 @@ export default function LandingPage() {
           {/* LEFT TEXT CONTENT */}
           <div className="space-y-6 md:space-y-8">
             {/* Label */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full text-sm font-semibold shadow-xl">
-              <FaTrophy className="text-yellow-300 text-base" />
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-primary via-primary to-secondary text-white rounded-full text-sm font-semibold shadow-xl">
+              <FaTrophy className="text-secondary text-base" />
               Award-Winning Studio
             </div>
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
               Transform Your Vision Into{" "}
-              <span className="block bg-gradient-to-r from-cyan-400 to-purple-400 text-transparent bg-clip-text">
+              <span className="block bg-gradient-to-r from-accent to-primary text-transparent bg-clip-text">
                 Stunning Digital Reality
               </span>
             </h1>
 
             {/* Divider */}
-            <div className="w-28 h-1 rounded-full bg-gradient-to-r from-cyan-400 to-purple-400 shadow-lg" />
+            <div className="w-28 h-1 rounded-full bg-gradient-to-r from-primary via-primary to-secondary" />
 
             {/* Description */}
             <p className="text-blue-100/90 text-lg md:text-xl leading-relaxed">
@@ -86,13 +86,13 @@ export default function LandingPage() {
             <div className="flex flex-wrap gap-4 mt-4">
               <a
                 href="#services"
-                className="px-6 py-3 bg-gradient-to-r from-cyan-400 to-purple-500 text-white rounded-xl font-bold shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-500"
+                className="px-6 py-3 bg-gradient-to-r from-secondary to-primary text-white rounded-xl font-bold shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-500"
               >
                 Explore Services
               </a>
               <a
                 href="#contact"
-                className="px-6 py-3 border border-white text-white rounded-xl font-bold hover:bg-white hover:text-purple-900 hover:shadow-lg transition duration-500"
+                className="px-6 py-3 border border-white text-white rounded-xl font-bold hover:bg-secondary hover:text-white hover:border-transparent hover:shadow-lg transition duration-500"
               >
                 Get Free Quote
               </a>

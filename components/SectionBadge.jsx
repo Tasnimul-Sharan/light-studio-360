@@ -1,14 +1,19 @@
 export default function SectionBadge({ text, className = "" }) {
   return (
     <span
-      className={`relative inline-block mb-3 px-6 py-1.5
-      text-xs font-bold tracking-widest uppercase
-      text-primary
-      border border-primary
-      ${className}`}
+      className={`
+        inline-flex items-center
+        mb-4 px-6 py-2.5
+        text-xs font-medium tracking-[0.28em] uppercase
+        text-white
+        bg-gradient-to-r from-primary to-secondary
+        rounded-full
+        ring-1 ring-white/10
+        transition-all duration-300
+        hover:ring-primary
+        ${className}
+      `}
     >
-      <span className="absolute -top-1 -left-1 w-2 h-2 border border-primary" />
-      <span className="absolute -bottom-1 -right-1 w-2 h-2 border border-primary" />
       {text}
     </span>
   );

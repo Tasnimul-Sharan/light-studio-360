@@ -10,9 +10,11 @@ import CompareSections from "@/components/CompareSections";
 import PortfolioSlideshow from "@/components/PortfolioSlideshow";
 import TrustSection from "@/components/TrustSection";
 import WhyChooseUs from "@/components/WhyUs";
-import CallToActionSection from "@/components/CallToActionSection";
+import CallToActionSection from "@/components/StudioHero";
 import About from "@/components/About";
 import ProjectsSection from "@/components/ProjectsSection";
+import StudioHero from "@/components/StudioHero";
+import StudioIntro from "@/components/StudioIntro";
 
 export default function Home() {
   const meta = {
@@ -27,6 +29,14 @@ export default function Home() {
     url: "https://www.redithgroup.com",
     image: "https://www.redithgroup.com/og/redith-home-og.jpg",
     locale: "en_US",
+  };
+
+  const creativeContent = {
+    backgroundImage: "/hero/creative.jpg",
+    title: "Ready to Bring Your Vision to Life?",
+    description:
+      "Let&apos;s create something extraordinary together. Get in touch today and let&apos;s discuss your project.",
+    buttonText: "Start Your Project Now",
   };
 
   return (
@@ -60,16 +70,17 @@ export default function Home() {
       <About />
       <OnModelPreview />
       <BrandSlider />
+      <StatsSection />
       <ServicesSection />
       <ProjectsSection />
-      <CompareSections />
+      {/* <CompareSections /> */}
+      <StudioIntro />
       <PortfolioSlideshow />
-      <StatsSection />
       <TrustSection />
       {/* <ClientTrustSection /> */}
       {/* <Leadership /> */}
       <WhyChooseUs />
-      <CallToActionSection />
+      <StudioHero creativeContent={creativeContent} />
       <News />
       <Contact />
     </div>

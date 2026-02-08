@@ -6,32 +6,58 @@ import ReactCompareImage from "react-compare-image";
 import Link from "next/link";
 import SectionBadge from "./SectionBadge";
 
-const categories = ["All", "VFX", "Video Editing", "Image Editing"];
+const categories = [
+  "VFX",
+  "Video Editing",
+  "Image Editing",
+  "3D Modeling",
+  "Animation",
+]
+;
 
 const projects = [
+  // ===== VFX =====
   {
     title: "CFROG VFX MAIN SHOWREEL",
     category: "VFX",
-    video:
-      "https://www.youtube.com/embed/rUC51rO9ojg?autoplay=1&mute=1&rel=0&modestbranding=1",
+    slug: "cfrog-vfx-showreel",
+    video: "https://www.youtube.com/embed/rUC51rO9ojg?autoplay=1&mute=1",
   },
   {
     title: "Rotoscoping Sample",
     category: "VFX",
-    video:
-      "https://www.youtube.com/embed/8EP5pDqTk0Y?autoplay=1&mute=1&rel=0&modestbranding=1",
+    slug: "rotoscoping-sample",
+    video: "https://www.youtube.com/embed/8EP5pDqTk0Y?autoplay=1&mute=1",
   },
+
+  // ===== VIDEO EDITING =====
   {
     title: "Cinematic Edit Sample 1",
     category: "Video Editing",
-    video:
-      "https://www.youtube.com/embed/FVR8zz8ci2k?autoplay=1&mute=1&rel=0&modestbranding=1",
+    slug: "cinematic-edit-1",
+    video: "https://www.youtube.com/embed/FVR8zz8ci2k?autoplay=1&mute=1",
   },
   {
     title: "Cinematic Edit Sample 2",
     category: "Video Editing",
-    video:
-      "https://www.youtube.com/embed/N_mKCJSfyww?autoplay=1&mute=1&rel=0&modestbranding=1",
+    slug: "cinematic-edit-2",
+    video: "https://www.youtube.com/embed/N_mKCJSfyww?autoplay=1&mute=1",
+  },
+
+  // ===== 3D MODELING =====
+  {
+    title: "3D Product Visualization",
+    category: "3D Modeling",
+    slug: "3d-product-visualization",
+    comingSoon: true,
+  },
+
+  // ===== ANIMATION =====
+  {
+    title: "2D & 3D Animation Showcase",
+    category: "Animation",
+    slug: "animation-showcase",
+    comingSoon: true,
   },
   {
     title: "Clipping Path",
@@ -133,126 +159,116 @@ const ProjectsSection = () => {
           </button>
         ))}
       </div>
-
-      {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {/* {filteredProjects.map((project, idx) => (
-          <div
-            key={idx}
-            className="bg-white p-4 rounded-xl border border-border_color hover:border-primary hover:shadow-xl transition-all transform-gpu duration-500"
-          >
-            <div className="rounded-xl overflow-hidden">
-              {project.video ? (
-                <div
-                  className="relative w-full h-96 aspect-video rounded-xl overflow-hidden transition-all will-change-transform transform-gpu duration-500"
-                  onClick={() => setIsInteractive(true)}
-                >
-                  <iframe
-                    className={`w-full h-full object-cover ${
-                      !isInteractive ? "pointer-events-none" : ""
-                    }`}
-                    src={project.video}
-                    title={project.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                  />
-                </div>
-              ) : project.category === "Image Editing" ? (
-                <Link href={`/portfolio/${project.slug}`}>
-                  <div className="cursor-pointer">
-                    <ReactCompareImage
-                      hover
-                      leftImage={project.before}
-                      rightImage={project.after}
-                      leftImageCss={{ width: "100%", height: "auto" }}
-                      rightImageCss={{ width: "100%", height: "auto" }}
-                    />
-                  </div>
-                </Link>
-              ) : project.image ? (
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={500}
-                  height={300}
-                  className="w-full h-auto object-cover"
-                />
-              ) : (
-                <div className="w-full h-24 bg-gray-200 flex items-center justify-center">
-                  <span className="text-gray-500">No preview available</span>
-                </div>
-              )}
-            </div>
+    {filteredProjects.map((project, idx) => (
+  <Link
+    key={idx}
+    href={project.slug ? `/project/${project.slug}` : "#"}
+    className="group"
+  >
+    <div
+      className="bg-white p-4 rounded-xl border border-border_color 
+                 hover:border-primary hover:shadow-xl 
+                 transition-all transform-gpu duration-500 
+                 h-full cursor-pointer"
+    >
+      {/* Media */}
+      {/* <div className="rounded-xl overflow-hidden">
+        {project.video ? (
+          <iframe
+            className="w-full h-96 aspect-video pointer-events-none"
+            src={project.video}
+            title={project.title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            loading="lazy"
+          />
+        ) : project.before && project.after ? (
+          <ReactCompareImage
+            hover
+            leftImage={project.before}
+            rightImage={project.after}
+          />
+        ) : null}
+       </div> */}
 
-            <div className="mt-4">
-              <div className="bg-primary text-white px-4 py-2 rounded-full text-sm inline-block">
-                {project.category}
-              </div>
+       {/* Media */}
+<div className="rounded-xl overflow-hidden h-96 flex items-center justify-center 
+                bg-gradient-to-br from-gray-100 to-gray-200 relative">
+  
+  {/* VIDEO */}
+  {project.video ? (
+    <iframe
+      className="w-full h-full aspect-video pointer-events-none"
+      src={project.video}
+      title={project.title}
+      frameBorder="0"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      loading="lazy"
+    />
+  ) 
 
-              <div className="flex justify-between items-center mt-2">
-                <h4 className="text-lg font-semibold mt-1">{project.title}</h4>
-                <div className="flex items-center gap-1 text-sm hover:text-secondary transition">
-                  <FiClock className="text-base" />
-                  Jan 2025
-                </div>
-              </div>
-            </div>
-          </div>
-        ))} */}
-        {filteredProjects.map((project, idx) => (
-          <div
-            key={idx}
-            className="bg-white p-4 rounded-xl border border-border_color hover:border-primary hover:shadow-xl transition-all transform-gpu duration-500"
-          >
-            <div className="rounded-xl overflow-hidden">
-              {project.video ? (
-                <iframe
-                  className="w-full h-96 aspect-video"
-                  src={project.video}
-                  title={project.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              ) : project.category === "Image Editing" &&
-                project.before &&
-                project.after ? (
-                <ReactCompareImage
-                  hover
-                  leftImage={project.before}
-                  rightImage={project.after}
-                />
-              ) : null}
-            </div>
+  /* IMAGE EDITING */
+  : project.before && project.after ? (
+    <ReactCompareImage
+      hover
+      leftImage={project.before}
+      rightImage={project.after}
+    />
+  ) 
 
-            <div className="mt-4">
-              <div className="bg-primary text-white px-4 py-2 rounded-full text-sm inline-block">
-                {project.category}
-              </div>
+  /* ANIMATION & 3D MODELING VISUAL */
+  : project.comingSoon ? (
+    <div className="text-center px-6">
+      <div className="text-5xl mb-4 animate-pulse">🎬</div>
+      <h4 className="text-xl font-semibold mb-2">
+        {project.category}
+      </h4>
+      <p className="text-sm text-secondary">
+        Projects coming soon
+      </p>
 
-              <div className="flex justify-between items-center mt-2">
-                <h4 className="text-lg font-semibold mt-1">{project.title}</h4>
-                {project.slug && (
-                  <Link href={`/portfolio/${project.slug}`}>
-                    <button className="mt-3 text-sm border border-border_color px-4 py-3 rounded-full hover:bg-primary hover:text-white transition duration-500 flex items-center gap-2">
-                      See Details <FiArrowRight className="text-base" />
-                    </button>
-                  </Link>
-                )}
-              </div>
-            </div>
-          </div>
-        ))}
+      <span className="inline-block mt-4 text-xs px-4 py-1 rounded-full 
+                       border border-border_color text-secondary">
+        Under Development
+      </span>
+    </div>
+  ) : null}
+</div>
+
+
+      {/* Content */}
+      <div className="mt-4">
+        <span className="bg-primary text-white px-4 py-2 rounded-full text-sm inline-block">
+          {project.category}
+        </span>
+
+        <div className="flex justify-between items-center mt-3">
+          <h4 className="text-lg font-semibold">
+            {project.title}
+          </h4>
+
+          {project.slug && (
+            <span
+              className="text-sm border border-border_color px-4 py-2 rounded-full 
+                         flex items-center gap-2 
+                         group-hover:bg-primary group-hover:text-white 
+                         transition duration-500"
+            >
+              See Details <FiArrowRight />
+            </span>
+          )}
+        </div>
+      </div>
+    </div>
+  </Link>
+))}
+
       </div>
 
-      {/* Button */}
       {/* <div className="text-center mt-12">
         <Link
-          href="/portfolio"
+          href="/project"
           className="px-8 py-3 bg-primary text-white rounded-full font-medium shadow-lg 
                      transition-all transform duration-500 hover:shadow-2xl hover:scale-105 hover:bg-Secound_primary"
         >

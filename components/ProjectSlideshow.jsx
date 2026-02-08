@@ -3,7 +3,7 @@
 // import { useState, useEffect } from "react";
 // import Image from "next/image";
 
-// export default function PortfolioSlideshow() {
+// export default function projectSlideshow() {
 //   const images = [
 //     "/Slideshow/1 (1).jpeg",
 //     "/Slideshow/1 (2).jpeg",
@@ -56,7 +56,7 @@
 //         {/* Header */}
 //         <div className="text-center mb-8">
 //           <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-500 to-cyan-400 text-white rounded-full text-sm font-bold mb-4">
-//             OUR PORTFOLIO
+//             OUR project
 //           </div>
 //           <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
 //             Gallery Showcase
@@ -71,7 +71,7 @@
 //           <div className="aspect-video relative flex items-center justify-center">
 //             <Image
 //               src={images[current]}
-//               alt="Portfolio"
+//               alt="project"
 //               fill
 //               className="object-cover w-full h-full"
 //               priority
@@ -133,7 +133,7 @@ import Image from "next/image";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import SectionBadge from "./SectionBadge";
 
-export default function PortfolioSlideshow() {
+export default function ProjectSlideshow() {
   const images = [
     // "/Slideshow/1 (1).jpeg",
     // "/Slideshow/1 (2).jpeg",
@@ -187,7 +187,7 @@ export default function PortfolioSlideshow() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-14">
-          <SectionBadge text="Our portfolio" />
+          <SectionBadge text="Our project" />
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
             Gallery Showcase
@@ -204,7 +204,7 @@ export default function PortfolioSlideshow() {
           <div className="relative aspect-video bg-black group">
             <Image
               src={images[current]}
-              alt="Portfolio"
+              alt="project"
               fill
               priority
               className="object-cover object-center transition-transform duration-[1200ms] group-hover:scale-105"

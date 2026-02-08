@@ -75,7 +75,7 @@ export const serviceDetails = [
       subtitle: "Enhancing everyday life",
     },
     meta: {
-      title: "Consumer Brands Portfolio | Redith Group",
+      title: "Consumer Brands project | Redith Group",
       description:
         "Redith Consumer Brands delivers high-quality, affordable consumer goods including toiletries, hygiene products, electronics, food items, and home care solutions.",
       keywords:

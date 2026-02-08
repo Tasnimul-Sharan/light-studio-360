@@ -75,7 +75,7 @@ export default function OnModelPreview() {
                 Get Started
               </a>
               <a
-                href="#portfolio"
+                href="#project"
                 className="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-blue-50 transition"
               >
                 View More

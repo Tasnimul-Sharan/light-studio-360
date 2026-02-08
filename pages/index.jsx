@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 import BrandSlider from "@/components/BrandSlider";
 import OnModelPreview from "@/components/OnModelPreview";
 import CompareSections from "@/components/CompareSections";
-import PortfolioSlideshow from "@/components/PortfolioSlideshow";
+// import projectSlideshow from "@/components/projectSlideshow";
 import TrustSection from "@/components/TrustSection";
 import WhyChooseUs from "@/components/WhyUs";
 import CallToActionSection from "@/components/StudioHero";
@@ -15,6 +15,7 @@ import About from "@/components/About";
 import ProjectsSection from "@/components/ProjectsSection";
 import StudioHero from "@/components/StudioHero";
 import StudioIntro from "@/components/StudioIntro";
+import ProjectSlideshow from "@/components/ProjectSlideshow";
 
 export default function Home() {
   const meta = {
@@ -75,7 +76,7 @@ export default function Home() {
       <ProjectsSection />
       {/* <CompareSections /> */}
       <StudioIntro />
-      <PortfolioSlideshow />
+      <ProjectSlideshow />
       <TrustSection />
       {/* <ClientTrustSection /> */}
       {/* <Leadership /> */}

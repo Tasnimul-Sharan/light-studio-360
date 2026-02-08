@@ -56,7 +56,7 @@ export default function Footer() {
         <FooterColumn title="Company">
           <FooterLink href="#home">Home</FooterLink>
           <FooterLink href="#about">About</FooterLink>
-          <FooterLink href="#portfolio">Portfolio</FooterLink>
+          <FooterLink href="#project">project</FooterLink>
           <FooterLink href="#packages">Packages</FooterLink>
           <FooterLink href="#whyus">Why Us</FooterLink>
           <FooterLink href="#contact">Contact</FooterLink>
@@ -113,7 +113,7 @@ export default function Footer() {
             <Link href="#contact" className="hover:text-white transition">
               Support
             </Link>
-            <Link href="#portfolio" className="hover:text-white transition">
+            <Link href="#project" className="hover:text-white transition">
               Case Studies
             </Link>
             <Link href="#packages" className="hover:text-white transition">

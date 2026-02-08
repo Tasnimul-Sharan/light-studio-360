@@ -3,21 +3,24 @@ import { packages } from "@/data/packagesData";
 
 export default function PackageComparison() {
   return (
-    <section className="mb-12">
+    <section className="mb-24">
       <h2
-        className="text-4xl font-black text-gray-800 mb-10 text-center "
+        className="text-4xl font-bold text-primary mb-12 text-center"
         style={{ fontFamily: "var(--heading-font)" }}
       >
-        Package Comparison
+        Package <span className="text-secondary">Comparison</span>
       </h2>
 
-      <div className="overflow-x-auto rounded-md max-w-4xl mx-auto border border-gray-200">
-        <table className="w-full border-collapse">
+      <div className="overflow-x-auto max-w-6xl mx-auto rounded-2xl border border-secondary/30">
+        <table className="w-full border-collapse bg-white">
           <thead>
-            <tr className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-              <th className="px-6 py-4 text-left">Feature</th>
+            <tr className="bg-primary text-white">
+              <th className="px-6 py-6 text-left font-semibold">Feature</th>
               {packages.map((pkg) => (
-                <th key={pkg.key} className="px-6 py-4 text-center">
+                <th
+                  key={pkg.key}
+                  className="px-6 py-5 text-center font-semibold"
+                >
                   {pkg.title}
                 </th>
               ))}
@@ -28,9 +31,9 @@ export default function PackageComparison() {
             {comparisonRows.map((row, i) => (
               <tr
                 key={row.feature}
-                className={`border-b hover:bg-gray-50 ${i % 2 === 1 ? "bg-gray-50" : ""}`}
+                className={`border-b ${i % 2 === 0 ? "bg-light" : "bg-white"}`}
               >
-                <td className="px-6 py-4 font-semibold text-gray-800">
+                <td className="px-6 py-4 font-medium text-primary">
                   {row.feature}
                 </td>
 
@@ -39,13 +42,13 @@ export default function PackageComparison() {
                   return (
                     <td
                       key={pkg.key}
-                      className="px-6 py-4 text-center text-gray-600"
+                      className="px-6 py-4 text-center text-dark/70"
                     >
                       {typeof value === "boolean" ? (
                         value ? (
-                          <span className="text-green-600 font-bold">✓</span>
+                          <span className="text-secondary font-bold">✓</span>
                         ) : (
-                          <span className="text-gray-400">—</span>
+                          <span className="text-dark/30">—</span>
                         )
                       ) : (
                         value

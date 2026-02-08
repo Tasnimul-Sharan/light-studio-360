@@ -1,93 +1,91 @@
-// export default function PackageCard({ data }) {
-//   return (
-//     <div
-//       className={`package-card ${data.delay} bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-500`}
-//     >
-//       <h3
-//         className="text-3xl font-black text-purple-600 mb-2"
-//         style={{ fontFamily: "var(--heading-font)" }}
-//       >
-//         {data.title}
-//       </h3>
-
-//       <p className="text-purple-600 font-bold text-sm mb-4">{data.timeLabel}</p>
-//       <p className="text-sm text-purple-600 mb-6">{data.shortDesc}</p>
-
-//       <ul className="space-y-3 mb-8">
-//         {data.features.map((f, i) => (
-//           <li key={i} className="flex gap-3">
-//             <span className="text-purple-600 font-bold">✓</span>
-//             <span className="text-gray-700 text-sm">{f}</span>
-//           </li>
-//         ))}
-//       </ul>
-
-//       <a
-//         href="#contact"
-//         className="block w-full bg-purple-600 text-white font-bold py-3 rounded-full hover:bg-purple-700 transition text-sm text-center"
-//       >
-//         {data.button}
-//       </a>
-//     </div>
-//   );
-// }
-
 export default function PackageCard({ data, isPremium }) {
   return (
     <div
-      className={`package-card ${data.delay} relative rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2 bg-gradient-to-b from-white to-${isPremium ? "primary/10" : "light"} `}
+      className={`
+        relative rounded-3xl p-8 border
+        transition-all duration-500
+        ${
+          isPremium
+            ? "bg-primary text-white shadow-2xl scale-[1.03]"
+            : "bg-white text-primary shadow-xl hover:-translate-y-1 hover:shadow-2xl"
+        }
+      `}
       style={{
-        border: isPremium ? `2px solid #FF6A00` : "1px solid #E5E5E5",
+        border: isPremium
+          ? "2px solid #d3ab64"
+          : "1px solid rgba(30,42,68,0.15)",
       }}
     >
-      {/* Premium Badge */}
+      {/* Premium badge */}
       {isPremium && (
-        <span className="absolute top-4 right-5 bg-primary text-white font-bold px-4 py-1 rounded-full text-xs tracking-wider shadow-md">
-          PREMIUM
+        <span className="absolute top-3 right-5 bg-secondary text-primary text-xs font-semibold px-4 py-1 rounded-full tracking-wider">
+          MOST POPULAR
         </span>
       )}
 
       {/* Title */}
       <h3
-        className={`text-3xl font-black mb-2 ${isPremium ? "text-primary" : "text-accent"}`}
+        className={`text-3xl font-bold mb-2 ${
+          isPremium ? "text-secondary" : "text-primary"
+        }`}
         style={{ fontFamily: "var(--heading-font)" }}
       >
         {data.title}
       </h3>
 
-      {/* Time Label */}
       <p
-        className={`font-bold text-sm mb-4 ${isPremium ? "text-primary" : "text-secondary"}`}
+        className={`
+    text-xs font-semibold mb-4 tracking-widest uppercase
+    ${isPremium ? "text-secondary" : "text-primary/90"}
+    ${isPremium ? "bg-white/10 px-3 py-1 rounded-full inline-block" : "bg-primary/10 px-3 py-1 rounded-full inline-block"}
+  `}
       >
         {data.timeLabel}
       </p>
 
       {/* Description */}
       <p
-        className={`text-sm mb-6 ${isPremium ? "text-accent/80" : "text-accent/70"}`}
+        className={`text-sm leading-relaxed mb-8 ${
+          isPremium ? "text-white/70" : "text-dark/70"
+        }`}
       >
         {data.shortDesc}
       </p>
 
       {/* Features */}
-      <ul className="space-y-3 mb-8">
+      <ul className="space-y-4 mb-10">
         {data.features.map((f, i) => (
-          <li key={i} className="flex items-start gap-3">
+          <li key={i} className="flex gap-3 items-start">
             <span
-              className={`font-bold ${isPremium ? "text-primary" : "text-secondary"} text-lg`}
+              className={`text-lg font-bold ${
+                isPremium ? "text-secondary" : "text-accent"
+              }`}
             >
               ✓
             </span>
-            <span className="text-accent text-sm">{f}</span>
+            <span
+              className={`text-sm ${
+                isPremium ? "text-white/80" : "text-dark/70"
+              }`}
+            >
+              {f}
+            </span>
           </li>
         ))}
       </ul>
 
-      {/* Button */}
+      {/* CTA */}
       <a
         href="#contact"
-        className={`block w-full font-bold py-3 rounded-full text-sm text-white text-center transition-transform duration-300
-          ${isPremium ? "bg-primary hover:bg-primary/90" : "bg-secondary hover:bg-secondary/90"} transform hover:scale-105 shadow-md hover:shadow-lg`}
+        className={`
+          block w-full text-center py-3 rounded-xl font-semibold
+          transition-all duration-300
+          ${
+            isPremium
+              ? "bg-secondary text-primary hover:bg-secondary/90"
+              : "bg-primary text-white hover:bg-primary/90"
+          }
+        `}
       >
         {data.button}
       </a>

@@ -1,26 +1,30 @@
 export default function QualityAssurance() {
   return (
-    <section className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-12 md:p-16 mb-12 border-l-4 border-indigo-600">
+    <section className="bg-light rounded-3xl py-20 px-8 md:px-14">
       <h2
-        className="text-4xl font-black text-center mb-10"
+        className="text-4xl font-bold text-primary text-center mb-14"
         style={{ fontFamily: "var(--heading-font)" }}
       >
-        Quality Assurance Process
+        Quality <span className="text-secondary">Assurance</span> Process
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto md:px-0 px-6">
         {[
-          ["1", "Automated Validation", "Initial AI-based quality checks"],
-          ["2", "Expert Review", "Manual professional inspection"],
-          ["3", "Final Delivery", "Verified & confirmed delivery"],
+          ["01", "Automated Validation", "Initial AI-powered quality checks"],
+          ["02", "Expert Review", "Manual inspection by senior professionals"],
+          ["03", "Final Delivery", "Verified, approved & delivered"],
         ].map(([n, t, d]) => (
           <div
             key={n}
-            className="bg-white p-6 rounded-xl shadow-md border-l-4 border-purple-600"
+            className="relative bg-white rounded-3xl p-10 border-2 border-secondary/30"
           >
-            <div className="text-4xl font-black text-purple-600 mb-3">{n}</div>
-            <h3 className="font-bold text-xl mb-2">{t}</h3>
-            <p className="text-gray-600">{d}</p>
+            <div className="text-secondary text-sm font-semibold mb-4 tracking-widest">
+              {n}
+            </div>
+
+            <h3 className="font-semibold text-xl text-primary mb-3">{t}</h3>
+
+            <p className="text-dark/70 leading-relaxed">{d}</p>
           </div>
         ))}
       </div>

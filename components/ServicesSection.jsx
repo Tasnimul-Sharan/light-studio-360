@@ -86,7 +86,7 @@ export default function ServicesSection() {
                 href={`#${item.id}`}
                 className="group relative bg-white rounded-2xl overflow-hidden
                 border border-white/5 hover:border-primary/40
-                transition-all duration-300 hover:-translate-y-2"
+                transition-all duration-500 hover:-translate-y-2"
               >
                 {/* Top Image */}
                 <div className="relative h-60 w-full overflow-hidden">
@@ -103,9 +103,18 @@ export default function ServicesSection() {
                 <div className="p-8 relative">
                   {/* Icon */}
                   <div
-                    className="w-12 h-12 flex items-center justify-center rounded-xl
-                    bg-gradient-to-br from-primary to-secondary group-hover:from-secondary hover:to-primary
-                    text-white text-xl mb-5 shadow-lg"
+                    className="
+      w-14 h-14 md:w-16 md:h-16
+      flex items-center justify-center
+      rounded-2xl
+      bg-gradient-to-br from-primary to-secondary
+      group-hover:from-secondary group-hover:to-primary
+      text-white text-2xl md:text-3xl
+      mb-5
+      shadow-xl group-hover:shadow-2xl
+      transition-all duration-500
+      transform group-hover:scale-110 group-hover:rotate-3
+    "
                   >
                     <Icon />
                   </div>

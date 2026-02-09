@@ -1,4 +1,3 @@
-
 "use client";
 
 import { FaEye, FaBullseye } from "react-icons/fa";
@@ -16,7 +15,7 @@ function InfoCard({ icon, title, desc }) {
       <div className="pointer-events-none absolute inset-0 -z-10 rounded-2xl opacity-0 blur-2xl transition-opacity duration-300 group-hover:opacity-60" />
 
       <div className="flex items-start gap-4">
-        <div className="flex w-16 h-16 shrink-0 items-center justify-center rounded-2xl bg-primary bg-opacity-80 text-white shadow-md text-2xl">
+        <div className="flex w-16 h-16 shrink-0 items-center justify-center rounded-2xl bg-primary text-white shadow-md text-2xl">
           {icon}
         </div>
 
@@ -24,8 +23,6 @@ function InfoCard({ icon, title, desc }) {
           <h3 className="text-lg font-semibold leading-tight text-secondary md:text-xl">
             {title}
           </h3>
-
-          {/* Vision paragraph OR Mission bullets */}
           {Array.isArray(desc) ? (
             <ul className="mt-3 space-y-2 text-sm text-gray-600 md:text-base list-disc list-inside">
               {desc.map((item, i) => (
@@ -47,16 +44,17 @@ export default function VisionMission() {
   const items = [
     {
       title: "Our Vision",
-      desc: "To be a force of progress by combining innovation, ethics, and excellence in everything we do—impacting lives, empowering communities, and inspiring industries.",
+      desc: "To become a globally trusted creative studio that sets new standards in visual storytelling—where innovation, artistic excellence, and technical precision come together to elevate brands and bring ideas to life.",
       icon: <FaEye />,
     },
     {
       title: "Our Mission",
       desc: [
-        "Deliver market-leading solutions with reliability and innovation.",
-        "Empower people and partners through knowledge and collaboration.",
-        "Foster sustainable development across all sectors of operation.",
-        "Continuously improve to exceed customer expectations.",
+        "Deliver world-class Image, VFX, 3D, Animation, and Video solutions with uncompromising quality.",
+        "Help brands stand out through visually powerful, detail-driven creative execution.",
+        "Maintain fast, reliable turnaround without sacrificing artistic excellence.",
+        "Build long-term partnerships through transparency, consistency, and trust.",
+        "Continuously evolve with industry trends, tools, and creative innovation.",
       ],
       icon: <FaBullseye />,
     },
@@ -72,17 +70,17 @@ export default function VisionMission() {
         className="mx-auto max-w-3xl text-center"
       >
         <p className="text-primary font-medium tracking-widest uppercase mb-2">
-          Redith Group
+          Light Studio360 • Image • VFX • 3D • Animation
         </p>
 
         <h2 className="mt-3 text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
-          Our Vision & Mission
+          Vision & Mission Behind Our Creative Excellence
         </h2>
 
         <p className="mx-auto mt-3 max-w-2xl text-sm text-gray-600 md:text-base">
-          Driving innovation, sustainability, and excellence across Technology,
-          Consumer Brands, Agribusiness, and Retail—creating long-term value for
-          communities and industries.
+          Driving visual excellence through creativity, technology, and
+          precision—helping brands communicate, inspire, and grow across global
+          markets.
         </p>
       </motion.div>
 

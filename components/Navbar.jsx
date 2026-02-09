@@ -20,6 +20,7 @@ export default function Navbar() {
   const menuItems = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
+    { label: "Projects", path: "/projects" },
     { label: "Services", path: "/services" },
     { label: "Packages", path: "/packages" },
     { label: "Why Us", path: "/whyus" },

@@ -2,27 +2,34 @@
 
 // export default function PillarsSection() {
 //   return (
-//     <div className="relative z-10 mb-8">
-//       <h3 className="text-4xl font-black text-center mb-12 text-gray-800">
-//         Our Three Pillars of Success
+//     <section className="relative z-10 py-20">
+//       <h3 className="text-4xl md:text-5xl font-bold text-center mb-14 text-primary">
+//         Our <span className="text-secondary">Three Pillars</span> of Success
 //       </h3>
 
-//       <div className="grid gap-8 md:grid-cols-3 max-w-7xl mx-auto">
+//       <div className="grid gap-10 md:grid-cols-3 max-w-7xl mx-auto px-6 md:px-0">
 //         {pillars.map((p, i) => (
 //           <div
 //             key={i}
-//             className={`bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border-2 ${p.border}`}
+//             className="relative bg-white rounded-3xl p-10 shadow-xl border border-secondary/20
+//                        transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
 //           >
-//             <h4 className="text-2xl font-bold mb-3 text-gray-800">{p.title}</h4>
-//             <p className="text-gray-700">{p.desc}</p>
+//             {/* Accent line */}
+//             <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-secondary to-accent rounded-t-3xl" />
+
+//             <h4 className="text-2xl font-semibold text-primary mb-4">
+//               {p.title}
+//             </h4>
+//             <p className="text-dark/70 leading-relaxed">{p.desc}</p>
 //           </div>
 //         ))}
 //       </div>
-//     </div>
+//     </section>
 //   );
 // }
 
 import { pillars } from "@/data/data";
+import { HiSparkles } from "react-icons/hi2";
 
 export default function PillarsSection() {
   return (
@@ -31,20 +38,42 @@ export default function PillarsSection() {
         Our <span className="text-secondary">Three Pillars</span> of Success
       </h3>
 
-      <div className="grid gap-10 md:grid-cols-3 max-w-7xl mx-auto px-6">
+      <div className="grid gap-10 md:grid-cols-3 max-w-7xl mx-auto px-6 md:px-0">
         {pillars.map((p, i) => (
           <div
             key={i}
-            className="relative bg-white rounded-3xl p-10 shadow-xl border border-secondary/20
-                       transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+            className="group relative rounded-3xl p-[1px]
+                       bg-gradient-to-br from-secondary via-accent to-primary
+                       transition-all duration-500 hover:-translate-y-1"
           >
-            {/* Accent line */}
-            <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-secondary to-accent rounded-t-3xl" />
+            {/* Inner Card */}
+            <div
+              className="relative h-full rounded-3xl bg-white p-10
+                         shadow-lg group-hover:shadow-2xl transition-all duration-500"
+            >
+              {/* Icon attached to border */}
+              <div
+                className="absolute -top-6 left-10
+                           w-12 h-12 rounded-xl flex items-center justify-center
+                           bg-gradient-to-br from-secondary to-accent
+                           text-white shadow-lg border border-white"
+              >
+                <HiSparkles className="text-xl" />
+              </div>
 
-            <h4 className="text-2xl font-semibold text-primary mb-4">
-              {p.title}
-            </h4>
-            <p className="text-dark/70 leading-relaxed">{p.desc}</p>
+              <h4 className="text-2xl font-semibold text-primary mb-4 mt-4">
+                {p.title}
+              </h4>
+
+              <p className="text-dark/70 leading-relaxed">{p.desc}</p>
+
+              {/* Subtle hover glow */}
+              <div
+                className="pointer-events-none absolute inset-0 rounded-3xl
+                           opacity-0 group-hover:opacity-100 transition duration-500
+                           bg-gradient-to-br from-secondary/10 to-accent/10"
+              />
+            </div>
           </div>
         ))}
       </div>

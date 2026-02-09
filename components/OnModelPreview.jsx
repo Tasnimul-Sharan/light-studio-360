@@ -57,7 +57,7 @@ export default function OnModelPreview() {
           {/* RIGHT – Description */}
           <div className="md:col-span-4">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-              (On) Model Imagery
+              (On) <span className="text-secondary">Model Imagery</span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-6 bg-sky-100 p-4 rounded-lg">
@@ -76,7 +76,7 @@ export default function OnModelPreview() {
               </a>
               <a
                 href="#project"
-                className="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-blue-50 transition"
+                className="px-6 py-3 border-2 border-accent text-accent font-bold rounded-lg hover:bg-accent hover:border-transparent hover:text-white transition-all transform-gpu duration-500"
               >
                 View More
               </a>

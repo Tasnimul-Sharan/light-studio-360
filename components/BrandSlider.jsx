@@ -31,8 +31,8 @@ export default function Brands() {
           </p> */}
           <SectionBadge text="Our Clients" />
 
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1E2A44] mb-4">
-            Trusted by <span className="text-primary">Global Brands</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4">
+            Trusted by <span className="text-secondary">Global Brands</span>
           </h2>
 
           <p className="text-[#1E2A44]/70 max-w-2xl mx-auto text-base md:text-lg">

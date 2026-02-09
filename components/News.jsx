@@ -41,7 +41,7 @@ export default function News() {
           <div className="max-w-3xl">
             <SectionBadge text="Our Blogs" />
             <h2 className="text-3xl font-extrabold text-gray-900">
-              Latest <span className="text-primary">News & Media</span>
+              Latest <span className="text-secondary">News & Media</span>
             </h2>
             <p className="mt-4 text-gray-600 leading-relaxed">
               Stay informed with the latest announcements, achievements, and

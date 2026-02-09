@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import { FiArrowRight, FiArrowRightCircle, FiClock } from "react-icons/fi";
 import ReactCompareImage from "react-compare-image";
 import Link from "next/link";
@@ -12,35 +11,33 @@ const categories = [
   "Image Editing",
   "3D Modeling",
   "Animation",
-]
-;
-
+];
 const projects = [
   // ===== VFX =====
   {
-    title: "CFROG VFX MAIN SHOWREEL",
+    title: "CFROG Ultimate VFX Reel 2026",
     category: "VFX",
-    slug: "cfrog-vfx-showreel",
+    slug: "cfrog-ultimate-vfx-reel-2026",
     video: "https://www.youtube.com/embed/rUC51rO9ojg?autoplay=1&mute=1",
   },
   {
-    title: "Rotoscoping Sample",
+    title: "Advanced Rotoscoping Demo",
     category: "VFX",
-    slug: "rotoscoping-sample",
+    slug: "advanced-rotoscoping-demo",
     video: "https://www.youtube.com/embed/8EP5pDqTk0Y?autoplay=1&mute=1",
   },
 
   // ===== VIDEO EDITING =====
   {
-    title: "Cinematic Edit Sample 1",
+    title: "Cinematic Color Grading Showcase",
     category: "Video Editing",
-    slug: "cinematic-edit-1",
+    slug: "cinematic-color-grading-showcase",
     video: "https://www.youtube.com/embed/FVR8zz8ci2k?autoplay=1&mute=1",
   },
   {
-    title: "Cinematic Edit Sample 2",
+    title: "Professional Trailer Edit",
     category: "Video Editing",
-    slug: "cinematic-edit-2",
+    slug: "professional-trailer-edit",
     video: "https://www.youtube.com/embed/N_mKCJSfyww?autoplay=1&mute=1",
   },
 
@@ -63,8 +60,8 @@ const projects = [
     title: "Clipping Path",
     category: "Image Editing",
     slug: "clipping-path",
-    before: "/image-edating/clipping/1--1.jpg",
-    after: "/image-edating/clipping/1--2.jpg",
+    before: "/image-edating/clipping/BinocularBefore.jpg",
+    after: "/image-edating/clipping/BinocularAfter.jpg",
   },
   {
     title: "Retouching",
@@ -133,7 +130,7 @@ const ProjectsSection = () => {
 
         <h2 className="text-3xl md:text-4xl font-bold mt-2">
           Crafting Powerful{" "}
-          <span className="text-accent">Visual Experiences</span>
+          <span className="text-secondary">Visual Experiences</span>
         </h2>
         <p className="text-dark text-sm max-w-2xl mx-auto mt-2">
           We specialize in high-quality VFX, animation, video production, and
@@ -160,20 +157,20 @@ const ProjectsSection = () => {
         ))}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    {filteredProjects.map((project, idx) => (
-  <Link
-    key={idx}
-    href={project.slug ? `/project/${project.slug}` : "#"}
-    className="group"
-  >
-    <div
-      className="bg-white p-4 rounded-xl border border-border_color 
-                 hover:border-primary hover:shadow-xl 
+        {filteredProjects.map((project, idx) => (
+          <Link
+            key={idx}
+            href={project.slug ? `/project/${project.slug}` : "#"}
+            className="group"
+          >
+            <div
+              className="bg-white p-4 rounded-xl border-2 border-border_color 
+                 hover:border-primary hover:shadow-xl hover:shadow-primary/50
                  transition-all transform-gpu duration-500 
                  h-full cursor-pointer"
-    >
-      {/* Media */}
-      {/* <div className="rounded-xl overflow-hidden">
+            >
+              {/* Media */}
+              {/* <div className="rounded-xl overflow-hidden">
         {project.video ? (
           <iframe
             className="w-full h-96 aspect-video pointer-events-none"
@@ -192,78 +189,73 @@ const ProjectsSection = () => {
         ) : null}
        </div> */}
 
-       {/* Media */}
-<div className="rounded-xl overflow-hidden h-96 flex items-center justify-center 
-                bg-gradient-to-br from-gray-100 to-gray-200 relative">
-  
-  {/* VIDEO */}
-  {project.video ? (
-    <iframe
-      className="w-full h-full aspect-video pointer-events-none"
-      src={project.video}
-      title={project.title}
-      frameBorder="0"
-      allow="autoplay; encrypted-media; picture-in-picture"
-      loading="lazy"
-    />
-  ) 
+              {/* Media */}
+              <div
+                className="rounded-xl overflow-hidden h-96 flex items-center justify-center 
+                bg-gradient-to-br from-gray-100 to-gray-200 relative"
+              >
+                {/* VIDEO */}
+                {project.video ? (
+                  <iframe
+                    className="w-full h-full aspect-video pointer-events-none"
+                    src={project.video}
+                    title={project.title}
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    loading="lazy"
+                  />
+                ) : /* IMAGE EDITING */
+                project.before && project.after ? (
+                  <ReactCompareImage
+                    hover
+                    leftImage={project.before}
+                    rightImage={project.after}
+                  />
+                ) : /* ANIMATION & 3D MODELING VISUAL */
+                project.comingSoon ? (
+                  <div className="text-center px-6">
+                    <div className="text-5xl mb-4 animate-pulse">🎬</div>
+                    <h4 className="text-xl font-semibold mb-2">
+                      {project.category}
+                    </h4>
+                    <p className="text-sm text-secondary">
+                      Projects coming soon
+                    </p>
 
-  /* IMAGE EDITING */
-  : project.before && project.after ? (
-    <ReactCompareImage
-      hover
-      leftImage={project.before}
-      rightImage={project.after}
-    />
-  ) 
+                    <span
+                      className="inline-block mt-4 text-xs px-4 py-1 rounded-full 
+                       border border-border_color text-secondary"
+                    >
+                      Under Development
+                    </span>
+                  </div>
+                ) : null}
+              </div>
 
-  /* ANIMATION & 3D MODELING VISUAL */
-  : project.comingSoon ? (
-    <div className="text-center px-6">
-      <div className="text-5xl mb-4 animate-pulse">🎬</div>
-      <h4 className="text-xl font-semibold mb-2">
-        {project.category}
-      </h4>
-      <p className="text-sm text-secondary">
-        Projects coming soon
-      </p>
+              {/* Content */}
+              <div className="mt-4">
+                <span className="bg-primary text-white px-4 py-2 rounded-full text-sm inline-block">
+                  {project.category}
+                </span>
 
-      <span className="inline-block mt-4 text-xs px-4 py-1 rounded-full 
-                       border border-border_color text-secondary">
-        Under Development
-      </span>
-    </div>
-  ) : null}
-</div>
+                <div className="flex justify-between items-center mt-3">
+                  <h4 className="text-lg font-semibold">{project.title}</h4>
 
-
-      {/* Content */}
-      <div className="mt-4">
-        <span className="bg-primary text-white px-4 py-2 rounded-full text-sm inline-block">
-          {project.category}
-        </span>
-
-        <div className="flex justify-between items-center mt-3">
-          <h4 className="text-lg font-semibold">
-            {project.title}
-          </h4>
-
-          {project.slug && (
-            <span
-              className="text-sm border border-border_color px-4 py-2 rounded-full 
+                  {project.slug && (
+                    <span
+                      className="text-sm border border-border_color px-4 py-2 rounded-full 
                          flex items-center gap-2 
                          group-hover:bg-primary group-hover:text-white 
                          transition duration-500"
-            >
-              See Details <FiArrowRight />
-            </span>
-          )}
-        </div>
-      </div>
-    </div>
-  </Link>
-))}
-
+                    >
+                      See Details <FiArrowRight />
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
 
       {/* <div className="text-center mt-12">

@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import Head from "next/head";
 import ContactPageSection from "@/components/ContactPageSection";
 import GoogleMapSection from "@/components/GoogleMapSection";
+import WorldClocks from "@/components/WorldClocks";
 
 export default function ContactPage() {
   const meta = {
@@ -41,8 +42,8 @@ export default function ContactPage() {
           backgroundImage: "/about-bg.jpg",
         }}
       />
-
       <ContactPageSection />
+      <WorldClocks />
       <GoogleMapSection />
     </div>
   );

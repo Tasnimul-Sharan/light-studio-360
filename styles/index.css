@@ -47,31 +47,129 @@ h3 {
   }
 }
 
-/* @keyframes ripple {
-  0% {
-    box-shadow: rgba(9, 136, 62, 0.4) 0 0 0 0;
-  }
-  70% {
-    box-shadow: rgba(9, 136, 62, 0) 0 0 0 10px;
-  }
-  100% {
-    box-shadow: rgba(9, 136, 62, 0) 0 0 0 0;
-  }
+.world-clock-section {
+  background: #f5f7fa; /* light */
+  padding: 40px 0;
 }
 
-.ripple {
-  animation: ripple 1.5s infinite;
-} */
-
-/* * {
-  cursor: none;
+.clock-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  padding: 20px 10px;
+  background: #f5f7fa; /* light */
 }
 
-@media (max-width: 768px) {
-  * {
-    cursor: auto;
-  }
-} */
+.clock-box {
+  text-align: center;
+  color: #1e2a44; /* primary */
+}
+
+/* CLOCK BASE */
+.clock {
+  width: 200px;
+  height: 200px;
+  background: #ffffff;
+  border: 8px solid #4a90e2; /* accent */
+  border-radius: 50%;
+  position: relative;
+  box-sizing: content-box;
+  box-shadow:
+    0 0 0 6px rgba(74, 144, 226, 0.15),
+    0 8px 18px rgba(0, 0, 0, 0.18),
+    inset 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+/* HOUR MARKERS */
+.hour-mark {
+  position: absolute;
+  width: 4px;
+  height: 14px;
+  background: #d3ab64 !important; /* secondary gold */
+  top: 6px;
+  left: 50%;
+  margin-left: -2px;
+  transform-origin: center 94px;
+}
+
+/* MINUTE MARKERS */
+.minute-mark {
+  position: absolute;
+  width: 2px;
+  height: 7px;
+  background: #0b0f14; /* dark */
+  top: 10px;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: center 90px;
+}
+
+/* NUMBERS */
+.number {
+  position: absolute;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e2a44; /* primary */
+  transform: translate(-50%, -50%);
+  padding: 4px 6px;
+}
+
+/* HANDS */
+.hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0%;
+  transform: rotate(-90deg);
+}
+
+.hour {
+  width: 55px;
+  height: 5px;
+  background: #0b0f14; /* dark */
+}
+
+.minute {
+  width: 75px;
+  height: 4px;
+  background: #0b0f14; /* dark */
+}
+
+.second {
+  width: 85px;
+  height: 2px;
+  background: #4a90e2; /* accent */
+}
+
+/* CENTER DOT */
+.center-dot {
+  width: 10px;
+  height: 10px;
+  background: #1e2a44; /* primary */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* DIGITAL TIME */
+.digital {
+  margin-top: 14px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #1e2a44; /* primary */
+}
+
+.city {
+  margin-top: 6px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #d3ab64; /* secondary */
+}
 
 .slick-dots {
   position: absolute;

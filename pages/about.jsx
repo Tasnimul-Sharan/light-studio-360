@@ -1,12 +1,13 @@
 import HeroSection from "@/components/HeroSection";
 import Head from "next/head";
-import Navbar from "@/components/Navbar";
 import VisionMission from "@/components/VisionMission";
-import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import faqData from "@/data/faqData";
-import AboutPage from "@/components/AboutPage";
-import StorySection from "@/components/StorySection";
+import CoreValues from "@/components/CoreValues";
+import Expertise from "@/components/ExpertiseSection";
+import WhyUsSection from "@/components/WhyUsSection";
+import AboutCTA from "@/components/AboutCTA";
+import CompanyStory from "@/components/CompanyStory";
 
 export default function AboutPageProfile() {
   const meta = {
@@ -56,9 +57,13 @@ export default function AboutPageProfile() {
           backgroundImage: "/hero-bg.jpg",
         }}
       />
-      <StorySection />
+      <CompanyStory />
       <VisionMission />
+      <CoreValues />
+      <Expertise />
+      <WhyUsSection />
       <FAQ faqData={faqData} />
+      <AboutCTA />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import PageHeader from "./PageHeader";
 import SectionBadge from "./SectionBadge";
 import Link from "next/link";
 
@@ -48,7 +47,6 @@ export default function News() {
               developments across Redith Group.
             </p>
           </div>
-
           <Link
             href="/news"
             className="inline-flex items-center justify-center
@@ -70,13 +68,10 @@ export default function News() {
   transition-all duration-500
   hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)]"
               >
-                {/* Gradient Glow */}
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500
     bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 pointer-events-none"
                 />
-
-                {/* Image */}
                 <div className="relative h-56 overflow-hidden">
                   <Image
                     src={article.img}
@@ -84,24 +79,18 @@ export default function News() {
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-
-                  {/* Image Overlay */}
                   <div
                     className="absolute inset-0 bg-gradient-to-t
       from-black/50 via-black/10 to-transparent"
                   />
                 </div>
-
-                {/* Content */}
                 <div className="relative p-6">
-                  {/* Meta */}
                   <div className="flex items-center gap-2 text-xs font-semibold tracking-wide text-primary uppercase">
                     <span>{article.date}</span>
                     <span className="w-1 h-1 rounded-full bg-primary" />
                     <span className="text-gray-500">{article.author}</span>
                   </div>
 
-                  {/* Title */}
                   <h3
                     className="mt-3 text-lg font-bold text-gray-900 leading-snug
       group-hover:text-primary transition-colors duration-300"
@@ -109,12 +98,10 @@ export default function News() {
                     {article.title}
                   </h3>
 
-                  {/* Description */}
                   <p className="mt-3 text-sm text-gray-600 leading-relaxed">
                     {article.description}
                   </p>
 
-                  {/* Read More */}
                   <div className="mt-6">
                     <span
                       className="relative inline-flex items-center text-sm font-semibold text-gray-900

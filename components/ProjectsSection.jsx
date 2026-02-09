@@ -24,21 +24,20 @@ const projects = [
     title: "Advanced Rotoscoping Demo",
     category: "VFX",
     slug: "advanced-rotoscoping-demo",
-    video: "https://www.youtube.com/embed/8EP5pDqTk0Y?autoplay=1&mute=1",
+    video: "https://www.youtube.com/embed/QF4N98KRC1A?autoplay=1&mute=1",
   },
-
   // ===== VIDEO EDITING =====
   {
     title: "Cinematic Color Grading Showcase",
     category: "Video Editing",
     slug: "cinematic-color-grading-showcase",
-    video: "https://www.youtube.com/embed/FVR8zz8ci2k?autoplay=1&mute=1",
+    video: "https://www.youtube.com/embed/7XfCM3yVuko?autoplay=1&mute=1",
   },
   {
     title: "Professional Trailer Edit",
     category: "Video Editing",
     slug: "professional-trailer-edit",
-    video: "https://www.youtube.com/embed/N_mKCJSfyww?autoplay=1&mute=1",
+    video: "https://www.youtube.com/embed/SjkcA2ZCmDU?autoplay=1&mute=1",
   },
 
   // ===== 3D MODELING =====

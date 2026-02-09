@@ -1,6 +1,5 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-// import Navbar from "./Navbar";
 import ScrollToTopButton from "./ScrollToTopButton";
 export default function Layout({ children, footerData, navbarData }) {
   return (

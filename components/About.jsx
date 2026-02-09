@@ -3,7 +3,6 @@ import SectionBadge from "./SectionBadge";
 export default function About() {
   return (
     <section className="relative bg-[#F5F7FA] text-[#1E2A44] md:py-28 py-20 overflow-hidden">
-      {/* Soft Brand Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="w-[420px] h-[420px] bg-secondary/20 blur-[160px] rounded-full absolute -top-24 -left-24" />
         <div className="w-[360px] h-[360px] bg-[#1E2A44]/15 blur-[140px] rounded-full absolute bottom-0 right-0" />
@@ -11,17 +10,13 @@ export default function About() {
 
       <div className="relative max-w-5xl mx-auto md:px-6 px-0">
         <SectionBadge text="About Light Studio360" />
-
-        {/* Headline */}
         <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-10">
           Crafting <span className="text-secondary">Visual Stories</span> That
           Captivate and Convert
         </h2>
 
-        {/* Divider */}
         <div className="w-20 h-[3px] bg-secondary mb-12 rounded-full" />
 
-        {/* Body */}
         <div className="space-y-8 text-[#1E2A44]/80 text-base md:text-lg leading-relaxed">
           <p>
             Founded in <strong className="text-[#1E2A44]">2020</strong>,{" "}
@@ -44,7 +39,6 @@ export default function About() {
           </p>
         </div>
 
-        {/* CTA Button */}
         <div className="mt-12">
           <a
             href="/contact"

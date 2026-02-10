@@ -1,258 +1,285 @@
-// import Image from "next/image";
-// import PageHeader from "./PageHeader";
+import {
+  FiCamera,
+  FiEdit3,
+  FiCheckCircle,
+  FiLayers,
+  FiStar,
+  FiCode,
+} from "react-icons/fi";
+import { FaVideo, FaCogs, FaCube, FaGear, FaPaintbrush } from "react-icons/fa6";
 
-// export default function ServiceDetails({ service }) {
-//   return (
-//     <div>
-//       <PageHeader
-//         title={service.header.title}
-//         subtitle={service.header.subtitle}
-//       />
-
-//       <section className="max-w-7xl mx-auto px-6 py-20">
-//         {service.sections.map((section, index) => (
-//           <div key={index} className="mb-12">
-//             {section.title && (
-//               <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
-//             )}
-
-//             {section.description && (
-//               <p className="text-gray-700 leading-relaxed mb-6">
-//                 {section.description}
-//               </p>
-//             )}
-
-//             {section.list && (
-//               <ul className="space-y-2 text-gray-700">
-//                 {section.list.map((item, i) => (
-//                   <li key={i}>• {item}</li>
-//                 ))}
-//               </ul>
-//             )}
-//           </div>
-//         ))}
-
-//         {service.image && (
-//           <Image
-//             src={service.image}
-//             alt={service.header.title}
-//             width={1000}
-//             height={600}
-//             className="rounded shadow"
-//           />
-//         )}
-//       </section>
-//     </div>
-//   );
-// }
-
-// import Image from "next/image";
-// import PageHeader from "./PageHeader";
-
-// export default function ServiceDetails({ service }) {
-//   return (
-//     <div className="bg-neutral-50">
-//       <PageHeader
-//         title={service.header.title}
-//         subtitle={service.header.subtitle}
-//       />
-
-//       <section className="max-w-7xl mx-auto px-6 py-24">
-//         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-//           {/* Main Content */}
-//           <div className="lg:col-span-7 space-y-14">
-//             {service.sections.map((section, index) => (
-//               <div key={index}>
-//                 {section.title && (
-//                   <h2 className="text-3xl font-semibold text-neutral-900 mb-5 leading-tight">
-//                     {section.title}
-//                   </h2>
-//                 )}
-
-//                 {section.description && (
-//                   <p className="text-lg text-neutral-600 leading-relaxed mb-6">
-//                     {section.description}
-//                   </p>
-//                 )}
-
-//                 {section.list && (
-//                   <ul className="space-y-4">
-//                     {section.list.map((item, i) => (
-//                       <li key={i} className="flex gap-4 text-neutral-700">
-//                         <span className="mt-2 h-1.5 w-1.5 rounded-full bg-neutral-900 shrink-0" />
-//                         <span className="leading-relaxed">{item}</span>
-//                       </li>
-//                     ))}
-//                   </ul>
-//                 )}
-//               </div>
-//             ))}
-//           </div>
-
-//           {/* Premium Image / Visual Column */}
-//           {service.image && (
-//             <div className="lg:col-span-5">
-//               <div className="lg:sticky lg:top-32 space-y-6">
-//                 <div className="overflow-hidden rounded-3xl bg-white shadow-xl border border-neutral-200">
-//                   <Image
-//                     src={service.image}
-//                     alt={service.header.title}
-//                     width={800}
-//                     height={600}
-//                     priority
-//                     className="w-full h-auto object-cover"
-//                   />
-//                 </div>
-
-//                 {/* Optional Highlight Box */}
-//                 <div className="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-//                   <p className="text-sm uppercase tracking-wider text-neutral-500 mb-2">
-//                     Why this service
-//                   </p>
-//                   <p className="text-neutral-700 leading-relaxed">
-//                     Built with industry best practices, modern technology, and a
-//                     focus on long-term scalability and performance.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-//           )}
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
-import Image from "next/image";
-import PageHeader from "./PageHeader";
+const featureIcons = {
+  "image-editing": FiCamera,
+  "video-production": FaVideo,
+  vfx: FaGear,
+  "3d-modeling": FaCube,
+  animation: FaPaintbrush,
+  "web-development": FiCode,
+};
 
 export default function ServiceDetails({ service }) {
+  if (!service) return null;
+  const details = service;
+
   return (
-    <div className="bg-gray-50">
-      <section className="max-w-7xl mx-auto px-6 py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-          {/* Text Content */}
-          <div className="lg:col-span-7 space-y-10">
-            {service.sections.map((section, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition"
-              >
-                {section.title && (
-                  <h2 className="text-2xl font-extrabold text-gray-900 mb-4">
-                    {section.title}
-                  </h2>
-                )}
+    <section className="bg-light py-24">
+      <div className="max-w-7xl mx-auto md:px-0 px-6">
+        {/* {details.hero && (
+          <div className="text-center mb-24">
+            <span
+              className="inline-flex items-center gap-2 px-6 py-2 rounded-full
+              bg-secondary/10 text-secondary text-sm font-semibold tracking-wide"
+            >
+              <FiStar />
+              {details.hero.badge}
+            </span>
 
-                {section.description && (
-                  <p className="text-gray-600 leading-relaxed mb-6">
-                    {section.description}
-                  </p>
-                )}
+            <h2 className="text-5xl font-extrabold text-primary mt-6">
+              {details.hero.title}
+            </h2>
 
-                {section.list && (
-                  <ul className="space-y-3">
-                    {section.list.map((item, i) => (
-                      <li key={i} className="flex items-start gap-3">
-                        <span className="mt-1 h-2 w-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
+            <p className="text-primary/70 mt-6 max-w-3xl mx-auto text-lg">
+              {details.hero.desc}
+            </p>
+          </div>
+        )} */}
+
+        {details.intro && (
+          <div className="max-w-4xl mx-auto text-center mb-24 space-y-5">
+            {details.intro.map((text, i) => (
+              <p key={i} className="text-lg text-secondary leading-relaxed">
+                {text}
+              </p>
             ))}
           </div>
+        )}
 
-          {/* Image */}
-          {service.image && (
-            <div className="lg:col-span-5 sticky top-24">
-              <div className="relative overflow-hidden rounded-3xl shadow-xl">
-                <Image
-                  src={service.image}
-                  alt={service.header.title}
-                  width={1000}
-                  height={700}
-                  className="object-cover"
-                />
+        {details.beforeAfter && (
+          <div className="mb-24">
+            {/* <h3 className="text-4xl font-bold text-primary text-center mb-6">
+              {details.works?.title}
+            </h3>
 
-                {/* Gradient Overlay */}
-                {/* <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent" /> */}
-              </div>
+            <p className="text-primary/70 text-center max-w-3xl mx-auto mb-14">
+              {details.works?.desc}
+            </p> */}
+
+            <div className="grid md:grid-cols-3 gap-10">
+              {details.beforeAfter.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-white rounded-2xl overflow-hidden border
+          border-primary/10 hover:shadow-xl transition"
+                >
+                  <div className="grid grid-cols-2">
+                    <img
+                      src={item.before}
+                      alt=""
+                      className="object-cover h-48 w-full"
+                    />
+                    <img
+                      src={item.after}
+                      alt=""
+                      className="object-cover h-48 w-full"
+                    />
+                  </div>
+
+                  <div className="p-6">
+                    <h4 className="font-bold text-lg text-primary mb-2">
+                      {item.title}
+                    </h4>
+                    <p className="text-primary/70 text-sm">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
-          )}
+          </div>
+        )}
+
+        {details.works?.showreel && (
+          <div className="mb-24 text-center">
+            <h3 className="text-4xl font-bold text-primary mb-6">
+              {details.works.showreel.title}
+            </h3>
+
+            <p className="text-primary/70 max-w-3xl mx-auto mb-12">
+              {details.works.showreel.desc}
+            </p>
+
+            <div className="relative aspect-video max-w-7xl mx-auto rounded-2xl overflow-hidden pointer-events-none">
+              <iframe
+                src={`${details.works.showreel.videoUrl}?autoplay=1&mute=1&loop=1`}
+                className="w-full h-full"
+                frameBorder="0"
+                allow="autoplay; fullscreen; encrypted-media"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        )}
+
+        {details.works?.categories && (
+          <div className="mb-24">
+            <div className="grid md:grid-cols-2 gap-12">
+              {details.works.categories.map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-2xl border border-primary/10
+          hover:shadow-xl transition overflow-hidden"
+                >
+                  <div className="relative aspect-video w-full min-h-[320px] pointer-events-none">
+                    <iframe
+                      src={`${item.videoUrl}?autoplay=1&mute=1&loop=1`}
+                      className="w-full h-full"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; encrypted-media"
+                      allowFullScreen
+                    />
+                  </div>
+
+                  <div className="p-6">
+                    <span className="text-xs font-bold tracking-widest text-secondary">
+                      {item.tag}
+                    </span>
+
+                    <h4 className="text-xl font-bold text-primary mt-2">
+                      {item.title}
+                    </h4>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* FEATURES */}
+        {details.features && (
+          <div className="grid md:grid-cols-2 gap-10 mb-24">
+            {details.features.map((item, i) => {
+              // service অনুযায়ী icon set
+              const Icon = featureIcons[service?.slug] || FiCamera;
+
+              return (
+                <div
+                  key={i}
+                  className="group relative bg-white p-10 rounded-2xl border
+          border-primary/10 hover:border-accent transition"
+                >
+                  <div
+                    className="w-14 h-14 rounded-xl flex items-center justify-center
+            bg-accent/10 text-accent mb-6"
+                  >
+                    <Icon size={26} />
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-primary mb-3">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-primary/70 leading-relaxed">{item.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* INCLUDES */}
+        {details.includes && (
+          <div className="mb-24">
+            <h3 className="text-4xl font-bold text-primary text-center mb-12">
+              What’s Included
+            </h3>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {details.includes.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-4 bg-white p-6 rounded-xl
+                  border border-primary/10 hover:border-secondary transition"
+                >
+                  <FiCheckCircle className="text-secondary" size={22} />
+                  <span className="font-medium text-primary">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* SERVICES */}
+        {details.services && (
+          <div className="mb-24">
+            <h3 className="text-4xl font-bold text-primary text-center mb-12">
+              Our Capabilities
+            </h3>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {details.services.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex items-center gap-4 bg-primary/5 p-6 rounded-xl"
+                >
+                  <FiLayers className="text-accent" size={22} />
+                  <span className="font-semibold text-primary">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* WHY CHOOSE */}
+        {details.why && (
+          <div className="mb-24">
+            <h3 className="text-4xl font-bold text-primary text-center mb-14">
+              Why Choose Us
+            </h3>
+
+            <div className="grid md:grid-cols-3 gap-10">
+              {details.why.map((item, i) => (
+                <div
+                  key={i}
+                  className="relative bg-white p-10 rounded-2xl border
+                  border-primary/10 hover:shadow-xl transition"
+                >
+                  <div
+                    className="absolute -top-6 left-10 bg-secondary
+                    text-dark w-12 h-12 rounded-xl flex items-center justify-center"
+                  >
+                    <FiEdit3 size={22} />
+                  </div>
+
+                  <h4 className="font-bold text-xl text-primary mt-8 mb-3">
+                    {item.title}
+                  </h4>
+
+                  <p className="text-primary/70 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* CTA */}
+        <div className="relative bg-primary text-light p-16 rounded-3xl text-center">
+          <h3 className="text-4xl font-bold mb-4">
+            Ready to Elevate Your Brand?
+          </h3>
+
+          <p className="text-light/80 max-w-2xl mx-auto mb-8">
+            Let’s create premium visuals and experiences that set you apart.
+          </p>
+
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-secondary
+            text-dark px-10 py-4 rounded-xl font-bold
+            hover:bg-secondary/90 transition"
+          >
+            Get Started
+          </a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
-
-// import Image from "next/image";
-// import PageHeader from "./PageHeader";
-
-// export default function ServiceDetails({ service }) {
-//   return (
-//     <div className="bg-red-50">
-//       {/* <PageHeader
-//         title={service.header.title}
-//         subtitle={service.header.subtitle}
-//       /> */}
-
-//       <section className="max-w-7xl mx-auto px-6 md:px-0 py-20">
-//         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-//           {/* Content */}
-//           <div className="lg:col-span-2 space-y-10">
-//             {service.sections.map((section, index) => (
-//               <div
-//                 key={index}
-//                 className="bg-white rounded-2xl border border-gray-200 p-8"
-//               >
-//                 {section.title && (
-//                   <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-//                     {section.title}
-//                   </h2>
-//                 )}
-
-//                 {section.description && (
-//                   <p className="text-gray-600 leading-relaxed mb-6">
-//                     {section.description}
-//                   </p>
-//                 )}
-
-//                 {section.list && (
-//                   <ul className="space-y-3">
-//                     {section.list.map((item, i) => (
-//                       <li
-//                         key={i}
-//                         className="flex items-start gap-3 text-gray-700"
-//                       >
-//                         <span className="mt-1 h-2 w-2 rounded-full bg-primary shrink-0" />
-//                         <span>{item}</span>
-//                       </li>
-//                     ))}
-//                   </ul>
-//                 )}
-//               </div>
-//             ))}
-//           </div>
-
-//           {/* Sidebar Image */}
-//           {service.image && (
-//             <div className="lg:sticky lg:top-28 h-fit">
-//               <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-//                 <Image
-//                   src={service.image}
-//                   alt={service.header.title}
-//                   width={600}
-//                   height={400}
-//                   className="w-full h-auto object-cover"
-//                   priority
-//                 />
-//               </div>
-//             </div>
-//           )}
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }

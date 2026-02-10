@@ -12,6 +12,7 @@ const categories = [
   "3D Modeling",
   "Animation",
 ];
+
 const projects = [
   // ===== VFX =====
   {
@@ -73,8 +74,8 @@ const projects = [
     title: "Jewelry Retouching",
     category: "Image Editing",
     slug: "jewelry-retouching",
-    before: "/image-edating/jewelry-retouching/1--1.jpg",
-    after: "/image-edating/jewelry-retouching/1--2.jpg",
+    before: "/image-edating/jewelry-retouching/before.png",
+    after: "/image-edating/jewelry-retouching/after.png",
   },
   {
     title: "Ghost Mannequin",
@@ -108,8 +109,8 @@ const projects = [
     title: "Glamour Model Retouching",
     category: "Image Editing",
     slug: "glamour-model-retouching",
-    before: "/image-edating/glamour-model/1--1.jpg",
-    after: "/image-edating/glamour-model/1--2.jpg",
+    before: "/image-edating/glamour-model/GlamBefore.jpg",
+    after: "/image-edating/glamour-model/Glamafter.jpg",
   },
 ];
 

@@ -45,8 +45,8 @@ export default function ServicesPage() {
       </Head>
       <HeroSection
         hero={{
-          title: "Services at Redith Group",
-          subtitle: "Explore our diverse range of business solutions",
+          title: "Services at Light Studio 360",
+          subtitle: "Creative Solutions Tailored to Your Vision",
           backgroundImage: "/about-bg.jpg",
         }}
       />

@@ -20,15 +20,22 @@ import ProjectSlideshow from "@/components/ProjectSlideshow";
 export default function Home() {
   const meta = {
     title:
-      "Redith Group | Leading Conglomerate in Bangladesh – Innovation & Sustainability",
+      "Light Studio360 | Award-Winning Creative Studio for Image Editing, VFX, 3D & Video Production",
+
     description:
-      "Redith Group is a diversified conglomerate in Bangladesh operating across Digital Marketing & IT, Consumer Brands, Agribusiness, and Retail Chain. Powered by AI, innovation, and sustainable growth.",
+      "Light Studio360 is a global creative studio delivering premium image editing, VFX & compositing, 3D modeling, animation, and cinematic video production. Trusted by 1000+ brands for high-quality visuals, fast turnaround, and professional execution.",
+
     keywords:
-      "Redith Group, Bangladesh Conglomerate, Digital Marketing Bangladesh, IT Company Bangladesh, Consumer Brands, Agribusiness Bangladesh, Retail Chain Bangladesh, AI Technology Company",
-    author: "Redith Group",
-    siteName: "Redith Group",
-    url: "https://www.redithgroup.com",
-    image: "https://www.redithgroup.com/og/redith-home-og.jpg",
+      "Light Studio360, Image Editing Services, Clipping Path, Photo Retouching, VFX Studio, 3D Modeling, CGI Rendering, Animation Studio, Video Production Company, Creative Agency, Post Production Studio, Graphic Design, Bangladesh Creative Studio",
+
+    author: "Light Studio360",
+
+    siteName: "Light Studio360",
+
+    url: "https://www.lightstudio360.com",
+
+    image: "https://www.lightstudio360.com/og/lightstudio360-home-og.jpg",
+
     locale: "en_US",
   };
 

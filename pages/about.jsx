@@ -11,15 +11,23 @@ import CompanyStory from "@/components/CompanyStory";
 
 export default function AboutPageProfile() {
   const meta = {
-    title: "About Us | Redith Group – Innovation, Industry & Impact",
+    title:
+      "About Light Studio360 | Award-Winning Creative Studio for Image, VFX, 3D & Video",
+
     description:
-      "Founded in 2018, Redith Group is one of Bangladesh’s leading conglomerates operating across Digital Marketing & IT, Consumer Brands, Agribusiness, and Retail Chain—driven by innovation, AI, and sustainable growth.",
+      "Founded in 2020, Light Studio360 is a global creative production studio specializing in professional image editing, VFX & compositing, 3D modeling, animation, and video production. Trusted by 1000+ brands for premium visuals, fast turnaround, and measurable results.",
+
     keywords:
-      "About Redith Group, Redith Bangladesh, Bangladeshi Conglomerate, Digital IT Company Bangladesh, Agribusiness Bangladesh, Retail Chain Bangladesh, Sustainable Business",
-    author: "Redith Group",
-    siteName: "Redith Group",
-    url: "https://www.redithgroup.com/about",
-    image: "https://www.redithgroup.com/about/redith-about-og.jpg",
+      "About Light Studio360, creative studio Bangladesh, image editing company, VFX studio, 3D modeling services, animation studio, video production company, post production agency, professional retouching, global creative agency",
+
+    author: "Light Studio360",
+
+    siteName: "Light Studio360",
+
+    url: "https://www.lightstudio360.com/about",
+
+    image: "https://www.lightstudio360.com/og/lightstudio360-about-og.jpg",
+
     locale: "en_US",
   };
 

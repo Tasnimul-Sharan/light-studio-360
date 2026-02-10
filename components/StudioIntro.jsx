@@ -34,7 +34,6 @@ export default function StudioIntro() {
           </p>
         </motion.div>
 
-        {/* RIGHT IMAGE */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -47,7 +46,6 @@ export default function StudioIntro() {
             className="rounded-xl shadow-2xl w-full object-cover"
           />
 
-          {/* decorative box */}
           <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary/20 rounded-xl -z-10" />
         </motion.div>
       </div>

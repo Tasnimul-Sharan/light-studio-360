@@ -9,11 +9,13 @@ import {
   FaCode,
 } from "react-icons/fa";
 import SectionBadge from "./SectionBadge";
+import Link from "next/link";
 
 export default function ServicesSection() {
   const services = [
     {
       icon: FaCamera,
+      slug: "image-editing",
       title: "Image Editing",
       desc: "Professional retouching, clipping path, background removal and high-end photo enhancement.",
       id: "services-image",
@@ -21,6 +23,7 @@ export default function ServicesSection() {
     },
     {
       icon: FaVideo,
+      slug: "video-production",
       title: "Video Production",
       desc: "Commercial videos, product promos and cinematic storytelling visuals.",
       id: "services-videos",
@@ -28,6 +31,7 @@ export default function ServicesSection() {
     },
     {
       icon: FaMagic,
+      slug: "vfx",
       title: "VFX & Compositing",
       desc: "Hollywood-style visual effects, green screen removal and motion graphics.",
       id: "services-vfx",
@@ -35,6 +39,7 @@ export default function ServicesSection() {
     },
     {
       icon: FaCube,
+      slug: "3d-modeling",
       title: "3D Modeling",
       desc: "Photorealistic product rendering, architectural visuals and CGI creation.",
       id: "services-3d",
@@ -42,6 +47,7 @@ export default function ServicesSection() {
     },
     {
       icon: FaFilm,
+      slug: "animation",
       title: "Animation",
       desc: "2D & 3D animation, character motion and explainer visuals.",
       id: "services-animation",
@@ -49,6 +55,7 @@ export default function ServicesSection() {
     },
     {
       icon: FaCode,
+      slug: "web-development",
       title: "Web Development",
       desc: "Modern responsive websites, landing pages and UI/UX solutions.",
       id: "services-webdev",
@@ -76,9 +83,9 @@ export default function ServicesSection() {
           {services.map((item, i) => {
             const Icon = item.icon;
             return (
-              <a
+              <Link
                 key={i}
-                href={`#${item.id}`}
+                href={`/services/${item.slug}`}
                 className="group relative bg-white rounded-2xl overflow-hidden
                 border border-white/5 hover:border-primary/40
                 transition-all duration-500 hover:-translate-y-2"
@@ -120,7 +127,7 @@ export default function ServicesSection() {
                   </p>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 blur-xl bg-primary/10" />
-              </a>
+              </Link>
             );
           })}
         </div>

@@ -33,10 +33,10 @@ export default function NewsDetailsDataPage() {
     );
   }
 
-  const siteUrl = "https://www.redithgroup.com";
+  const siteUrl = "https://www.lightstudio360.com";
 
   const meta = {
-    title: `${news.blogPost.title} | Redith Group`,
+    title: `${news.blogPost.title} | Redith Group`, 
     description: news.blogPost.description,
     keywords: news.blogPost.postTags.join(", "),
     author: news.blogPost.author || "Redith Group",

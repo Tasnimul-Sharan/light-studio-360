@@ -2,18 +2,24 @@ import { FaVideo, FaMagic, FaPaintBrush, FaImage } from "react-icons/fa";
 
 export const projectPageData = {
   meta: {
-    title: "Our project | Creative Frog",
+    title:
+      "Our Projects | Light Studio360 – Image Editing, VFX, 3D & Video Portfolio",
+
     description:
-      "Take a look at our work in animation, video production, graphics design, and photo editing at Creative Frog.",
+      "Explore Light Studio360’s portfolio featuring premium image editing, VFX & compositing, 3D modeling, animation, and cinematic video production projects trusted by 1000+ global brands.",
+
     keywords:
-      "Creative Frog project, Animation project, Graphics Design Projects, Video Editing, Image Retouching",
-    author: "Creative Frog",
+      "Light Studio360 portfolio, creative studio projects, image editing portfolio, VFX projects, 3D modeling showcase, animation work, video production portfolio, post production studio work, professional retouching examples",
+
+    author: "Light Studio360",
+
     viewport: "width=device-width, initial-scale=1.0",
+
     og: {
-      title: "Our project | Creative Frog",
+      title: "Our Projects | Light Studio360 Portfolio",
       description:
-        "Browse the creative project of Creative Frog featuring work in animation, video, and design.",
-      url: "https://creativefrog.org/project",
+        "Browse our latest creative work including image retouching, VFX, 3D renders, animation, and professional video production.",
+      url: "https://www.lightstudio360.com/projects",
       type: "website",
     },
   },

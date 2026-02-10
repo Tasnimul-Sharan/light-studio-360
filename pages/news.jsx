@@ -52,8 +52,8 @@ export default function NewsPage() {
       </Head>
       <HeroSection
         hero={{
-          title: "News & Updates from Redith Group",
-          subtitle: "Stay updated with the latest news and insights",
+          title: "News & Updates",
+          subtitle: "Stay updated with the latest news and insights", 
           backgroundImage: "/about-bg.jpg",
         }}
       />

@@ -32,16 +32,29 @@ export default function projectDetailsPage() {
 
   return (
     <div className="w-full relative">
-      <Head>
+   <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
         <meta name="keywords" content={meta.keywords} />
         <meta name="author" content={meta.author} />
-        <meta name="viewport" content={meta.viewport} />
-        <meta property="og:title" content={meta.og.title} />
-        <meta property="og:description" content={meta.og.description} />
-        <meta property="og:url" content={meta.og.url} />
-        <meta property="og:type" content={meta.og.type} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={meta.url} />
+        <meta property="og:site_name" content={meta.siteName} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={meta.url} />
+        <meta property="og:image" content={meta.image} />
+        <meta
+          property="og:image:alt"
+          content="Projects Light Studio360 – Award-Winning Creative Studio"
+        />
+        <meta property="og:locale" content={meta.locale} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={meta.title} />
+        <meta name="twitter:description" content={meta.description} />
+        <meta name="twitter:image" content={meta.image} />
       </Head>
       <HeroSection
         hero={{

@@ -22,7 +22,7 @@ export default function ProjectsPage() {
         <meta property="og:image" content={meta.image} />
         <meta
           property="og:image:alt"
-          content="About Redith Group – Corporate Profile"
+          content="Project Light Studio360 – Award-Winning Creative Studio"
         />
         <meta property="og:locale" content={meta.locale} />
         <meta name="twitter:card" content="summary_large_image" />

@@ -3,17 +3,18 @@ import Head from "next/head";
 import ServicesSection from "@/components/ServicesSection";
 
 export default function ServicesPage() {
-  const meta = {
+ const meta = {
     title:
-      "Our Services | Redith Group – Digital, Consumer, Agribusiness & Retail Solutions",
+      "Our Services | Light Studio360 – Image Editing, VFX, 3D & Video Production",
     description:
-      "Explore Redith Group’s diverse services including Digital Marketing & IT, Consumer Brands, Agribusiness, Retail Chain, and Sustainability initiatives—driven by innovation, AI, and impact.",
+      "Discover Light Studio360’s professional services including image editing, photo retouching, VFX & compositing, 3D modeling & animation, and cinematic video production—crafted for global brands.",
     keywords:
-      "Redith Group Services, Digital Marketing Services Bangladesh, IT Services Bangladesh, Consumer Brands, Agribusiness Solutions, Retail Chain Services, AI Technology Company",
-    author: "Redith Group",
-    siteName: "Redith Group",
-    url: "https://www.redithgroup.com/services",
-    image: "https://www.redithgroup.com/services/redith-services-og.jpg",
+      "Light Studio360 Services, Image Editing Services, Photo Retouching, VFX Studio, 3D Modeling, CGI Rendering, Animation Studio, Video Production Company, Creative Studio Bangladesh",
+    author: "Light Studio360",
+    siteName: "Light Studio360",
+    url: "https://www.lightstudio360.com/services",
+    image:
+      "https://www.lightstudio360.com/services/lightstudio360-services-og.jpg",
     locale: "en_US",
   };
 

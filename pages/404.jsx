@@ -40,16 +40,16 @@ export default function Custom404() {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <Head>
-        <title>404 | Page Not Found – Redith Group</title>
+        <title>404 | Page Not Found – Light Studio360</title>
         <meta
           name="description"
-          content="The page you are looking for could not be found. Explore Redith Group’s business divisions, innovations, and global presence."
+          content="The page you are looking for could not be found. Explore Light Studio360’s business divisions, innovations, and global presence."
         />
         <meta name="robots" content="noindex, nofollow" />
-        <meta property="og:title" content="404 | Redith Group" />
+        <meta property="og:title" content="404 | Light Studio360" />
         <meta
           property="og:description"
-          content="This page does not exist. Discover Redith Group’s vision, businesses, and innovations."
+          content="This page does not exist. Discover Light Studio360’s vision, businesses, and innovations."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.redithgroup.com/404" />
@@ -58,10 +58,10 @@ export default function Custom404() {
           content="https://www.redithgroup.com/og/404-og.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="404 | Redith Group" />
+        <meta name="twitter:title" content="404 | Light Studio360" />
         <meta
           name="twitter:description"
-          content="The requested page could not be found. Return to Redith Group homepage."
+          content="The requested page could not be found. Return to Light Studio360 homepage."
         />
         <meta
           name="twitter:image"
@@ -83,7 +83,7 @@ export default function Custom404() {
         </p>
 
         <p className="text-gray-600 max-w-xl mb-10">
-          Redith Group continues to drive innovation across Digital Technology,
+          Light Studio360 continues to drive innovation across Digital Technology,
           Consumer Brands, Agribusiness, and Retail—let’s get you back on track.
         </p>
         <div className="relative inline-block group">

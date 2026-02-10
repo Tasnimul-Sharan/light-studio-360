@@ -23,274 +23,285 @@ const newsDetailsData = {
         )}&title=${encodeURIComponent(title)}`,
     },
   ],
-  newsDetails: [
-    {
-      slug: "ai-powered-digital-transformation",
-      blogPost: {
-        title: "AI-Powered Digital Transformation",
-        author: "Redith IT",
-        date: "Jan 5, 2026",
-        image: "/images/news/redith-it.jpg",
-        description:
-          "Redith IT is leading AI-powered digital transformation by delivering secure, scalable, and intelligent software solutions across industries. From enterprise software to cloud platforms, AI integration is driving measurable growth.",
-        checklist: [
-          "AI-driven enterprise software solutions",
-          "Cloud infrastructure & cybersecurity services",
-          "Scalable systems for long-term growth",
-          "Automation & AI integration for business processes",
-          "Data analytics for informed decision-making",
-          "Custom digital strategies tailored to clients",
-        ],
+ newsDetails: [
+  {
+    slug: "professional-image-editing-ecommerce",
+    blogPost: {
+      title: "Professional Image Editing for eCommerce Growth",
+      author: "Light Studio 360",
+      date: "Jan 12, 2026",
+      image: "/news/image-editing.jpg",
+      description:
+        "Professional image editing services help eCommerce brands present products with clarity and consistency. From clipping paths to high-end retouching, optimized visuals directly influence customer trust and conversion rates.",
 
-        subImages: [
-          "/images/news/redith-it-1.jpg",
-          "/images/news/redith-it-2.jpg",
-          //   "/images/news/redith-it-3.jpg",
-        ],
-        subContent: [
-          "Redith IT empowers organizations to adopt AI-driven workflows, enhancing efficiency, reducing operational costs, and improving customer engagement.",
-          "By integrating cloud services with intelligent automation, businesses can securely manage data, scale operations, and adapt to market demands swiftly.",
-          "Advanced analytics tools allow companies to derive actionable insights, optimize processes, and make informed strategic decisions.",
-          "AI-enhanced cybersecurity solutions safeguard digital assets, mitigate risks, and maintain business continuity in a dynamic threat landscape.",
-          "Customized software solutions ensure seamless integration with existing systems, supporting long-term innovation and sustainability.",
-          "With continuous support and monitoring, Redith IT guarantees organizations stay ahead in the fast-evolving digital ecosystem.",
-        ],
+      checklist: [
+        "Clipping Path & Background Removal",
+        "High-End Beauty & Product Retouching",
+        "Ghost Mannequin & Apparel Editing",
+        "Color Correction & Enhancement",
+        "Shadow & Reflection Creation",
+        "Bulk Image Optimization for Stores",
+      ],
 
-        quote:
-          "Digital transformation is not about technology alone—it’s about empowering people and businesses through innovation.",
+      subImages: [
+        "/news/image-editing-1.jpg",
+        "/news/image-editing-2.jpg",
+      ],
 
-        postTags: [
-          "AI",
-          "Digital Transformation",
-          "IT Solutions",
-          "Innovation",
-          "Business Growth",
-        ],
-      },
+      subContent: [
+        "Clean background and accurate cut-outs ensure your product stands out across marketplaces.",
+        "High-end retouching enhances textures, lighting, and realism without losing authenticity.",
+        "Ghost mannequin techniques provide a 3D look for apparel without visible models.",
+        "Consistent color grading maintains brand identity across all listings.",
+        "Optimized images improve loading speed and SEO performance.",
+        "Professional editing ultimately increases customer confidence and sales.",
+      ],
+
+      quote:
+        "A perfectly edited product image speaks louder than a thousand marketing words.",
+
+      postTags: [
+        "Image Editing",
+        "eCommerce",
+        "Retouching",
+        "Product Enhancement",
+        "Clipping Path",
+      ],
     },
-    {
-      slug: "consumer-brands-expansion",
-      blogPost: {
-        title: "Consumer Brands Expansion",
-        author: "Redith Brands",
-        date: "Dec 20, 2025",
-        image: "/images/news/consumer-brands.jpg",
-        description:
-          "Redith Consumer Brands continues its nationwide expansion, delivering quality and affordable products to millions of households, reinforcing trust and market leadership.",
+  },
 
-        checklist: [
-          "Wide range of daily consumer products",
-          "Nationwide distribution network",
-          "Quality-focused manufacturing processes",
-          "Sustainable packaging & production",
-          "Consumer engagement & loyalty programs",
-          "Market research driven product innovation",
-        ],
+  {
+    slug: "commercial-video-production-storytelling",
+    blogPost: {
+      title: "Commercial Video Production That Tells Your Story",
+      author: "Light Studio 360",
+      date: "Dec 28, 2025",
+      image: "/news/video-production.jpg",
+      description:
+        "Commercial video production transforms brand messages into engaging visual stories. From promotional ads to cinematic edits, strong storytelling builds emotional connection and brand recognition.",
 
-        subImages: [
-          "/images/news/consumer-1.jpg",
-          "/images/news/consumer-2.jpg",
-          //   "/images/news/consumer-3.jpg",
-        ],
+      checklist: [
+        "Corporate & Brand Commercials",
+        "Product Promo Videos",
+        "Cinematic Editing & Color Grading",
+        "Script & Storyboarding Support",
+        "Motion Graphics Integration",
+        "Multi-Platform Video Optimization",
+      ],
 
-        subContent: [
-          "Redith Consumer Brands ensures that its products are available to both urban and rural households, maintaining consistency in quality and affordability.",
-          "The company leverages robust supply chain management to optimize distribution, reduce delays, and maintain product freshness.",
-          "By listening to consumer feedback, Redith introduces innovative products that cater to evolving lifestyle needs and preferences.",
-          "Sustainability initiatives, including eco-friendly packaging, reinforce the brand’s commitment to environmental responsibility.",
-          "Through promotional campaigns, loyalty programs, and digital marketing, the brand maintains strong engagement and consumer trust.",
-          "These strategies ensure Redith continues to grow as a household name while delivering value and satisfaction to its customers.",
-        ],
+      subImages: [
+        "/news/video-1.jpg",
+        "/news/video-2.jpg",
+      ],
 
-        quote:
-          "Quality products should be accessible to every family, everywhere.",
+      subContent: [
+        "Story-driven visuals create deeper audience engagement and retention.",
+        "Cinematic editing enhances emotion, pacing, and professionalism.",
+        "Product promos highlight features in a visually persuasive way.",
+        "Motion graphics simplify complex information.",
+        "Multi-platform optimization ensures quality across YouTube, social media, and websites.",
+        "Strong visuals strengthen brand identity and recall.",
+      ],
 
-        postTags: [
-          "Consumer Goods",
-          "Retail",
-          "Expansion",
-          "Sustainability",
-          "Brand Growth",
-        ],
-      },
+      quote:
+        "Great video content doesn’t just show a product—it tells a memorable story.",
+
+      postTags: [
+        "Video Production",
+        "Brand Storytelling",
+        "Commercial Ads",
+        "Cinematic Editing",
+        "Marketing",
+      ],
     },
+  },
 
-    {
-      slug: "smart-farming-initiative",
-      blogPost: {
-        title: "Smart Farming Initiative",
-        author: "Redith Agro",
-        date: "Dec 2, 2025",
-        image: "/images/news/agribusiness.jpg",
-        description:
-          "Redith Agribusiness is transforming agriculture with AI-powered solutions, modern farm technologies, and sustainable practices to enhance productivity and farmer livelihoods.",
+  {
+    slug: "hollywood-style-vfx-compositing",
+    blogPost: {
+      title: "Hollywood-Style VFX & Compositing Techniques",
+      author: "Light Studio 360",
+      date: "Dec 10, 2025",
+      image: "/news/vfx.jpg",
+      description:
+        "Advanced VFX and compositing techniques bring cinematic quality to digital content. From green screen removal to complex visual effects, raw footage is transformed into immersive visuals.",
 
-        checklist: [
-          "AI-based crop monitoring & forecasting",
-          "Smart irrigation & water management systems",
-          "Modern farm mechanization and equipment",
-          "Sustainable agricultural practices",
-          "Farmer training & technology adoption",
-          "Data-driven soil and crop management",
-        ],
+      checklist: [
+        "Green Screen Keying",
+        "Rotoscoping & Masking",
+        "CGI Integration",
+        "Visual Effects Simulation",
+        "Scene Compositing",
+        "Color Matching & Final Grading",
+      ],
 
-        subImages: [
-          "/images/news/agro-1.jpg",
-          "/images/news/agro-2.jpg",
-          //   "/images/news/agro-3.jpg",
-        ],
+      subImages: [
+        "/news/vfx-1.jpg",
+        "/news/vfx-2.jpg",
+      ],
 
-        subContent: [
-          "Redith Agro integrates AI and IoT devices to monitor crop health, forecast yields, and optimize irrigation schedules.",
-          "Smart irrigation systems reduce water wastage while ensuring crops receive optimal hydration for growth.",
-          "Modern farm mechanization accelerates planting and harvesting, increasing efficiency and reducing labor dependency.",
-          "Data-driven insights empower farmers to make informed decisions about crop rotation, soil management, and fertilizer application.",
-          "Training programs ensure farmers adopt new technologies effectively, improving productivity and sustainability.",
-          "These initiatives contribute to higher yield, better income for farmers, and a more sustainable agricultural ecosystem.",
-        ],
+      subContent: [
+        "Precise rotoscoping ensures clean subject isolation in complex scenes.",
+        "Green screen removal allows limitless background possibilities.",
+        "CGI elements add depth and realism to footage.",
+        "Compositing blends multiple layers seamlessly.",
+        "Color matching ensures visual harmony across shots.",
+        "Professional VFX increases production value dramatically.",
+      ],
 
-        quote: "Smart farming is the foundation of a sustainable food future.",
+      quote:
+        "Visual effects turn imagination into believable cinematic reality.",
 
-        postTags: [
-          "Agribusiness",
-          "Smart Farming",
-          "Sustainability",
-          "AI",
-          "Innovation",
-        ],
-      },
+      postTags: [
+        "VFX",
+        "Compositing",
+        "Rotoscoping",
+        "CGI",
+        "Cinematic",
+      ],
     },
-    {
-      slug: "web-development-solutions",
-      blogPost: {
-        title: "Web Development Solutions",
-        author: "Redith IT",
-        date: "Nov 5, 2025",
-        image: "/images/news/web-development.jpg",
-        description:
-          "Redith IT builds high-performance, secure, and scalable websites and web applications for modern businesses, ensuring optimal user experience and robust back-end systems.",
+  },
 
-        checklist: [
-          "Custom website & web application development",
-          "Mobile-responsive & SEO-friendly designs",
-          "Performance & security focused builds",
-          "Scalable architecture for future growth",
-          "Integration with APIs & third-party platforms",
-          "UI/UX design aligned with business goals",
-        ],
+  {
+    slug: "3d-modeling-product-rendering",
+    blogPost: {
+      title: "3D Modeling & Photorealistic Product Rendering",
+      author: "Light Studio 360",
+      date: "Nov 25, 2025",
+      image: "/news/3d-modeling.jpg",
+      description:
+        "3D modeling and photorealistic rendering allow brands to visualize products before production. High-quality CGI visuals are essential for architecture, marketing, and digital presentations.",
 
-        subImages: [
-          "/images/news/web-1.jpg",
-          "/images/news/web-2.jpg",
-          "/images/news/web-3.jpg",
-        ],
+      checklist: [
+        "Product 3D Modeling",
+        "Photorealistic Rendering",
+        "Architectural Visualization",
+        "CGI Asset Creation",
+        "Lighting & Material Setup",
+        "Marketing Visual Production",
+      ],
 
-        subContent: [
-          "From corporate websites to complex platforms, Redith IT ensures intuitive design, clean code, and future-ready solutions.",
-          "Our development process includes thorough requirement analysis, prototyping, and agile implementation to ensure client satisfaction at every stage.",
-          "We focus on modern technologies like React, Next.js, Node.js, and cloud services to deliver fast, reliable, and scalable websites.",
-          "Security is a core priority: we implement SSL, data encryption, secure authentication, and regular vulnerability assessments.",
-          "User experience is optimized through responsive designs, interactive UI elements, fast loading times, and accessibility standards.",
-          "With analytics integration, businesses can track user behavior, measure performance, and continuously improve digital presence.",
-        ],
+      subImages: [
+        "/news/3d-1.jpg",
+        "/news/3d-2.jpg",
+      ],
 
-        quote:
-          "A strong digital presence begins with a powerful website and a seamless user experience.",
+      subContent: [
+        "Detailed modeling ensures accurate product representation.",
+        "Photorealistic lighting enhances realism and depth.",
+        "Architectural renders showcase spaces before construction.",
+        "CGI assets are reusable across campaigns.",
+        "Material accuracy increases authenticity.",
+        "3D visuals reduce production costs and time.",
+      ],
 
-        postTags: [
-          "Web Development",
-          "UI UX",
-          "Technology",
-          "Digital Transformation",
-          "Business Growth",
-        ],
-      },
+      quote:
+        "If you can imagine it in 3D, you can present it before it exists.",
+
+      postTags: [
+        "3D Modeling",
+        "Rendering",
+        "CGI",
+        "Architecture",
+        "Product Visualization",
+      ],
     },
-    {
-      slug: "retail-chain-innovation",
-      blogPost: {
-        title: "Retail Chain Innovation",
-        author: "Redith Retail",
-        date: "Nov 18, 2025",
-        image: "/images/news/retail-chain.jpg",
-        description:
-          "Redith Retail Chain is redefining shopping experiences through smart stores, e-commerce, and same-day delivery, enhancing convenience and customer satisfaction.",
+  },
 
-        checklist: [
-          "Hypermarkets & neighborhood stores",
-          "E-commerce & mobile shopping apps",
-          "Same-day delivery & quick logistics",
-          "Loyalty programs & customer engagement",
-          "Smart billing & inventory management",
-          "Data analytics for personalized offers",
-        ],
+  {
+    slug: "2d-3d-animation-for-brands",
+    blogPost: {
+      title: "2D & 3D Animation for Modern Brands",
+      author: "Light Studio 360",
+      date: "Nov 10, 2025",
+      image: "/news/animation.jpg",
+      description:
+        "2D and 3D animation help brands communicate ideas visually and creatively. From explainer videos to character animation, motion content boosts engagement and understanding.",
 
-        subImages: [
-          "/images/news/retail-1.jpg",
-          "/images/news/retail-2.jpg",
-          //   "/images/news/retail-3.jpg",
-        ],
-        subContent: [
-          "Redith Retail integrates technology into its retail formats to provide a seamless shopping experience.",
-          "E-commerce platforms are designed for easy navigation, personalized recommendations, and fast checkout.",
-          "Neighborhood stores leverage smart inventory management to maintain product availability at all times.",
-          "Same-day delivery services ensure customers receive their products quickly, enhancing satisfaction and loyalty.",
-          "Data-driven marketing enables personalized offers based on customer preferences and purchasing history.",
-          "Through these innovations, Redith Retail strengthens its position as a modern, customer-centric retail leader.",
-        ],
-        quote:
-          "Convenience, choice, and affordability define the future of retail.",
+      checklist: [
+        "Explainer Videos",
+        "Character Animation",
+        "Motion Graphics",
+        "Logo Animation",
+        "Storyboard & Concept Design",
+        "Social Media Animated Content",
+      ],
 
-        postTags: [
-          "Retail",
-          "E-commerce",
-          "Innovation",
-          "Customer Experience",
-          "Logistics",
-        ],
-      },
+      subImages: [
+        "/news/animation-1.jpg",
+        "/news/animation-2.jpg",
+      ],
+
+      subContent: [
+        "Animated explainers simplify complex services.",
+        "Character animation adds personality to brands.",
+        "Motion graphics enhance marketing visuals.",
+        "Logo animations improve brand recall.",
+        "Creative storytelling keeps viewers engaged longer.",
+        "Animation increases shareability across platforms.",
+      ],
+
+      quote:
+        "Animation brings static ideas to life with movement and emotion.",
+
+      postTags: [
+        "Animation",
+        "Motion Graphics",
+        "Explainer Video",
+        "Branding",
+        "Creative Media",
+      ],
     },
-    {
-      slug: "ai-in-digital-marketing",
-      blogPost: {
-        title: "AI in Digital Marketing",
-        author: "Redith Digital",
-        date: "Oct 15, 2025",
-        image: "/images/news/digital-marketing.jpg",
-        description:
-          "Redith Digital leverages AI-driven analytics to deliver data-focused marketing strategies, optimizing campaigns and ensuring measurable results.",
-        checklist: [
-          "AI-powered campaign optimization",
-          "SEO & social media analytics",
-          "Data-driven decision making",
-          "Predictive customer behavior modeling",
-          "Personalized content & messaging",
-          "Marketing automation for efficiency",
-        ],
-        subImages: [
-          "/images/news/marketing-1.jpg",
-          "/images/news/marketing-2.jpg",
-          //   "/images/news/marketing-3.jpg",
-        ],
-        subContent: [
-          "By analyzing vast amounts of consumer data, Redith Digital tailors marketing strategies for maximum impact.",
-          "AI tools help brands understand customer behavior, preferences, and engagement patterns for precise targeting.",
-          "Predictive analytics enable proactive decision-making, improving ROI and minimizing wasteful spending.",
-          "Marketing automation streamlines repetitive tasks, freeing teams to focus on creative strategy.",
-          "Personalized content ensures that each audience segment receives relevant messaging, improving conversion rates.",
-          "Continuous monitoring and analytics ensure campaigns evolve with changing market trends, maintaining competitive advantage.",
-        ],
-        quote: "Marketing works best when data leads creativity.",
-        postTags: [
-          "Digital Marketing",
-          "AI",
-          "Brand Growth",
-          "Analytics",
-          "Marketing Automation",
-        ],
-      },
+  },
+
+  {
+    slug: "modern-web-development-ui-ux",
+    blogPost: {
+      title: "Modern Web Development & UI/UX Solutions",
+      author: "Light Studio 360",
+      date: "Oct 30, 2025",
+      image: "/news/web-development.jpg",
+      description:
+        "Modern web development combined with intuitive UI/UX design ensures engaging and high-performing digital experiences that convert visitors into customers.",
+
+      checklist: [
+        "Responsive Website Development",
+        "Landing Page Design",
+        "Custom UI/UX Prototyping",
+        "Performance Optimization",
+        "SEO-Friendly Architecture",
+        "API & CMS Integration",
+      ],
+
+      subImages: [
+        "/news/web-1.jpg",
+        "/news/web-2.jpg",
+        "/news/web-3.jpg",
+      ],
+
+      subContent: [
+        "Responsive layouts ensure compatibility across all devices.",
+        "User-focused UI design improves interaction flow.",
+        "Optimized performance reduces bounce rates.",
+        "SEO-friendly structure increases visibility.",
+        "Custom solutions align with brand identity.",
+        "Analytics integration enables continuous improvement.",
+      ],
+
+      quote:
+        "A modern website is the digital foundation of every successful brand.",
+
+      postTags: [
+        "Web Development",
+        "UI UX",
+        "Responsive Design",
+        "Technology",
+        "Digital Presence",
+      ],
     },
-  ],
+  },
+]
+
 };
 
 export default newsDetailsData;

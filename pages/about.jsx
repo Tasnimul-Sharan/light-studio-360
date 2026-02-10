@@ -13,21 +13,14 @@ export default function AboutPageProfile() {
   const meta = {
     title:
       "About Light Studio360 | Award-Winning Creative Studio for Image, VFX, 3D & Video",
-
     description:
       "Founded in 2020, Light Studio360 is a global creative production studio specializing in professional image editing, VFX & compositing, 3D modeling, animation, and video production. Trusted by 1000+ brands for premium visuals, fast turnaround, and measurable results.",
-
     keywords:
       "About Light Studio360, creative studio Bangladesh, image editing company, VFX studio, 3D modeling services, animation studio, video production company, post production agency, professional retouching, global creative agency",
-
     author: "Light Studio360",
-
     siteName: "Light Studio360",
-
     url: "https://www.lightstudio360.com/about",
-
     image: "https://www.lightstudio360.com/og/lightstudio360-about-og.jpg",
-
     locale: "en_US",
   };
 
@@ -49,7 +42,7 @@ export default function AboutPageProfile() {
         <meta property="og:image" content={meta.image} />
         <meta
           property="og:image:alt"
-          content="About Redith Group – Corporate Profile"
+          content="About Light Studio360 – Award-Winning Creative Studio"
         />
         <meta property="og:locale" content={meta.locale} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -60,7 +53,7 @@ export default function AboutPageProfile() {
 
       <HeroSection
         hero={{
-          title: "About Redith Group",
+          title: "About Light Studio360",
           subtitle: "Building the Future Through Innovation & Trust",
           backgroundImage: "/hero-bg.jpg",
         }}

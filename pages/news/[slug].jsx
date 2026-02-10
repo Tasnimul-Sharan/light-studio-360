@@ -36,10 +36,10 @@ export default function NewsDetailsDataPage() {
   const siteUrl = "https://www.lightstudio360.com";
 
   const meta = {
-    title: `${news.blogPost.title} | Redith Group`, 
+    title: `${news.blogPost.title} | Light Studio360 – Award-Winning Creative Studio`, 
     description: news.blogPost.description,
     keywords: news.blogPost.postTags.join(", "),
-    author: news.blogPost.author || "Redith Group",
+    author: news.blogPost.author || "Light Studio360 – Award-Winning Creative Studio",
     url: `${siteUrl}/news/${news.slug}`,
     image: `${siteUrl}${news.blogPost.image}`,
     publishedTime: news.blogPost.date,
@@ -58,7 +58,7 @@ export default function NewsDetailsDataPage() {
         <meta property="og:type" content="article" />
         <meta property="og:url" content={meta.url} />
         <meta property="og:image" content={meta.image} />
-        <meta property="og:site_name" content="Redith Group" />
+        <meta property="og:site_name" content="Light Studio360 – Award-Winning Creative Studio" />
         <meta property="article:author" content={meta.author} />
         <meta property="article:published_time" content={meta.publishedTime} />
         <meta

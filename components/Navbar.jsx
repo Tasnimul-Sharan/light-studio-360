@@ -124,7 +124,7 @@ export default function Navbar() {
             About
           </Link>
 
-          <div className="border-t pt-4">
+          {/* <div className="border-t pt-4">
             <p className="font-bold mb-2">SBUs</p>
             <div className="flex flex-col gap-3 ml-2 text-sm">
               <Link href="/sbu/digital-it">Digital & IT</Link>
@@ -132,12 +132,12 @@ export default function Navbar() {
               <Link href="/sbu/agribusiness">Agribusiness</Link>
               <Link href="/sbu/retail">Retail Chain</Link>
             </div>
-          </div>
-
-          <Link href="/sustainability">CSR</Link>
-          <Link href="/leadership">Leadership</Link>
-          <Link href="/presence">Presence</Link>
-          <Link href="/why-redith">Why Redith</Link>
+          </div> */}
+          <Link href="/service">Service</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/packages">Packages</Link>
+          <Link href="/news">News</Link>
+          <Link href="/whyus">Why US</Link>
           <Link href="/contact">Contact</Link>
         </div>
       </div>

@@ -125,6 +125,20 @@ export default function ServicesSection() {
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {item.desc}
                   </p>
+                  <button
+                    className="
+    relative mt-6 px-5 py-2 rounded-lg border border-primary text-primary
+    overflow-hidden group
+  "
+                  >
+                    <span className="relative z-10">View Details</span>
+                    <span
+                      className="
+      absolute left-0 bottom-0 w-0 h-[2px] bg-primary
+      transition-all duration-300 group-hover:w-full
+    "
+                    />
+                  </button>
                 </div>
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 blur-xl bg-primary/10" />
               </Link>

@@ -7,10 +7,8 @@ import Contact from "@/components/Contact";
 import BrandSlider from "@/components/BrandSlider";
 import OnModelPreview from "@/components/OnModelPreview";
 import CompareSections from "@/components/CompareSections";
-// import projectSlideshow from "@/components/projectSlideshow";
 import TrustSection from "@/components/TrustSection";
 import WhyChooseUs from "@/components/WhyUs";
-import CallToActionSection from "@/components/StudioHero";
 import About from "@/components/About";
 import ProjectsSection from "@/components/ProjectsSection";
 import StudioHero from "@/components/StudioHero";
@@ -85,8 +83,6 @@ export default function Home() {
       <StudioIntro />
       <ProjectSlideshow />
       <TrustSection />
-      {/* <ClientTrustSection /> */}
-      {/* <Leadership /> */}
       <WhyChooseUs />
       <StudioHero creativeContent={creativeContent} />
       <News />

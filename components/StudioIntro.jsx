@@ -7,10 +7,10 @@ export default function StudioIntro() {
   return (
     <section className="bg-light py-24 px-6">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
-        {/* LEFT CONTENT */}
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
           viewport={{ once: true }}
         >
           <SectionBadge text="Our Studio" />
@@ -33,10 +33,10 @@ export default function StudioIntro() {
             client projects with precision and creativity.
           </p>
         </motion.div>
-
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative"
         >

@@ -16,54 +16,63 @@ const projectDetailsData = {
   },
   projectDetails: [
     {
-  slug: "cfrog-vfx-showreel",
-  title: "CFROG VFX Main Showreel",
-  category: "VFX",
-  videos: [
-    {
-      url: "https://www.youtube.com/embed/rUC51rO9ojg",
+      slug: "cfrog-vfx-showreel",
+      title: "CFROG VFX Main Showreel",
+      category: "VFX",
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/rUC51rO9ojg",
+        },
+      ],
     },
-  ],
-},
-{
-  slug: "rotoscoping-sample",
-  title: "Rotoscoping Sample",
-  category: "VFX",
-  videos: [
     {
-      url: "https://www.youtube.com/embed/8EP5pDqTk0Y",
+      slug: "rotoscoping-sample",
+      title: "Rotoscoping Sample",
+      category: "VFX",
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/8EP5pDqTk0Y",
+        },
+      ],
     },
-  ],
-},
-{
-  slug: "cinematic-edit-1",
-  title: "Cinematic Edit Sample 1",
-  category: "Video Editing",
-  videos: [
     {
-      url: "https://www.youtube.com/embed/FVR8zz8ci2k",
+      slug: "cinematic-edit-1",
+      title: "Cinematic Edit Sample 1",
+      category: "Video Editing",
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/FVR8zz8ci2k",
+        },
+      ],
     },
-  ],
-},
-{
-  slug: "cinematic-edit-2",
-  title: "Cinematic Edit Sample 2",
-  category: "Video Editing",
-  videos: [
     {
-      url: "https://www.youtube.com/embed/N_mKCJSfyww",
+      slug: "cinematic-edit-2",
+      title: "Cinematic Edit Sample 2",
+      category: "Video Editing",
+      videos: [
+        {
+          url: "https://www.youtube.com/embed/N_mKCJSfyww",
+        },
+      ],
     },
-  ],
-},
-
     {
       slug: "clipping-path",
       title: "Clipping Path",
       category: "Image Editing",
-      images: Array.from({ length: 12 }, (_, i) => ({
-        before: `/image-edating/clipping/${i + 1}--1.jpg`,
-        after: `/image-edating/clipping/${i + 1}--2.jpg`,
-      })),
+      images: [
+        {
+          before: "/image-edating/clipping/ShoesBefore1.png",
+          after: "/image-edating/clipping/ShoesAfter1.png",
+        },
+        {
+          before: "/image-edating/clipping/CycleBefore.jpg",
+          after: "/image-edating/clipping/CycleAfter.jpg",
+        },
+        // {
+        //   before: "/image-edating/clipping/3--1.jpg",
+        //   after: "/image-edating/clipping/3--2.jpg",
+        // },
+      ],
     },
     {
       slug: "ghost-mannequin",
@@ -102,12 +111,12 @@ const projectDetailsData = {
       })),
     },
     {
-      slug: "background-retouch",
-      title: "Background Retouch",
+      slug: "masking",
+      title: "Masking",
       category: "Image Editing",
       images: Array.from({ length: 7 }, (_, i) => ({
-        before: `/image-edating/background-retouch/${i + 1}--1.jpg`,
-        after: `/image-edating/background-retouch/${i + 1}--2.jpg`,
+        before: `/image-edating/masking/${i + 1}--1.jpg`,
+        after: `/image-edating/masking/${i + 1}--2.jpg`,
       })),
     },
   ],

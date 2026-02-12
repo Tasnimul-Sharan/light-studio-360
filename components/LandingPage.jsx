@@ -6,6 +6,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { FaTrophy } from "react-icons/fa";
+import Link from "next/link";
 
 export default function LandingPage() {
   const slides = [
@@ -84,18 +85,18 @@ export default function LandingPage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 mt-4">
-              <a
-                href="#services"
+              <Link
+                href="/services"
                 className="px-6 py-3 bg-gradient-to-r from-secondary to-primary text-white rounded-xl font-bold shadow-xl hover:scale-105 hover:shadow-2xl transition-transform duration-500"
               >
                 Explore Services
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                href="/contact"
                 className="px-6 py-3 border border-white text-white rounded-xl font-bold hover:bg-secondary hover:text-white hover:border-transparent hover:shadow-lg transition duration-500"
               >
                 Get Free Quote
-              </a>
+              </Link>
             </div>
           </div>
 

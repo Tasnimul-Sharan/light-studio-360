@@ -67,22 +67,22 @@ const projects = [
     title: "Retouching",
     category: "Image Editing",
     slug: "retouching",
-    before: "/image-edating/retouching/1--1.jpg",
-    after: "/image-edating/retouching/1--2.jpg",
+    before: "/image-edating/retouching/lipstick1.png",
+    after: "/image-edating/retouching/lipstick2.png",
   },
   {
     title: "Jewelry Retouching",
     category: "Image Editing",
     slug: "jewelry-retouching",
-    before: "/image-edating/jewelry-retouching/before.png",
-    after: "/image-edating/jewelry-retouching/after.png",
+    before: "/image-edating/jewelry-retouching/Before2.png",
+    after: "/image-edating/jewelry-retouching/After2.png",
   },
   {
     title: "Ghost Mannequin",
     category: "Image Editing",
     slug: "ghost-mannequin",
-    before: "/image-edating/ghost-mannequin/1--1.jpg",
-    after: "/image-edating/ghost-mannequin/1--2.jpg",
+    before: "/image-edating/ghost-mannequin/A-1.png",
+    after: "/image-edating/ghost-mannequin/A-2.png",
   },
   {
     title: "Shadow Retouch",
@@ -92,25 +92,25 @@ const projects = [
     after: "/image-edating/shadow-retouch/1--2.jpg",
   },
   {
-    title: "Background Retouch",
+    title: "Masking",
     category: "Image Editing",
-    slug: "background-retouch",
-    before: "/image-edating/background-retouch/1--1.jpg",
-    after: "/image-edating/background-retouch/1--2.jpg",
+    slug: "masking",
+    before: "/image-edating/masking/masking1.jpg",
+    after: "/image-edating/masking/masking2.jpg",
   },
   {
     title: "eCommerce Shoes Enhancement",
     category: "Image Editing",
     slug: "ecommerce-shoes-enhancement",
-    before: "/image-edating/shoes-enhancement/1--1.jpg",
-    after: "/image-edating/shoes-enhancement/1--2.jpg",
+    before: "/image-edating/shoes-enhancement/black-shoes1.jpg",
+    after: "/image-edating/shoes-enhancement/black-shoes2.jpg",
   },
   {
     title: "Glamour Model Retouching",
     category: "Image Editing",
     slug: "glamour-model-retouching",
-    before: "/image-edating/glamour-model/GlamBefore.jpg",
-    after: "/image-edating/glamour-model/Glamafter.jpg",
+    before: "/image-edating/glamour-model/aiimageeditorfeatt1.jpg",
+    after: "/image-edating/glamour-model/aiimageeditorfeatt2.jpg",
   },
 ];
 
@@ -139,7 +139,6 @@ const ProjectsSection = () => {
         </p>
       </div>
 
-      {/* Categories */}
       <div className="flex justify-center gap-4 flex-wrap mb-10">
         {categories.map((cat, index) => (
           <button
@@ -189,9 +188,9 @@ const ProjectsSection = () => {
         ) : null}
        </div> */}
 
-              {/* Media */}
               <div
-                className="rounded-xl overflow-hidden h-96 flex items-center justify-center 
+                className="rounded-xl overflow-hidden h-96
+ flex items-center justify-center 
                 bg-gradient-to-br from-gray-100 to-gray-200 relative"
               >
                 {/* VIDEO */}
@@ -210,6 +209,9 @@ const ProjectsSection = () => {
                     hover
                     leftImage={project.before}
                     rightImage={project.after}
+                    style={{ width: "100%", height: "100%" }}
+                    leftImageCss={{ objectFit: "contain" }}
+                    rightImageCss={{ objectFit: "contain" }}
                   />
                 ) : /* ANIMATION & 3D MODELING VISUAL */
                 project.comingSoon ? (

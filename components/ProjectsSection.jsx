@@ -85,11 +85,11 @@ const projects = [
     after: "/image-edating/ghost-mannequin/A-2.png",
   },
   {
-    title: "Shadow Retouch",
+    title: "Color Correction",
     category: "Image Editing",
-    slug: "shadow-retouch",
-    before: "/image-edating/shadow-retouch/1--1.jpg",
-    after: "/image-edating/shadow-retouch/1--2.jpg",
+    slug: "color-correction",
+    before: "/image-edating/color-correction/Chair1.png",
+    after: "/image-edating/color-correction/Chair2.png",
   },
   {
     title: "Masking",

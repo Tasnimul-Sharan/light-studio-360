@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+
 export const useLenis = () => {
   useEffect(() => {
     const lenis = new Lenis({
@@ -8,16 +9,21 @@ export const useLenis = () => {
       easing: (t) => 1 - Math.pow(1 - t, 3),
       direction: "vertical",
       gestureDirection: "vertical",
-      smoothTouch: true,
-      touchMultiplier: 2,
+      smoothTouch: false,
+      touchMultiplier: 1.2,
     });
-    function raf(time) {
+
+    let rafId;
+
+    const raf = (time) => {
       lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
+    };
+
+    rafId = requestAnimationFrame(raf);
 
     return () => {
+      cancelAnimationFrame(rafId);
       lenis.destroy();
     };
   }, []);

@@ -23,25 +23,33 @@ export const servicesDetailsData = {
     beforeAfter: [
       {
         id: 1,
-        title: "Portrait Retouching",
-        before: "/works/image-editing/portrait-before.jpg",
-        after: "/works/image-editing/portrait-after.jpg",
+        title: "Masking & Retouching",
+        before: "/services/masking1.jpg",
+        after: "/services/masking2.jpg",
         description:
-          "Skin retouching, color correction, and lighting enhancement while maintaining natural texture.",
+          "Precise masking and retouching to enhance details and create flawless images.",
       },
       {
         id: 2,
         title: "Product Background Removal",
-        before: "/works/image-editing/product-before.jpg",
-        after: "/works/image-editing/product-after.jpg",
+        before: "/services/product-before.jpg",
+        after: "/services/product-after.jpg",
         description:
           "Clean background removal with sharp edges for eCommerce-ready visuals.",
       },
       {
         id: 3,
+        title: "Juewellery Retouching",
+        before: "/services/Ring1.png",
+        after: "/services/Ring2.png",
+        description:
+          "Precise retouching of jewellery items to enhance shine, texture, and overall appearance.",
+      },
+      {
+        id: 4,
         title: "Color Correction & Enhancement",
-        before: "/works/image-editing/color-before.jpg",
-        after: "/works/image-editing/color-after.jpg",
+        before: "/services/image-editing/color-before.jpg",
+        after: "/services/image-editing/color-after.jpg",
         description:
           "Balanced colors, improved contrast, and professional tone correction.",
       },

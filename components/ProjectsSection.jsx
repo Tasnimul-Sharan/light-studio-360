@@ -112,6 +112,13 @@ const projects = [
     before: "/image-edating/glamour-model/aiimageeditorfeatt1.jpg",
     after: "/image-edating/glamour-model/aiimageeditorfeatt2.jpg",
   },
+  {
+    title: "Real Estate",
+    category: "Image Editing",
+    slug: "real-estate",
+    before: "/image-edating/real-estate/Realestatebefore.png",
+    after: "/image-edating/real-estate/Realestateafter.png",
+  },
 ];
 
 const ProjectsSection = () => {

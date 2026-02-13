@@ -16,7 +16,6 @@ export default function OnModelPreview() {
     <section className="w-full py-12 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          {/* LEFT – Thumbnails */}
           <div className="md:col-span-2 flex md:flex-col gap-4">
             {images.map((img) => (
               <button
@@ -39,8 +38,6 @@ export default function OnModelPreview() {
               </button>
             ))}
           </div>
-
-          {/* CENTER – Main Image */}
           <div className="md:col-span-6">
             <div className="bg-gray-100 rounded-xl overflow-hidden border border-gray-200">
               <Image
@@ -53,8 +50,6 @@ export default function OnModelPreview() {
               />
             </div>
           </div>
-
-          {/* RIGHT – Description */}
           <div className="md:col-span-4">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
               (On) <span className="text-secondary">Model Imagery</span>

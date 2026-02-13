@@ -31,11 +31,11 @@ export const servicesDetailsData = {
       },
       {
         id: 2,
-        title: "Product Background Removal",
-        before: "/services/product-before.jpg",
-        after: "/services/product-after.jpg",
+        title: "Ghost Mannequin",
+        before: "/services/cap1.png",
+        after: "/services/cap2.png",
         description:
-          "Clean background removal with sharp edges for eCommerce-ready visuals.",
+          "Professional ghost mannequin technique for seamless product presentation.",
       },
       {
         id: 3,
@@ -47,9 +47,17 @@ export const servicesDetailsData = {
       },
       {
         id: 4,
-        title: "Color Correction & Enhancement",
-        before: "/services/image-editing/color-before.jpg",
-        after: "/services/image-editing/color-after.jpg",
+        title: "Sunglasses Enhancement",
+        before: "/services/sunglass1.png",
+        after: "/services/sunglass2.png",
+        description:
+          "Balanced colors, improved contrast, and professional tone correction.",
+      },
+      {
+        id: 4,
+        title: "Shoes Enhancement",
+        before: "/services/shoes1.png",
+        after: "/services/shoes2.png",
         description:
           "Balanced colors, improved contrast, and professional tone correction.",
       },

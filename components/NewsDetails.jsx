@@ -38,8 +38,6 @@ export default function NewsDetails({ blogsData, socialIcons }) {
           </div>
         ))}
       </div>
-
-      {/* Sub Images */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {blogPost.subImages.map((img, i) => (
           <Image
@@ -52,8 +50,6 @@ export default function NewsDetails({ blogsData, socialIcons }) {
           />
         ))}
       </div>
-
-      {/* Sub Content */}
       {blogPost.subContent && (
         <div className="space-y-4 text-gray-700 leading-relaxed text-base">
           {Array.isArray(blogPost.subContent) ? (
@@ -90,46 +86,11 @@ export default function NewsDetails({ blogsData, socialIcons }) {
             </p>
           ))}
         </div>
-
-        {/* <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-base text-textPrimary">Share Now</span>
-          <div className="flex items-center gap-2">
-            {blogsData.socialIcons.map(({ icon: Icon, link }, index) => (
-              <a
-                key={index}
-                href={link}
-                rel="noopener noreferrer"
-                aria-label="Social Link"
-                className="w-8 h-8 flex items-center justify-center border border-textSecondary text-textSecondary p-2 rounded-full hover:bg-primaryStart hover:text-textWhite hover:border-transparent cursor-pointer transition duration-500"
-              >
-                <Icon className="w-4 h-4" />
-              </a>
-            ))}
-          </div>
-        </div> */}
-
-        {/* <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-base text-textPrimary">Share Now:</span>
-          <div className="flex items-center gap-2">
-            {socialIcons.map(({ icon: Icon, link }, index) => (
-              <a
-                key={index}
-                href={link(currentUrl, blogPost.title)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 flex items-center justify-center border border-textSecondary text-textSecondary p-2 rounded-full hover:bg-primary hover:text-white transition"
-              >
-                <Icon className="w-4 h-4" />
-              </a>
-            ))}
-          </div>
-        </div> */}
-
         <div className="flex items-center gap-2 flex-wrap">
           <span className="text-base text-textPrimary">Share Now</span>
           <div className="flex items-center gap-2">
             {socialIcons?.map(({ icon: Icon, link }, index) => {
-              const currentUrl = `https://www.redithgroup.com/news/${blogsData.slug}`;
+              const currentUrl = `https://www.lightstudio360.com/news/${blogsData.slug}`;
               return (
                 <a
                   key={index}

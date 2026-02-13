@@ -1,6 +1,5 @@
 import { comparisonRows } from "@/data/packageComparisonData";
 import { packages } from "@/data/packagesData";
-
 export default function PackageComparison() {
   return (
     <section className="mb-24">
@@ -10,7 +9,6 @@ export default function PackageComparison() {
       >
         Package <span className="text-secondary">Comparison</span>
       </h2>
-
       <div className="overflow-x-auto max-w-6xl mx-auto rounded-2xl border border-secondary/30">
         <table className="w-full border-collapse bg-white">
           <thead>
@@ -26,7 +24,6 @@ export default function PackageComparison() {
               ))}
             </tr>
           </thead>
-
           <tbody>
             {comparisonRows.map((row, i) => (
               <tr

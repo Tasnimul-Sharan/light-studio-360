@@ -16,14 +16,11 @@ export default function PackageCard({ data, isPremium }) {
           : "1px solid rgba(30,42,68,0.15)",
       }}
     >
-      {/* Premium badge */}
       {isPremium && (
         <span className="absolute top-3 right-5 bg-secondary text-primary text-xs font-semibold px-4 py-1 rounded-full tracking-wider">
           MOST POPULAR
         </span>
       )}
-
-      {/* Title */}
       <h3
         className={`text-3xl font-bold mb-2 ${
           isPremium ? "text-secondary" : "text-primary"
@@ -32,7 +29,6 @@ export default function PackageCard({ data, isPremium }) {
       >
         {data.title}
       </h3>
-
       <p
         className={`
     text-xs font-semibold mb-4 tracking-widest uppercase
@@ -42,8 +38,6 @@ export default function PackageCard({ data, isPremium }) {
       >
         {data.timeLabel}
       </p>
-
-      {/* Description */}
       <p
         className={`text-sm leading-relaxed mb-8 ${
           isPremium ? "text-white/70" : "text-dark/70"
@@ -51,8 +45,6 @@ export default function PackageCard({ data, isPremium }) {
       >
         {data.shortDesc}
       </p>
-
-      {/* Features */}
       <ul className="space-y-4 mb-10">
         {data.features.map((f, i) => (
           <li key={i} className="flex gap-3 items-start">
@@ -73,8 +65,6 @@ export default function PackageCard({ data, isPremium }) {
           </li>
         ))}
       </ul>
-
-      {/* CTA */}
       <a
         href="#contact"
         className={`

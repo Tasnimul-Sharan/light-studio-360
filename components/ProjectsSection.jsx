@@ -87,8 +87,8 @@ const projects = [
     title: "Jewelry Retouching",
     category: "Image Editing",
     slug: "jewelry-retouching",
-    before: "/image-edating/jewelry-retouching/Before2.png",
-    after: "/image-edating/jewelry-retouching/After2.png",
+    before: "/image-edating/jewelry-retouching/Before2.jpg",
+    after: "/image-edating/jewelry-retouching/After2.jpg",
   },
   {
     title: "Ghost Mannequin",

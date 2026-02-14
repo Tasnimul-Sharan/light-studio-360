@@ -4,7 +4,6 @@ import PackageCard from "./PackageCard";
 export default function PackagesSection() {
   return (
     <section className="relative bg-light py-24 px-8 md:px-14 mb-24 overflow-hidden">
-      {/* ambient glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/10" />
 
       <div className="relative z-10 text-center">

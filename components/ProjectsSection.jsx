@@ -16,10 +16,10 @@ const categories = [
 const projects = [
   // ===== VFX =====
   {
-    title: "CFROG Ultimate VFX Reel 2026",
+    title: "Ultimate VFX Reel 2026",
     category: "VFX",
-    slug: "cfrog-ultimate-vfx-reel-2026",
-    video: "https://www.youtube.com/embed/rUC51rO9ojg?autoplay=1&mute=1",
+    slug: "ultimate-vfx-reel-2026",
+    video: "https://www.youtube.com/embed/Dkl6q5pfRWI?autoplay=1&mute=1",
   },
   {
     title: "Advanced Rotoscoping Demo",
@@ -43,19 +43,32 @@ const projects = [
 
   // ===== 3D MODELING =====
   {
-    title: "3D Product Visualization",
+    title: "3D Product Visualization – Watch Render",
     category: "3D Modeling",
     slug: "3d-product-visualization",
-    comingSoon: true,
+    video: "https://www.youtube.com/embed/t9Ibk0I8Jyk?autoplay=1&mute=1",
+  },
+  {
+    title: "3D Product Animation Video",
+    category: "3D Modeling",
+    slug: "3d-product-visualization",
+    video: "https://www.youtube.com/embed/WoaAMzG31P4?autoplay=1&mute=1",
   },
 
   // ===== ANIMATION =====
   {
-    title: "2D & 3D Animation Showcase",
+    title: "2D Character Animation Reel",
     category: "Animation",
-    slug: "animation-showcase",
-    comingSoon: true,
+    slug: "2d-character-animation-reel",
+    video: "https://www.youtube.com/embed/2lvRFj-RSaU?autoplay=1&mute=1",
   },
+  {
+    title: "3D Logo Animation",
+    category: "Animation",
+    slug: "3d-logo-animation",
+    video: "https://www.youtube.com/embed/1La4QzGeaaQ?autoplay=1&mute=1",
+  },
+
   {
     title: "Clipping Path",
     category: "Image Editing",
@@ -175,26 +188,6 @@ const ProjectsSection = () => {
                  transition-all transform-gpu duration-500 
                  h-full cursor-pointer"
             >
-              {/* Media */}
-              {/* <div className="rounded-xl overflow-hidden">
-        {project.video ? (
-          <iframe
-            className="w-full h-96 aspect-video pointer-events-none"
-            src={project.video}
-            title={project.title}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            loading="lazy"
-          />
-        ) : project.before && project.after ? (
-          <ReactCompareImage
-            hover
-            leftImage={project.before}
-            rightImage={project.after}
-          />
-        ) : null}
-       </div> */}
-
               <div
                 className="rounded-xl overflow-hidden h-96
  flex items-center justify-center 
@@ -266,16 +259,6 @@ const ProjectsSection = () => {
           </Link>
         ))}
       </div>
-
-      {/* <div className="text-center mt-12">
-        <Link
-          href="/project"
-          className="px-8 py-3 bg-primary text-white rounded-full font-medium shadow-lg 
-                     transition-all transform duration-500 hover:shadow-2xl hover:scale-105 hover:bg-Secound_primary"
-        >
-          See All
-        </Link>
-      </div> */}
     </section>
   );
 };

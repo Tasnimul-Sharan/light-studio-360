@@ -10,7 +10,6 @@ export default function Gallery() {
   const images = [
     "/Slideshow/1.png",
     "/Slideshow/2.png",
-    "/Slideshow/4.png",
     "/Slideshow/M1.png",
     "/Slideshow/M2.png",
     "/Slideshow/Masking.png",
@@ -23,6 +22,12 @@ export default function Gallery() {
     "/Slideshow/Necklace.png",
     "/Slideshow/Skirt1.png",
     "/Slideshow/Skirt2.png",
+    "/Slideshow/G (1).png",
+    "/Slideshow/G (2).png",
+    "/Slideshow/P (1).png",
+    "/Slideshow/P (2).png",
+    "/Slideshow/P (3).png",
+    "/Slideshow/Product (1).png",
   ];
 
   const slides = images.map((src) => ({ src }));

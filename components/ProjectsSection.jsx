@@ -80,8 +80,8 @@ const projects = [
     title: "Retouching",
     category: "Image Editing",
     slug: "retouching",
-    before: "/image-edating/retouching/lipstick1.png",
-    after: "/image-edating/retouching/lipstick2.png",
+    before: "/image-edating/retouching/BananaBefore.png",
+    after: "/image-edating/retouching/BananaAfter.png",
   },
   {
     title: "Jewelry Retouching",
@@ -114,14 +114,14 @@ const projects = [
   {
     title: "eCommerce Shoes Enhancement",
     category: "Image Editing",
-    slug: "ecommerce-shoes-enhancement",
+    slug: "shoes-enhancement",
     before: "/image-edating/shoes-enhancement/black-shoes1.jpg",
     after: "/image-edating/shoes-enhancement/black-shoes2.jpg",
   },
   {
     title: "Glamour Model Retouching",
     category: "Image Editing",
-    slug: "glamour-model-retouching",
+    slug: "glamour-model",
     before: "/image-edating/glamour-model/aiimageeditorfeatt1.jpg",
     after: "/image-edating/glamour-model/aiimageeditorfeatt2.jpg",
   },
@@ -131,6 +131,13 @@ const projects = [
     slug: "real-estate",
     before: "/image-edating/real-estate/Realestatebefore.png",
     after: "/image-edating/real-estate/Realestateafter.png",
+  },
+  {
+    title: "Background Removal",
+    category: "Image Editing",
+    slug: "background-removal",
+    before: "/image-edating/background-removal/shirt1.jpg",
+    after: "/image-edating/background-removal/shirt2.jpg",
   },
 ];
 

@@ -6,23 +6,29 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 import SectionBadge from "./SectionBadge";
 
 export default function ProjectSlideshow() {
-    const images = [
-      "/Slideshow/1.png",
-      "/Slideshow/2.png",
-      "/Slideshow/4.png",
-      "/Slideshow/M1.png",
-      "/Slideshow/M2.png",
-      "/Slideshow/M3.png",
-      "/Slideshow/Masking.png",
-      "/Slideshow/s1.png",
-      "/Slideshow/s2.png",
-      "/Slideshow/s5.png",
-      "/Slideshow/Bracelet.png",
-      "/Slideshow/Chain.png",
-      "/Slideshow/Earring.png",
-      "/Slideshow/Necklace.png",
-      "/Slideshow/Skirt (3).png",
-    ];
+  const images = [
+    "/Slideshow/1.png",
+    "/Slideshow/2.png",
+    "/Slideshow/M1.png",
+    "/Slideshow/M2.png",
+    "/Slideshow/M3.png",
+    "/Slideshow/Masking.png",
+    "/Slideshow/s1.png",
+    "/Slideshow/s2.png",
+    "/Slideshow/s5.png",
+    "/Slideshow/Bracelet.png",
+    "/Slideshow/Chain.png",
+    "/Slideshow/Earring.png",
+    "/Slideshow/Necklace.png",
+    "/Slideshow/Skirt1.png",
+    "/Slideshow/Skirt2.png",
+    "/Slideshow/G (1).png",
+    "/Slideshow/G (2).png",
+    "/Slideshow/P (1).png",
+    "/Slideshow/P (2).png",
+    "/Slideshow/P (3).png",
+    "/Slideshow/Product (1).png",
+  ];
 
   const [current, setCurrent] = useState(0);
   const total = images.length;

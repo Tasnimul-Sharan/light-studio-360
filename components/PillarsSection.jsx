@@ -1,33 +1,3 @@
-// import { pillars } from "@/data/data";
-
-// export default function PillarsSection() {
-//   return (
-//     <section className="relative z-10 py-20">
-//       <h3 className="text-4xl md:text-5xl font-bold text-center mb-14 text-primary">
-//         Our <span className="text-secondary">Three Pillars</span> of Success
-//       </h3>
-
-//       <div className="grid gap-10 md:grid-cols-3 max-w-7xl mx-auto px-6 md:px-0">
-//         {pillars.map((p, i) => (
-//           <div
-//             key={i}
-//             className="relative bg-white rounded-3xl p-10 shadow-xl border border-secondary/20
-//                        transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
-//           >
-//             {/* Accent line */}
-//             <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-secondary to-accent rounded-t-3xl" />
-
-//             <h4 className="text-2xl font-semibold text-primary mb-4">
-//               {p.title}
-//             </h4>
-//             <p className="text-dark/70 leading-relaxed">{p.desc}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
 import { pillars } from "@/data/data";
 import { HiSparkles } from "react-icons/hi2";
 
@@ -46,12 +16,10 @@ export default function PillarsSection() {
                        bg-gradient-to-br from-secondary via-accent to-primary
                        transition-all duration-500 hover:-translate-y-1"
           >
-            {/* Inner Card */}
             <div
               className="relative h-full rounded-3xl bg-white p-10
                          shadow-lg group-hover:shadow-2xl transition-all duration-500"
             >
-              {/* Icon attached to border */}
               <div
                 className="absolute -top-6 left-10
                            w-12 h-12 rounded-xl flex items-center justify-center
@@ -67,7 +35,6 @@ export default function PillarsSection() {
 
               <p className="text-dark/70 leading-relaxed">{p.desc}</p>
 
-              {/* Subtle hover glow */}
               <div
                 className="pointer-events-none absolute inset-0 rounded-3xl
                            opacity-0 group-hover:opacity-100 transition duration-500

@@ -14,7 +14,6 @@ const categories = [
 ];
 
 const projects = [
-  // ===== VFX =====
   {
     title: "Ultimate VFX Reel 2026",
     category: "VFX",
@@ -27,7 +26,6 @@ const projects = [
     slug: "advanced-rotoscoping-demo",
     video: "https://www.youtube.com/embed/QF4N98KRC1A?autoplay=1&mute=1",
   },
-  // ===== VIDEO EDITING =====
   {
     title: "Cinematic Color Grading Showcase",
     category: "Video Editing",
@@ -40,8 +38,6 @@ const projects = [
     slug: "professional-trailer-edit",
     video: "https://www.youtube.com/embed/SjkcA2ZCmDU?autoplay=1&mute=1",
   },
-
-  // ===== 3D MODELING =====
   {
     title: "3D Product Visualization – Watch Render",
     category: "3D Modeling",
@@ -54,8 +50,6 @@ const projects = [
     slug: "3d-product-visualization",
     video: "https://www.youtube.com/embed/WoaAMzG31P4?autoplay=1&mute=1",
   },
-
-  // ===== ANIMATION =====
   {
     title: "2D Character Animation Reel",
     category: "Animation",
@@ -200,7 +194,6 @@ const ProjectsSection = () => {
  flex items-center justify-center 
                 bg-gradient-to-br from-gray-100 to-gray-200 relative"
               >
-                {/* VIDEO */}
                 {project.video ? (
                   <iframe
                     className="w-full h-full aspect-video pointer-events-none"
@@ -210,7 +203,7 @@ const ProjectsSection = () => {
                     allow="autoplay; encrypted-media; picture-in-picture"
                     loading="lazy"
                   />
-                ) : /* IMAGE EDITING */
+                ) :
                 project.before && project.after ? (
                   <ReactCompareImage
                     hover
@@ -220,7 +213,7 @@ const ProjectsSection = () => {
                     leftImageCss={{ objectFit: "contain" }}
                     rightImageCss={{ objectFit: "contain" }}
                   />
-                ) : /* ANIMATION & 3D MODELING VISUAL */
+                ) :
                 project.comingSoon ? (
                   <div className="text-center px-6">
                     <div className="text-5xl mb-4 animate-pulse">🎬</div>
@@ -240,8 +233,6 @@ const ProjectsSection = () => {
                   </div>
                 ) : null}
               </div>
-
-              {/* Content */}
               <div className="mt-4">
                 <span className="bg-primary text-white px-4 py-2 rounded-full text-sm inline-block">
                   {project.category}

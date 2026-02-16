@@ -50,7 +50,6 @@ export default function Gallery() {
           </p>
         </div>
 
-        {/* GRID */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
           {images.map((img, i) => (
             <button
@@ -70,7 +69,6 @@ export default function Gallery() {
                 />
               </div>
 
-              {/* Hover Overlay */}
               <div
                 className="absolute inset-0 bg-black/40 opacity-0
                 group-hover:opacity-100 transition duration-300
@@ -82,7 +80,6 @@ export default function Gallery() {
           ))}
         </div>
 
-        {/* LIGHTBOX */}
         <Lightbox
           open={open}
           close={() => setOpen(false)}

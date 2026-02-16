@@ -29,8 +29,6 @@ export default function WorldClocks() {
 
     return () => clearInterval(interval);
   }, []);
-
-  // 🚫 Prevent hydration mismatch
   if (!mounted) return null;
 
   return (
@@ -42,35 +40,6 @@ export default function WorldClocks() {
     </section>
   );
 }
-
-// function Clock({ hour, minute, second, digital, city }) {
-//   const hourDeg = (hour % 12) * 30 + minute * 0.5;
-//   const minuteDeg = minute * 6;
-//   const secondDeg = second * 6;
-
-//   return (
-//     <div className="clock-box">
-//       <div className="clock">
-//         <div
-//           className="hand hour"
-//           style={{ transform: `rotate(${hourDeg - 90}deg)` }}
-//         />
-//         <div
-//           className="hand minute"
-//           style={{ transform: `rotate(${minuteDeg - 90}deg)` }}
-//         />
-//         <div
-//           className="hand second"
-//           style={{ transform: `rotate(${secondDeg - 90}deg)` }}
-//         />
-//         <div className="center-dot" />
-//       </div>
-
-//       <div className="digital">{digital}</div>
-//       <div className="city">{city}</div>
-//     </div>
-//   );
-// }
 
 function Clock({ hour, minute, second, digital, city }) {
   const hourDeg = (hour % 12) * 30 + minute * 0.5;
@@ -84,7 +53,6 @@ function Clock({ hour, minute, second, digital, city }) {
   return (
     <div className="clock-box">
       <div className="clock">
-        {/* Hour marks */}
         {[...Array(12)].map((_, i) => (
           <div
             key={i}
@@ -92,10 +60,8 @@ function Clock({ hour, minute, second, digital, city }) {
             style={{ transform: `rotate(${i * 30}deg)` }}
           />
         ))}
-
-        {/* Minute marks */}
         {[...Array(60)].map((_, i) => {
-          if (i % 5 === 0) return null; // hour position skip
+          if (i % 5 === 0) return null;
 
           return (
             <div
@@ -105,8 +71,6 @@ function Clock({ hour, minute, second, digital, city }) {
             />
           );
         })}
-
-        {/* Numbers */}
         {numbers.map((num) => {
           const angle = (num * 30 - 90) * (Math.PI / 180);
           const radius = 70;
@@ -126,8 +90,6 @@ function Clock({ hour, minute, second, digital, city }) {
             </div>
           );
         })}
-
-        {/* Hands */}
         <div
           className="hand hour"
           style={{ transform: `rotate(${hourDeg - 90}deg)` }}
@@ -140,10 +102,8 @@ function Clock({ hour, minute, second, digital, city }) {
           className="hand second"
           style={{ transform: `rotate(${secondDeg - 90}deg)` }}
         />
-
         <div className="center-dot" />
       </div>
-
       <div className="digital">{digital}</div>
       <div className="city">{city}</div>
     </div>

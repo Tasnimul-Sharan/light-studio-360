@@ -2,7 +2,6 @@ export default function CompanyStory() {
   return (
     <section className="bg-accent/10 text-dark">
       <div className="grid md:grid-cols-2 gap-10 items-center max-w-7xl mx-auto px-6 md:px-0 py-16 md:py-20">
-        {/* Text */}
         <div>
           <h2 className="text-4xl md:text-5xl font-black text-primary mb-6 font-heading">
             Our Story
@@ -27,7 +26,6 @@ export default function CompanyStory() {
           </p>
         </div>
 
-        {/* Stats Card */}
         <div className="relative rounded-3xl p-10 bg-gradient-to-br from-primary to-dark shadow-2xl text-white">
           <div className="text-6xl font-black text-secondary mb-3">5+</div>
           <p className="text-2xl font-bold mb-8">Years of Excellence</p>

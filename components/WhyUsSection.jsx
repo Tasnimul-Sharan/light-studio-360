@@ -4,21 +4,18 @@ import {
   HiUserGroup,
   HiCurrencyDollar,
 } from "react-icons/hi2";
-
 const reasons = [
   { title: "Proven Track Record", icon: <HiShieldCheck /> },
   { title: "Full-Service Solutions", icon: <HiSquares2X2 /> },
   { title: "Client-Centric Approach", icon: <HiUserGroup /> },
   { title: "Competitive Pricing", icon: <HiCurrencyDollar /> },
 ];
-
 export default function WhyUsSection() {
   return (
     <section className=" py-20 bg-primary/10 text-dark">
       <h2 className="text-4xl md:text-5xl font-black text-primary text-center mb-14 font-heading">
         Why Work With Light Studio360?
       </h2>
-
       <div className="grid gap-8 md:grid-cols-2 max-w-6xl mx-auto">
         {reasons.map((r, i) => (
           <div

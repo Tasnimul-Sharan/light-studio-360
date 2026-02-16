@@ -6,7 +6,6 @@ import News from "@/components/News";
 import Contact from "@/components/Contact";
 import BrandSlider from "@/components/BrandSlider";
 import OnModelPreview from "@/components/OnModelPreview";
-import CompareSections from "@/components/CompareSections";
 import TrustSection from "@/components/TrustSection";
 import WhyChooseUs from "@/components/WhyUs";
 import About from "@/components/About";
@@ -79,7 +78,6 @@ export default function Home() {
       <StatsSection />
       <ServicesSection />
       <ProjectsSection />
-      {/* <CompareSections /> */}
       <StudioIntro />
       <ProjectSlideshow />
       <TrustSection />

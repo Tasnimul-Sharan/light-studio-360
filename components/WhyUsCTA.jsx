@@ -2,7 +2,6 @@ export default function WhyUsCTA() {
   return (
     <section className="relative z-10 my-12 md:my-20">
       <div className="relative overflow-hidden max-w-6xl mx-auto rounded-3xl bg-primary px-10 py-16 text-center shadow-2xl border border-white/10">
-        {/* Subtle glow layer */}
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-accent/10 opacity-70" />
 
         <div className="relative z-10">

@@ -28,7 +28,6 @@ export default function TrustSection() {
   return (
     <section className="w-full py-12 md:py-16 bg-accent/10">
       <div className="max-w-6xl mx-auto px-6">
-        {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-dark mb-4">
             Why Businesses Trust{" "}
@@ -41,8 +40,6 @@ export default function TrustSection() {
             results
           </p>
         </div>
-
-        {/* Cards */}
         <div className="grid gap-8 md:grid-cols-3">
           {values.map((item, i) => {
             const Icon = item.icon;

@@ -56,15 +56,12 @@ export default function LandingPage() {
 
       <div className="relative z-10 container mx-auto px-6 md:px-12 py-16 md:py-28">
         <div className="grid md:grid-cols-2 gap-12 items-center justify-center">
-          {/* LEFT TEXT CONTENT */}
           <div className="space-y-6 md:space-y-8">
-            {/* Label */}
             <div className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-primary via-primary to-secondary text-white rounded-full text-sm font-semibold shadow-xl">
               <FaTrophy className="text-secondary text-base" />
               Award-Winning Studio
             </div>
 
-            {/* Headline */}
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
               Transform Your Vision Into{" "}
               <span className="block bg-gradient-to-r from-accent to-primary text-transparent bg-clip-text">
@@ -72,10 +69,8 @@ export default function LandingPage() {
               </span>
             </h1>
 
-            {/* Divider */}
             <div className="w-28 h-1 rounded-full bg-gradient-to-r from-primary via-primary to-secondary" />
 
-            {/* Description */}
             <p className="text-blue-100/90 text-lg md:text-xl leading-relaxed">
               We deliver world-class creative solutions trusted by 1,000+ global
               brands. From high-end image editing and cinematic VFX to 3D
@@ -83,7 +78,6 @@ export default function LandingPage() {
               into visual masterpieces that captivate and convert.
             </p>
 
-            {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 mt-4">
               <Link
                 href="/services"
@@ -100,7 +94,6 @@ export default function LandingPage() {
             </div>
           </div>
 
-          {/* RIGHT IMAGE SLIDER */}
           <div className="rounded-md overflow-hidden border border-white/20 backdrop-blur-sm">
             <Swiper
               modules={[Pagination, Autoplay]}
@@ -112,7 +105,6 @@ export default function LandingPage() {
               {slides.map((item, i) => (
                 <SwiperSlide key={i}>
                   <div className="grid grid-cols-2 gap-0">
-                    {/* Before */}
                     <div className="relative group overflow-hidden">
                       <Image
                         src={item.before}

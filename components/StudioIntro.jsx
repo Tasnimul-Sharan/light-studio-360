@@ -56,8 +56,6 @@ export default function StudioIntro() {
     "
             >
               <span className="relative z-10">Start a Project</span>
-
-              {/* Hover Shine Line */}
               <span
                 className="
         absolute left-[-100%] top-0 h-full w-full
@@ -81,7 +79,6 @@ export default function StudioIntro() {
             alt="Light Studio360 Workspace"
             className="rounded-xl shadow-2xl w-full object-cover"
           />
-
           <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary/20 rounded-xl -z-10" />
         </motion.div>
       </div>

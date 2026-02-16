@@ -12,9 +12,7 @@ import {
 export default function Footer() {
   return (
     <footer className="relative bg-dark text-gray-300">
-      {/* Top */}
       <div className="custom-container mx-auto py-20 grid gap-14 md:grid-cols-5">
-        {/* Brand */}
         <div className="md:col-span-2 space-y-6">
           <Link href="#home" className="inline-block">
             <Image
@@ -39,8 +37,6 @@ export default function Footer() {
             Available worldwide • Fast turnaround
           </div>
         </div>
-
-        {/* Services */}
         <FooterColumn title="Services">
           <FooterLink href="#services-image">Image Editing</FooterLink>
           <FooterLink href="#services-clipping">Clipping Path</FooterLink>
@@ -51,8 +47,6 @@ export default function Footer() {
           <FooterLink href="#services-3d">3D & CGI</FooterLink>
           <FooterLink href="#services-videos">Video Production</FooterLink>
         </FooterColumn>
-
-        {/* Company */}
         <FooterColumn title="Company">
           <FooterLink href="#home">Home</FooterLink>
           <FooterLink href="#about">About</FooterLink>
@@ -62,7 +56,6 @@ export default function Footer() {
           <FooterLink href="#contact">Contact</FooterLink>
         </FooterColumn>
 
-        {/* Contact + Social */}
         <div className="space-y-6">
           <h4 className="text-white font-semibold tracking-wide">Contact</h4>
 
@@ -86,7 +79,6 @@ export default function Footer() {
             <li className="text-gray-500">24/6 response for global clients</li>
           </ul>
 
-          {/* Social */}
           <div className="flex items-center gap-4 pt-2">
             <SocialIcon href="https://www.facebook.com/LightStudio360">
               <FaFacebookF />
@@ -104,7 +96,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom */}
       <div className="custom-container mx-auto border-t border-white/10">
         <div className=" py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <span>© 2025 LightStudio360. All rights reserved.</span>

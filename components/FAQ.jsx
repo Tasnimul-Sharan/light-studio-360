@@ -1,149 +1,3 @@
-// "use client";
-
-// import { useRef, useState } from "react";
-// import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-// import { motion } from "framer-motion";
-// import gsap from "gsap";
-
-// export default function FAQ({ faqData }) {
-//   const [activeIndex, setActiveIndex] = useState(null);
-//   const answerRefs = useRef([]);
-
-//   const toggleFAQ = (index) => {
-//     if (activeIndex === index) {
-//       collapse(index);
-//       setActiveIndex(null);
-//     } else {
-//       if (activeIndex !== null) {
-//         collapse(activeIndex, () => {
-//           expand(index);
-//           setActiveIndex(index);
-//         });
-//       } else {
-//         expand(index);
-//         setActiveIndex(index);
-//       }
-//     }
-//   };
-
-//   const expand = (index) => {
-//     const el = answerRefs.current[index];
-//     if (!el) return;
-//     gsap.killTweensOf(el);
-//     el.style.display = "block";
-//     gsap.fromTo(
-//       el,
-//       { height: 0, opacity: 0 },
-//       {
-//         height: el.scrollHeight,
-//         opacity: 1,
-//         duration: 0.4,
-//         ease: "power3.out",
-//         onComplete: () => (el.style.height = "auto"),
-//       },
-//     );
-//   };
-
-//   const collapse = (index, cb) => {
-//     const el = answerRefs.current[index];
-//     if (!el) return;
-//     gsap.killTweensOf(el);
-//     gsap.to(el, {
-//       height: 0,
-//       opacity: 0,
-//       duration: 0.25,
-//       ease: "power2.inOut",
-//       onComplete: () => {
-//         el.style.display = "none";
-//         cb?.();
-//       },
-//     });
-//   };
-
-//   return (
-//     <section className="py-24 bg-light">
-//       <div className="max-w-4xl mx-auto px-6">
-//         {/* Heading */}
-//         <motion.h2
-//           className="text-center text-4xl md:text-5xl font-extrabold mb-16 text-dark"
-//           initial={{ opacity: 0, y: 24 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           viewport={{ once: true }}
-//         >
-//           {faqData.title}
-//         </motion.h2>
-
-//         {/* FAQ Items */}
-//         <div className="space-y-6">
-//           {faqData.faqs.map((faq, index) => {
-//             const isActive = activeIndex === index;
-
-//             return (
-//               <motion.div
-//                 key={index}
-//                 initial={{ opacity: 0, y: 30 }}
-//                 whileInView={{ opacity: 1, y: 0 }}
-//                 transition={{ delay: index * 0.05 }}
-//                 viewport={{ once: true }}
-//                 className={`bg-white border rounded-2xl p-6 md:p-8 transition-all duration-300
-//                 ${
-//                   isActive
-//                     ? "border-primary shadow-lg"
-//                     : "border-gray-200 hover:border-accent hover:shadow-md"
-//                 }`}
-//               >
-//                 {/* Question */}
-//                 <div
-//                   onClick={() => toggleFAQ(index)}
-//                   className="flex items-center justify-between gap-6 cursor-pointer"
-//                 >
-//                   <h3
-//                     className={`text-lg md:text-xl font-semibold transition-colors
-//                     ${isActive ? "text-primary" : "text-dark"}`}
-//                   >
-//                     {faq.question}
-//                   </h3>
-
-//                   <span
-//                     className={`p-3 rounded-full border transition-all
-//                     ${
-//                       isActive
-//                         ? "border-primary text-primary rotate-180"
-//                         : "border-gray-300 text-gray-500 hover:text-accent"
-//                     }`}
-//                   >
-//                     {isActive ? <AiOutlineMinus /> : <AiOutlinePlus />}
-//                   </span>
-//                 </div>
-
-//                 {/* Divider */}
-//                 <span
-//                   className={`block mt-4 h-[1px] w-full transition-opacity
-//                   ${
-//                     isActive
-//                       ? "bg-gradient-to-r from-transparent via-primary/40 to-transparent"
-//                       : "bg-gray-200"
-//                   }`}
-//                 />
-
-//                 {/* Answer */}
-//                 <div
-//                   ref={(el) => (answerRefs.current[index] = el)}
-//                   className="mt-6 text-dark/70 leading-relaxed overflow-hidden"
-//                   style={{ height: 0, opacity: 0, display: "none" }}
-//                 >
-//                   {faq.answer}
-//                 </div>
-//               </motion.div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
 "use client";
 
 import { useRef, useState } from "react";
@@ -208,7 +62,6 @@ export default function FAQ({ faqData }) {
 
   return (
     <section className="relative py-28 bg-gray-50 text-dark overflow-hidden">
-      {/* Glow Background */}
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="w-[600px] h-[600px] bg-secondary blur-[160px] rounded-full absolute -top-40 -left-40" />
         <div className="w-[500px] h-[500px] bg-accent blur-[160px] rounded-full absolute bottom-0 right-0" />
@@ -239,7 +92,6 @@ export default function FAQ({ faqData }) {
                 ${isActive ? "shadow-primary-500/20 scale-[1.01]" : "hover:shadow-accent/10 hover:bg-dark/10"}
                 `}
               >
-                {/* Question */}
                 <div
                   onClick={() => toggleFAQ(index)}
                   className="flex items-center justify-between gap-6 cursor-pointer"
@@ -265,14 +117,11 @@ export default function FAQ({ faqData }) {
                   </span>
                 </div>
 
-                {/* Divider */}
                 <span
                   className={`block mt-4 h-[1px] w-full bg-gradient-to-r from-transparent via-dark to-transparent transition-opacity duration-500
                   ${isActive ? "opacity-100" : "opacity-60"}
                 `}
                 />
-
-                {/* Answer */}
                 <div
                   ref={(el) => (answerRefs.current[index] = el)}
                   className="mt-6 text-dark/60 leading-relaxed overflow-hidden"

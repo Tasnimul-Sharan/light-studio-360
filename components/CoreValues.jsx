@@ -36,14 +36,11 @@ export default function CoreValues() {
                          bg-white p-8 transition-all duration-500
                          hover:-translate-y-1 hover:shadow-2xl"
             >
-              {/* Border glow on hover */}
               <div
                 className="pointer-events-none absolute inset-0 rounded-3xl
                               opacity-0 group-hover:opacity-100 transition
                               bg-gradient-to-br from-secondary/20 via-transparent to-accent/20"
               />
-
-              {/* Icon */}
               <div
                 className="relative z-10 mb-6 inline-flex h-14 w-14 items-center justify-center
                            rounded-2xl bg-gradient-to-br from-secondary to-accent
@@ -52,8 +49,6 @@ export default function CoreValues() {
               >
                 <Icon />
               </div>
-
-              {/* Content */}
               <h3 className="relative z-10 text-2xl font-bold text-primary mb-4 font-heading">
                 {v.title}
               </h3>

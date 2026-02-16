@@ -49,7 +49,6 @@ export default function Expertise() {
                        bg-gradient-to-br from-secondary/40 via-accent/30 to-primary/30
                        transition-all duration-500 hover:-translate-y-1"
           >
-            {/* Card */}
             <div
               className="relative h-full rounded-2xl bg-white p-6
                          shadow-sm group-hover:shadow-xl transition-all duration-500"

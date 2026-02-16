@@ -7,7 +7,6 @@ export default function ContactPageSection() {
     <section className="w-full py-24 bg-gray-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* LEFT SIDE */}
           <div className="max-w-xl">
             <h2 className="text-5xl font-bold leading-tight text-gray-900">
               Let’s <span className="text-secondary">Connect</span>
@@ -65,7 +64,6 @@ export default function ContactPageSection() {
             </div>
           </div>
 
-          {/* RIGHT SIDE FORM */}
           <div className="bg-white border border-gray-100 rounded-3xl p-10">
             <h3 className="text-3xl font-semibold mb-10 text-gray-900">
               Send Us a Message

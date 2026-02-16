@@ -24,26 +24,6 @@ export default function ServiceDetails({ service }) {
   return (
     <section className="bg-light py-24">
       <div className="max-w-7xl mx-auto md:px-0 px-6">
-        {/* {details.hero && (
-          <div className="text-center mb-24">
-            <span
-              className="inline-flex items-center gap-2 px-6 py-2 rounded-full
-              bg-secondary/10 text-secondary text-sm font-semibold tracking-wide"
-            >
-              <FiStar />
-              {details.hero.badge}
-            </span>
-
-            <h2 className="text-5xl font-extrabold text-primary mt-6">
-              {details.hero.title}
-            </h2>
-
-            <p className="text-primary/70 mt-6 max-w-3xl mx-auto text-lg">
-              {details.hero.desc}
-            </p>
-          </div>
-        )} */}
-
         {details.intro && (
           <div className="max-w-4xl mx-auto text-center mb-24 space-y-5">
             {details.intro.map((text, i) => (
@@ -56,13 +36,6 @@ export default function ServiceDetails({ service }) {
 
         {details.beforeAfter && (
           <div className="mb-24">
-            {/* <h3 className="text-4xl font-bold text-primary text-center mb-6">
-              {details.works?.title}
-            </h3>
-
-            <p className="text-primary/70 text-center max-w-3xl mx-auto mb-14">
-              {details.works?.desc}
-            </p> */}
 
             <div className="grid md:grid-cols-3 gap-10">
               {details.beforeAfter.map((item) => (
@@ -154,11 +127,9 @@ export default function ServiceDetails({ service }) {
           </div>
         )}
 
-        {/* FEATURES */}
         {details.features && (
           <div className="grid md:grid-cols-2 gap-10 mb-24">
             {details.features.map((item, i) => {
-              // service অনুযায়ী icon set
               const Icon = featureIcons[service?.slug] || FiCamera;
 
               return (
@@ -184,8 +155,6 @@ export default function ServiceDetails({ service }) {
             })}
           </div>
         )}
-
-        {/* INCLUDES */}
         {details.includes && (
           <div className="mb-24">
             <h3 className="text-4xl font-bold text-primary text-center mb-12">
@@ -206,8 +175,6 @@ export default function ServiceDetails({ service }) {
             </div>
           </div>
         )}
-
-        {/* SERVICES */}
         {details.services && (
           <div className="mb-24">
             <h3 className="text-4xl font-bold text-primary text-center mb-12">
@@ -227,8 +194,6 @@ export default function ServiceDetails({ service }) {
             </div>
           </div>
         )}
-
-        {/* WHY CHOOSE */}
         {details.why && (
           <div className="mb-24">
             <h3 className="text-4xl font-bold text-primary text-center mb-14">
@@ -259,17 +224,13 @@ export default function ServiceDetails({ service }) {
             </div>
           </div>
         )}
-
-        {/* CTA */}
         <div className="relative bg-primary text-light p-16 rounded-3xl text-center">
           <h3 className="text-4xl font-bold mb-4">
             Ready to Elevate Your Brand?
           </h3>
-
           <p className="text-light/80 max-w-2xl mx-auto mb-8">
             Let’s create premium visuals and experiences that set you apart.
           </p>
-
           <a
             href="#contact"
             className="inline-flex items-center gap-2 bg-secondary

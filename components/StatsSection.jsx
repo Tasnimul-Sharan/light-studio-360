@@ -1,37 +1,25 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import SectionBadge from "./SectionBadge";
-
-/* =======================
-   DATA
-======================= */
 const STATS = [
   {
     label: "Happy Clients",
     value: 1000,
-    // gradient: "secondary",
   },
   {
     label: "Completed Projects",
     value: 400,
-    // gradient: "from-secondary to-primary",
   },
   {
     label: "Years in Business",
     value: 5,
-    // gradient: "from-primary to-secondary",
   },
   {
     label: "Countries Served",
     value: 50,
-    // gradient: "from-primary to-secondary",
   },
 ];
 
-/* =======================
-   COMPONENT
-======================= */
 export default function StatsSection() {
   const sectionRef = useRef(null);
   const countersRef = useRef([]);
@@ -125,7 +113,6 @@ function StatCard({ stat, refCallback }) {
     <div className="bg-white/5 border border-white/10 backdrop-blur-md p-8 rounded-3xl text-center hover:scale-105 transition duration-300 shadow-lg">
       <div
         ref={refCallback}
-        // className={`text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r ${stat.gradient}`}
         className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-secondary"
       >
         0

@@ -1,5 +1,3 @@
-//
-
 "use client";
 
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
@@ -9,7 +7,6 @@ export default function ContactPageSection() {
     <section className="w-full py-24 bg-gray-200">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* LEFT SIDE */}
           <div className="max-w-xl">
             <h2 className="text-5xl font-bold leading-tight text-gray-900">
               Let’s <span className="text-secondary">Connect</span>
@@ -67,7 +64,6 @@ export default function ContactPageSection() {
             </div>
           </div>
 
-          {/* RIGHT SIDE FORM */}
           <div
             className="bg-white border border-gray-100 rounded-3xl p-10
                        shadow-[0_15px_50px_rgba(0,0,0,0.06)]"

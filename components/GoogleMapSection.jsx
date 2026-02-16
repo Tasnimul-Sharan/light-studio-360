@@ -11,20 +11,6 @@ export default function GoogleMapSection() {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       />
-
-      {/* Center Map Pin */}
-      {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="flex flex-col items-center">
-          <div className="bg-primary text-white p-3 rounded-full shadow-lg animate-bounce">
-            <FaMapMarkerAlt className="text-xl" />
-          </div>
-          <span className="mt-2 bg-white text-xs font-semibold px-3 py-1 rounded-full shadow">
-            Rampura Bus Stand
-          </span>
-        </div>
-      </div> */}
-
-      {/* Open in Google Maps Button */}
       <a
         href="https://share.google/cUxBrgwh3Q1uGytMU"
         target="_blank"

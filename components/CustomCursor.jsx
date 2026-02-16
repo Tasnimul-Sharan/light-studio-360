@@ -13,7 +13,6 @@ export default function CustomCursor() {
     gsap.set(cursor.current, { xPercent: -50, yPercent: -50 });
     gsap.set(dot.current, { xPercent: -50, yPercent: -50 });
 
-    // SMOOTH FOLLOW (true inertia)
     gsap.ticker.add(() => {
       pos.x += (mouse.x - pos.x) * 0.12;
       pos.y += (mouse.y - pos.y) * 0.12;
@@ -29,7 +28,6 @@ export default function CustomCursor() {
 
     window.addEventListener("mousemove", move);
 
-    // HOVER EFFECT (GSAP scale – no re-render)
     document.addEventListener("mouseover", (e) => {
       if (e.target.closest("a, button")) {
         gsap.to(cursor.current, {
@@ -55,7 +53,6 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* OUTER RING */}
       <div
         ref={cursor}
         className="fixed top-0 left-0 z-[9999] pointer-events-none"
@@ -68,7 +65,6 @@ export default function CustomCursor() {
         }}
       />
 
-      {/* CENTER DOT */}
       <div
         ref={dot}
         className="fixed top-0 left-0 z-[9999] pointer-events-none"

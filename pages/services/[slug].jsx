@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import ServiceDetails from "@/components/ServiceDetails";
-// import { serviceDetails } from "@/data/serviceDetails";
 import Head from "next/head";
 import HeroSection from "@/components/HeroSection";
 import { servicesDetailsData } from "@/data/servicesDetailsData";

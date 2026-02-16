@@ -11,7 +11,6 @@ export default function ProjectSlideshow() {
     "/Slideshow/2.png",
     "/Slideshow/M1.png",
     "/Slideshow/M2.png",
-    "/Slideshow/M3.png",
     "/Slideshow/Masking.png",
     "/Slideshow/s1.png",
     "/Slideshow/s2.png",

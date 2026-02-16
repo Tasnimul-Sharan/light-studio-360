@@ -77,11 +77,7 @@ export default function NewsDetails({ blogsData, socialIcons }) {
         <div className="flex items-center flex-wrap gap-2">
           <AiOutlineTag className="text-primary text-xl" />
           {blogPost.postTags.map((tag, i) => (
-            <p
-              // key={i}
-              // href="#"
-              className="bg-primary/80 text-white px-3 py-1 rounded-md text-sm transition transform duration-500"
-            >
+            <p className="bg-primary/80 text-white px-3 py-1 rounded-md text-sm transition transform duration-500">
               {tag}
             </p>
           ))}

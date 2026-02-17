@@ -9,19 +9,11 @@ module.exports = {
     extend: {
       colors: {
         primary: "#1E2A44", // Midnight Navy
-        // secondary: "#D4AF37", // Royal Gold
         secondary: "#d3ab64", // Royal Gold
         accent: "#4A90E2", // Electric Blue
         dark: "#0B0F14", // Charcoal Black
         light: "#F5F7FA", // Soft Pearl
       },
-      // colors: {
-      //   primary: "#FF6A00", // Orange
-      //   secondary: "#FFC107", // Gold
-      //   accent: "#2B2B2B", // Dark text
-      //   light: "#F5F5F5",
-      //   dark: "#000000",
-      // },
     },
     keyframes: {
       ripple: {

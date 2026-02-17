@@ -49,14 +49,14 @@ export default function ContactPage() {
       </Head>
       <HeroSection
         hero={{
-          title: "Contact Redith Group",
+          title: "Contact Light Studio360",
           subtitle: "We’re here to help—let’s connect and grow together.",
           backgroundImage: "/about-bg.jpg",
         }}
       />
       <ContactPageSection />
       <WorldClocks />
-      <GoogleMapSection />
+      {/* <GoogleMapSection /> */}
     </div>
   );
 }
